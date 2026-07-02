@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TRENDS - Financial Markets & Macro Intelligence</title>
+  <!-- Google Fonts: Outfit & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- Stile personalizzato -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Layout Container -->
+  <div class="app-container">
+    
+    <!-- Sidebar di Navigazione -->
+    <aside class="sidebar">
+      <div class="sidebar-brand">
+        <div class="logo-icon"><i class="fa-solid fa-chart-line"></i></div>
+        <div class="logo-text">TRENDS</div>
+      </div>
+      
+      <nav class="sidebar-menu">
+        <a href="#dashboard" class="menu-item active" id="nav-dashboard">
+          <i class="fa-solid fa-gauge-high"></i>
+          <span>Dashboard</span>
+        </a>
+        <a href="#strumenti" class="menu-item" id="nav-strumenti">
+          <i class="fa-solid fa-gem"></i>
+          <span>Strumenti Solidi</span>
+        </a>
+        <a href="#macro" class="menu-item" id="nav-macro">
+          <i class="fa-solid fa-landmark"></i>
+          <span>Quadro Macro</span>
+        </a>
+        <a href="#geopolitica" class="menu-item" id="nav-geopolitica">
+          <i class="fa-solid fa-globe"></i>
+          <span>Analisi Geopolitica</span>
+        </a>
+        <a href="#simulatore" class="menu-item" id="nav-simulatore">
+          <i class="fa-solid fa-sliders"></i>
+          <span>Simulatore</span>
+        </a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="user-status">
+          <span class="status-dot online"></span>
+          <span>Mercati Aperti</span>
+        </div>
+        <div class="local-time" id="current-time">--:--:--</div>
+        <button id="theme-toggle" class="theme-toggle-btn" title="Cambia Tema">
+          <i class="fa-solid fa-sun"></i> <span>Tema Chiaro</span>
+        </button>
+      </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+      
+      <!-- Top Market Ticker -->
+      <header class="top-header">
+        <div class="ticker-container">
+          <div class="ticker-wrapper" id="ticker-wrapper">
+            <!-- Riempito dinamicamente da app.js -->
+          </div>
+        </div>
+        
+        <div class="market-status-badge">
+          <div class="sentiment-label">Sentiment di Mercato</div>
+          <div class="sentiment-meter">
+            <div class="sentiment-bar" style="width: 68%;"></div>
+            <span class="sentiment-value">Moderato Ottimismo (68/100)</span>
+          </div>
+        </div>
+      </header>
+
+      <!-- Sezioni dell'applicazione -->
+      <div class="content-body">
+        
+        <!-- SECTION: DASHBOARD -->
+        <section id="dashboard" class="section-pane active">
+          <div class="section-header">
+            <div>
+              <h1 class="page-title">Mercati Finanziari &amp; Informazioni Globali <button class="info-btn-title" data-info="dashboard-general" title="Spiegazione"><i class="fa-solid fa-circle-info"></i></button></h1>
+              <p class="page-subtitle">Sintesi in tempo reale degli indicatori più solidi e delle principali macro tendenze.</p>
+            </div>
+            <div class="date-badge" id="current-date">--/--/----</div>
+          </div>
+
+          <!-- Cards Indici -->
+          <div class="indices-grid" id="indices-grid">
+            <!-- Riempito dinamicamente da app.js -->
+          </div>
+
+          <!-- Griglia Principale Dashboard -->
+          <div class="dashboard-grid">
+            
+            <!-- Sintesi Strumenti Importanti -->
+            <div class="card card-double shadow-premium">
+              <div class="card-header">
+                <h3><i class="fa-solid fa-star text-gold"></i> Strumenti Più Rilevanti <button class="info-btn" data-info="featured-instruments" title="Spiegazione"><i class="fa-solid fa-circle-info"></i></button></h3>
+                <a href="#strumenti" class="view-all-btn">Vedi Tutti <i class="fa-solid fa-chevron-right"></i></a>
+              </div>
+              <div class="featured-list" id="featured-instruments">
+                <!-- Riempito da app.js -->
+              </div>
+            </div>
+
+            <!-- Calendario Economico & Notizie -->
+            <div class="card shadow-premium">
+              <div class="card-header">
+                <h3><i class="fa-solid fa-calendar-days text-blue"></i> Eventi Macro Chiave <button class="info-btn" data-info="macro-events" title="Spiegazione"><i class="fa-solid fa-circle-info"></i></button></h3>
+              </div>
+              <div class="economic-events" id="economic-events">
+                <!-- Riempito da app.js -->
+              </div>
+            </div>
+
+            <!-- Mappa di Calore Geopolitica -->
+            <div class="card card-double shadow-premium">
+              <div class="card-header">
+                <h3><i class="fa-solid fa-triangle-exclamation text-orange"></i> Allarmi Geopolitici Rilevanti <button class="info-btn" data-info="geopolitical-alarms" title="Spiegazione"><i class="fa-solid fa-circle-info"></i></button></h3>
+                <a href="#geopolitica" class="view-all-btn">Analisi Rotte <i class="fa-solid fa-chevron-right"></i></a>
+              </div>
+              <div class="geopolitical-alarms" id="geopolitical-alarms">
+                <!-- Riempito da app.js -->
+              </div>
+            </div>
+
+            <!-- Tassi Centrali -->
+            <div class="card shadow-premium">
+              <div class="card-header">
+                <h3><i class="fa-solid fa-percent text-purple"></i> Tassi Banche Centrali <button class="info-btn" data-info="central-banks" title="Spiegazione"><i class="fa-solid fa-circle-info"></i></button></h3>
+              </div>
+              <div class="central-banks-list" id="central-banks-list">
+                <!-- Riempito da app.js -->
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- SECTION: STRUMENTI SOLIDI -->
+        <section id="strumenti" class="section-pane">
+          <div class="section-header">
+            <div>
+              <h1 class="page-title">Strumenti Finanziari Rilevanti <button class="info-btn-title" data-info="instruments-general" title="Spiegazione"><i class="fa-solid fa-circle-info"></i></button></h1>
+              <p class="page-subtitle">Una selezione curata dei pilastri più solidi e liquidi del mercato.</p>
+            </div>
+            <!-- Controlli Filtri -->
+            <div class="filters-container">
+              <div class="search-bar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" id="instrument-search" placeholder="Cerca strumento o simbolo...">
+              </div>
+              <div class="filter-dropdowns">
+                <select id="filter-category" class="premium-select">
+                  <option value="all">Tutte le Categorie</option>
+                  <option value="Azioni">Azioni</option>
+                  <option value="ETF">ETF</option>
+                  <option value="Obbligazioni">Obbligazioni</option>
+                  <option value="Commodity">Commodity</option>
+                  <option value="Crypto">Crypto</option>
+                </select>
+                <select id="filter-risk" class="premium-select">
+                  <option value="all">Tutti i Rischi</option>
+                  <option value="Basso">Basso/Minimo</option>
+                  <option value="Medio">Medio</option>
+                  <option value="Alto">Alto/Molto Alto</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <!-- Due Colonne: Lista Strumenti e Dettaglio Selezionato -->
+          <div class="instruments-layout">
+            <!-- Sidebar lista -->
+            <div class="instruments-sidebar" id="instruments-list">
+              <!-- Riempito da app.js -->
+            </div>
+            <!-- Dettaglio Strumento -->
+            <div class="instrument-detail-card" id="instrument-detail">
+              <div class="empty-state">
+                <i class="fa-solid fa-hand-pointer animate-pulse"></i>
+                <h4>Seleziona uno strumento</h4>
+                <p>Clicca su uno strumento nella lista a sinistra per visualizzarne i dettagli analitici, il rendimento storico e i motivi di solidità.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION: QUADRO MACRO -->
+        <section id="macro" class="section-pane">
+          <div class="section-header">
+            <div>
+              <h1 class="page-title">Quadro Macroeconomico Globale <button class="info-btn-title" data-info="macro-general" title="Spiegazione"><i class="fa-solid fa-circle-info"></i></button></h1>
+              <p class="page-subtitle">Analisi dei fondamentali economici che guidano le decisioni monetarie.</p>
+            </div>
+          </div>
+
+          <div class="macro-layout">
+            <!-- Indicatori Principali in un Grid -->
+            <div class="macro-indicators-grid" id="macro-indicators">
+              <!-- Riempito da app.js -->
+            </div>
+
+            <!-- Due Pannelli per Tassi di Interesse e Dettaglio Banche Centrali -->
+            <div class="macro-charts-row">
+              <div class="card shadow-premium">
+                <div class="card-header">
+                  <h3><i class="fa-solid fa-chart-line text-blue"></i> Andamento dei Tassi <button class="info-btn" data-info="banks-rates-chart" title="Spiegazione"><i class="fa-solid fa-circle-info"></i></button></h3>
+                </div>
+                <div class="chart-container">
+                  <canvas id="macroTassiChart"></canvas>
+                </div>
+              </div>
+
+              <div class="card shadow-premium">
+                <div class="card-header">
+                  <h3><i class="fa-solid fa-scale-balanced text-gold"></i> Dettaglio Politiche Centrali <button class="info-btn" data-info="banks-policies-detail" title="Spiegazione"><i class="fa-solid fa-circle-info"></i></button></h3>
+                </div>
+                <div class="central-banks-detailed" id="central-banks-detailed">
+                  <!-- Riempito da app.js -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION: GEOPOLITICA -->
+        <section id="geopolitica" class="section-pane">
+          <div class="section-header">
+            <div>
+              <h1 class="page-title">Scenari &amp; Analisi Geopolitica <button class="info-btn-title" data-info="geopolitics-general" title="Spiegazione"><i class="fa-solid fa-circle-info"></i></button></h1>
+              <p class="page-subtitle">Come le tensioni geopolitiche e le catene di fornitura influenzano i mercati globali.</p>
+            </div>
+          </div>
+
+          <div class="geopolitical-layout">
+            <!-- Selettori dello Scenario -->
+            <div class="scenarios-selector" id="scenarios-selector">
+              <!-- Riempito da app.js -->
+            </div>
+
+            <!-- Analisi ed Impatto Dettagliato dello Scenario Selezionato -->
+            <div class="scenario-details-card" id="scenario-detail">
+              <div class="empty-state">
+                <i class="fa-solid fa-earth-americas animate-spin-slow"></i>
+                <h4>Seleziona uno Scenario Geopolitico</h4>
+                <p>Fai clic su uno degli scenari attivi a sinistra per esplorare le implicazioni macro, i canali di trasmissione e la matrice degli impatti sugli asset class.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION: SIMULATORE -->
+        <section id="simulatore" class="section-pane">
+          <div class="section-header">
+            <div>
+              <h1 class="page-title">Simulatore di Portafoglio ed Interesse Composto <button class="info-btn-title" data-info="simulator-general" title="Spiegazione"><i class="fa-solid fa-circle-info"></i></button></h1>
+              <p class="page-subtitle">Modella e proietta la crescita dei tuoi investimenti combinando gli strumenti solidi analizzati.</p>
+            </div>
+          </div>
+
+          <div class="simulator-grid">
+            
+            <!-- AI INVESTMENT ADVISOR (COLLOCATO SOPRA PER RILEVANZA E ACCESSO AI PRESET) -->
+            <div class="card shadow-premium" style="grid-column: span 2;">
+              <div class="card-header">
+                <h3><i class="fa-solid fa-brain text-purple"></i> AI Investment Advisor <button class="info-btn" data-info="ai-advisor-general" title="Spiegazione"><i class="fa-solid fa-circle-info"></i></button></h3>
+                <div class="ai-status">
+                  <span class="status-dot online"></span>
+                  <span>AI Analyst Attivo</span>
+                </div>
+              </div>
+              <div class="ai-advisor-container">
+                <!-- AI Suggestions/Presets -->
+                <div class="ai-presets">
+                  <span class="preset-badge" data-preset="cauto"><i class="fa-solid fa-shield"></i> Portafoglio Conservativo</span>
+                  <span class="preset-badge" data-preset="bilanciato"><i class="fa-solid fa-scale-balanced"></i> Bilanciato Globale</span>
+                  <span class="preset-badge" data-preset="aggressivo"><i class="fa-solid fa-rocket"></i> Tech &amp; Crypto Aggressivo</span>
+                </div>
+                <!-- Chat Window -->
+                <div class="ai-chat-window" id="ai-chat-window">
+                  <div class="chat-message ai">
+                    <div class="message-bubble">
+                      Ciao! Sono il tuo consulente finanziario AI. Clicca su uno dei portafogli suggeriti qui sopra o descrivimi il tuo obiettivo di investimento (es. <em>"voglio un portafoglio a basso rischio con un po' d'oro per 10 anni"</em>) ed io calcolerò l'allocazione ideale impostando all'istante le percentuali degli strumenti finanziari qui sotto!
+                    </div>
+                  </div>
+                </div>
+                <!-- Chat Input -->
+                <form id="ai-chat-form" class="ai-chat-input-bar">
+                  <input type="text" id="ai-chat-input" placeholder="Chiedi all'AI: descrivi i tuoi obiettivi, durata o tolleranza al rischio..." autocomplete="off">
+                  <button type="submit" class="ai-send-btn" title="Invia richiesta"><i class="fa-solid fa-paper-plane"></i></button>
+                </form>
+              </div>
+            </div>
+
+            <!-- Pannello Parametri di Input -->
+            <div class="card shadow-premium">
+              <div class="card-header">
+                <h3><i class="fa-solid fa-sliders text-blue"></i> Configura Parametri <button class="info-btn" data-info="simulator-inputs" title="Spiegazione"><i class="fa-solid fa-circle-info"></i></button></h3>
+              </div>
+              <form id="simulator-form" class="simulator-form">
+                <div class="form-group">
+                  <label for="sim-capital">Capitale Iniziale (€)</label>
+                  <input type="number" id="sim-capital" min="100" value="10000" step="500">
+                </div>
+                
+                <div class="form-group">
+                  <label for="sim-contribution">Piano di Accumulo Mensile (PAC - €)</label>
+                  <input type="number" id="sim-contribution" min="0" value="300" step="50">
+                </div>
+                
+                <div class="form-group">
+                  <label for="sim-years">Orizzonte Temporale (Anni)</label>
+                  <div class="range-slider">
+                    <input type="range" id="sim-years" min="1" max="40" value="15">
+                    <span id="sim-years-val">15 anni</span>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <div class="portfolio-header-row">
+                    <label>Composizione Portafoglio</label>
+                    <span id="weight-counter" class="weight-indicator-bad">0%</span>
+                  </div>
+                  <div class="portfolio-selection-list" id="portfolio-selection-list">
+                    <!-- Popolato dinamicamente da app.js con i 17 strumenti -->
+                  </div>
+                  <div class="portfolio-validation-error" id="portfolio-error-msg" style="display: none;">
+                    * La somma deve essere esattamente 100% (attuale: <span id="current-weight-sum">0%</span>).
+                  </div>
+                </div>
+
+                <button type="submit" class="premium-btn">
+                  <i class="fa-solid fa-chart-pie-simple"></i> Calcola Proiezione
+                </button>
+              </form>
+            </div>
+
+            <!-- Risultati della simulazione -->
+            <div class="card card-double shadow-premium">
+              <div class="card-header">
+                <h3><i class="fa-solid fa-calculator text-gold"></i> Risultati &amp; Piano di Ammortamento <button class="info-btn" data-info="simulator-results" title="Spiegazione"><i class="fa-solid fa-circle-info"></i></button></h3>
+                <!-- Statistiche ponderate visualizzate nell'header -->
+                <div class="portfolio-stats-header" id="portfolio-stats-header">
+                  <span class="stat-badge-yield">Rendimento Stimato: <strong id="stat-weighted-yield">0.00%</strong></span>
+                  <span class="stat-badge-risk">Profilo Rischio: <strong id="stat-weighted-risk">--</strong></span>
+                </div>
+              </div>
+              <div class="simulator-results">
+                <div class="results-summary">
+                  <div class="result-box">
+                    <div class="result-label">Capitale Totale Investito</div>
+                    <div class="result-value" id="res-invested">€ 0</div>
+                  </div>
+                  <div class="result-box">
+                    <div class="result-label">Interessi Capitalizzati</div>
+                    <div class="result-value text-gold" id="res-interests">€ 0</div>
+                  </div>
+                  <div class="result-box">
+                    <div class="result-label">Valore Finale Stimato</div>
+                    <div class="result-value text-blue" id="res-total">€ 0</div>
+                  </div>
+                </div>
+                
+                <!-- Tabella dei risultati anno per anno -->
+                <div class="table-scroll-container">
+                  <table class="premium-table">
+                    <thead>
+                      <tr>
+                        <th>Anno</th>
+                        <th>Capitale Investito (€)</th>
+                        <th>Interessi Maturati (€)</th>
+                        <th>Valore Portafoglio (€)</th>
+                      </tr>
+                    </thead>
+                    <tbody id="simulator-table-body">
+                      <!-- Riempito dinamicamente da app.js -->
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </main>
+
+  </div>
+
+  <!-- Modal Unico Informativo -->
+  <div id="info-modal" class="modal-overlay">
+    <div class="modal-card">
+      <button id="modal-close" class="modal-close-btn" aria-label="Chiudi Spiegazione">&times;</button>
+      <div class="modal-header">
+        <h3 id="modal-title">Spiegazione Dettagliata</h3>
+      </div>
+      <div class="modal-body" id="modal-body">
+        <!-- Popolato dinamicamente da app.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Script Applicativo -->
+  <script type="module" src="app.js"></script>
+</body>
+</html>

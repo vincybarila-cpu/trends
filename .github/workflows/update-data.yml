@@ -1,0 +1,39 @@
+name: Update Market Data
+
+on:
+  schedule:
+    - cron: '17 * * * *'   # ogni ora al minuto 17 (il minuto 0 viene spesso ritardato/saltato da GitHub)
+  workflow_dispatch:        # permette il trigger manuale dalla UI di GitHub o via gh CLI
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-data
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Aggiorna dati di mercato
+        run: python update_data.py
+
+      - name: Commit e push se data.js è cambiato
+        run: |
+          git config user.name "trends-bot"
+          git config user.email "actions@github.com"
+          git add data.js
+          if git diff --cached --quiet; then
+            echo "Nessuna modifica da committare."
+            exit 0
+          fi
+          git commit -m "Auto-update market data"
+          git pull --rebase
+          git push
