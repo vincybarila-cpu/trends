@@ -6,11 +6,11 @@
 
 export const TRENDS_DATA = {
   indices: [
-    { symbol: "SPX", name: "S&P 500", value: "7,483.23", change: "+0.58%", status: "positive", estimated: false },
-    { symbol: "IXIC", name: "Nasdaq Composite", value: "26,040.03", change: "+0.85%", status: "positive", estimated: false },
-    { symbol: "DJI", name: "Dow Jones", value: "52,305.24", change: "+0.23%", status: "positive", estimated: false },
-    { symbol: "FTSEMIB", name: "FTSE MIB", value: "52,566.06", change: "+1.71%", status: "positive", estimated: false },
-    { symbol: "GDAXI", name: "DAX 40", value: "25,406.59", change: "+1.64%", status: "positive", estimated: false },
+    { symbol: "SPX", name: "S&P 500", value: "7,471.76", change: "-0.37%", status: "negative", estimated: false },
+    { symbol: "IXIC", name: "Nasdaq Composite", value: "25,834.99", change: "-1.44%", status: "negative", estimated: false },
+    { symbol: "DJI", name: "Dow Jones", value: "52,691.75", change: "+0.71%", status: "positive", estimated: false },
+    { symbol: "FTSEMIB", name: "FTSE MIB", value: "52,428.18", change: "+1.44%", status: "positive", estimated: false },
+    { symbol: "GDAXI", name: "DAX 40", value: "25,580.88", change: "+2.34%", status: "positive", estimated: false },
     { symbol: "N225", name: "Nikkei 225", value: "68,733.15", change: "-2.47%", status: "negative", estimated: false }
   ],
 
@@ -395,8 +395,8 @@ export const TRENDS_DATA = {
       description: "La prima e più grande criptovaluta decentralizzata basata su blockchain. Caratterizzata da una scarsità algoritmica programmata a 21 milioni di unità totali.",
       solidRationale: "Adozione istituzionale crescente (approvazione di ETF spot globali), proprietà tangibili di oro digitale (scarsità matematica, trasferibilità globale senza intermediari) e indipendenza dai sistemi bancari centrali.",
       risks: "Estrema volatilità dei prezzi, incertezze normative e regolatorie globali, e potenziale impatto ambientale dei consumi del protocollo Proof of Work.",
-      currentPrice: "61,448.00 USD",
-      changePercent: "+5.38%",
+      currentPrice: "61,554.00 USD",
+      changePercent: "+2.51%",
       status: "positive",
       historicalYields: [
         { year: "2020", yield: 302.8 },
