@@ -9,9 +9,9 @@ export const TRENDS_DATA = {
     { symbol: "SPX", name: "S&P 500", value: "7,483.24", change: "-0.21%", status: "negative", estimated: false },
     { symbol: "IXIC", name: "Nasdaq Composite", value: "25,832.67", change: "-1.45%", status: "negative", estimated: false },
     { symbol: "DJI", name: "Dow Jones", value: "52,900.07", change: "+1.11%", status: "positive", estimated: false },
-    { symbol: "FTSEMIB", name: "FTSE MIB", value: "52,428.18", change: "+1.44%", status: "positive", estimated: false },
-    { symbol: "GDAXI", name: "DAX 40", value: "25,580.88", change: "+2.34%", status: "positive", estimated: false },
-    { symbol: "N225", name: "Nikkei 225", value: "69,101.11", change: "+0.54%", status: "positive", estimated: false }
+    { symbol: "FTSEMIB", name: "FTSE MIB", value: "52,741.63", change: "+2.20%", status: "positive", estimated: false },
+    { symbol: "GDAXI", name: "DAX 40", value: "25,765.67", change: "+2.90%", status: "positive", estimated: false },
+    { symbol: "N225", name: "Nikkei 225", value: "69,744.07", change: "+1.47%", status: "positive", estimated: false }
   ],
 
   instruments: [
@@ -395,8 +395,8 @@ export const TRENDS_DATA = {
       description: "La prima e più grande criptovaluta decentralizzata basata su blockchain. Caratterizzata da una scarsità algoritmica programmata a 21 milioni di unità totali.",
       solidRationale: "Adozione istituzionale crescente (approvazione di ETF spot globali), proprietà tangibili di oro digitale (scarsità matematica, trasferibilità globale senza intermediari) e indipendenza dai sistemi bancari centrali.",
       risks: "Estrema volatilità dei prezzi, incertezze normative e regolatorie globali, e potenziale impatto ambientale dei consumi del protocollo Proof of Work.",
-      currentPrice: "61,318.00 USD",
-      changePercent: "+0.83%",
+      currentPrice: "61,703.00 USD",
+      changePercent: "+2.72%",
       status: "positive",
       historicalYields: [
         { year: "2020", yield: 302.8 },
