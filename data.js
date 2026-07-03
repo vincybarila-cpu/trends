@@ -11,7 +11,7 @@ export const TRENDS_DATA = {
     { symbol: "DJI", name: "Dow Jones", value: "52,900.07", change: "+1.11%", status: "positive", estimated: false },
     { symbol: "FTSEMIB", name: "FTSE MIB", value: "52,428.18", change: "+1.44%", status: "positive", estimated: false },
     { symbol: "GDAXI", name: "DAX 40", value: "25,580.88", change: "+2.34%", status: "positive", estimated: false },
-    { symbol: "N225", name: "Nikkei 225", value: "68,733.15", change: "-2.47%", status: "negative", estimated: false }
+    { symbol: "N225", name: "Nikkei 225", value: "69,101.11", change: "+0.54%", status: "positive", estimated: false }
   ],
 
   instruments: [
@@ -395,8 +395,8 @@ export const TRENDS_DATA = {
       description: "La prima e più grande criptovaluta decentralizzata basata su blockchain. Caratterizzata da una scarsità algoritmica programmata a 21 milioni di unità totali.",
       solidRationale: "Adozione istituzionale crescente (approvazione di ETF spot globali), proprietà tangibili di oro digitale (scarsità matematica, trasferibilità globale senza intermediari) e indipendenza dai sistemi bancari centrali.",
       risks: "Estrema volatilità dei prezzi, incertezze normative e regolatorie globali, e potenziale impatto ambientale dei consumi del protocollo Proof of Work.",
-      currentPrice: "61,439.00 USD",
-      changePercent: "+2.14%",
+      currentPrice: "61,318.00 USD",
+      changePercent: "+0.83%",
       status: "positive",
       historicalYields: [
         { year: "2020", yield: 302.8 },
