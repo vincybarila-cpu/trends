@@ -409,29 +409,32 @@ export const TRENDS_DATA = {
   ],
 
   macro: {
+    // rate/inflation e indicators[].actual/previous/status sono aggiornati
+    // automaticamente da update_macro.py (FRED/ECB, workflow settimanale).
+    // stance, comment e calendar sono contenuti editoriali manuali.
     centralBanks: [
       {
         name: "Federal Reserve (Fed)",
         region: "Stati Uniti",
-        rate: "5.25% - 5.50%",
-        inflation: "2.7% (PCE)",
+        rate: "3.50% - 3.75%",
+        inflation: "4.1% (PCE)",
         inflationTarget: "2.0%",
-        stance: "Restrittivo / In attesa (Data-dependent)",
-        comment: "La Fed mantiene i tassi ai massimi da 23 anni per combattere la persistenza dell'inflazione dei servizi, ma segnala che il prossimo movimento sarà probabilmente un taglio, escludendo quasi del tutto ulteriori rialzi."
+        stance: "In allentamento graduale (Data-dependent)",
+        comment: "Dopo il picco restrittivo del 2023-2024, la Fed ha avviato un ciclo di riduzione graduale dei tassi. Il ritmo dei tagli resta legato ai dati su inflazione dei servizi e mercato del lavoro."
       },
       {
         name: "Banca Centrale Europea (BCE)",
         region: "Eurozona",
-        rate: "4.50% (Rif. Principale)",
-        inflation: "2.4% (CPI)",
+        rate: "2.40% (Rif. Principale)",
+        inflation: "1.9% (CPI)",
         inflationTarget: "2.0%",
-        stance: "Verso il primo taglio (Moderatamente Restrittivo)",
-        comment: "Con un'inflazione in costante convergenza verso l'obiettivo, la BCE ha ampiamente preannunciato un primo taglio dei tassi di 25 punti base a inizio giugno 2026. L'evoluzione successiva dipenderà dalla dinamica salariale."
+        stance: "Neutrale / Ciclo di tagli avanzato",
+        comment: "Con l'inflazione ormai convergente all'obiettivo del 2%, la BCE ha riportato i tassi verso livelli neutrali. Le prossime mosse dipenderanno dalla dinamica salariale e dalla crescita, ancora modesta, dell'Eurozona."
       },
       {
         name: "People's Bank of China (PBOC)",
         region: "Cina",
-        rate: "3.45% (LPR a 1 anno)",
+        rate: "3.00% (LPR a 1 anno)",
         inflation: "0.3% (CPI)",
         inflationTarget: "3.0%",
         stance: "Espansivo / Stimolo monetario",
@@ -439,16 +442,16 @@ export const TRENDS_DATA = {
       }
     ],
     indicators: [
-      { name: "Inflazione USA (CPI)", actual: "3.4%", previous: "3.5%", status: "Elevata ma stabile" },
-      { name: "PIL USA (Q1 Trimestrale)", actual: "1.3%", previous: "3.4%", status: "Rallentamento" },
-      { name: "Tasso Disoccupazione USA", actual: "3.9%", previous: "3.8%", status: "Piena occupazione" },
-      { name: "Inflazione Eurozona (CPI)", actual: "2.4%", previous: "2.4%", status: "In convergenza" },
-      { name: "PIL Eurozona (Q1 Trimestrale)", actual: "0.3%", previous: "-0.1%", status: "Modesta ripresa" }
+      { name: "Inflazione USA (CPI)", actual: "4.3%", previous: "3.9%", status: "Elevata" },
+      { name: "PIL USA (trim. annualizzato)", actual: "2.1%", previous: "0.5%", status: "Crescita moderata" },
+      { name: "Tasso Disoccupazione USA", actual: "4.2%", previous: "4.3%", status: "Piena occupazione" },
+      { name: "Inflazione Eurozona (CPI)", actual: "1.9%", previous: "2.1%", status: "Vicina al target" },
+      { name: "PIL Eurozona (var. annua)", actual: "0.3%", previous: "1.2%", status: "Crescita debole" }
     ],
     calendar: [
-      { date: "05 Giugno 2026", event: "USA Non-Farm Payrolls (Dati Occupazione Maggio)", impact: "Alto", expectation: "+180k" },
-      { date: "06 Giugno 2026", event: "Decisione sui Tassi d'Interesse della BCE", impact: "Massimo", expectation: "Taglio -0.25%" },
-      { date: "12 Giugno 2026", event: "USA CPI (Dati Inflazione Maggio) & Decisione Fed", impact: "Massimo", expectation: "Tassi Invariati" }
+      { date: "07 Agosto 2026", event: "USA Non-Farm Payrolls (Dati Occupazione Luglio)", impact: "Alto", expectation: "—" },
+      { date: "12 Agosto 2026", event: "USA CPI (Dati Inflazione Luglio)", impact: "Massimo", expectation: "—" },
+      { date: "15-16 Settembre 2026", event: "Decisione sui Tassi d'Interesse della Fed (FOMC)", impact: "Massimo", expectation: "—" }
     ]
   },
 
