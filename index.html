@@ -273,13 +273,13 @@
 
           <div class="simulator-grid">
             
-            <!-- AI INVESTMENT ADVISOR (COLLOCATO SOPRA PER RILEVANZA E ACCESSO AI PRESET) -->
+            <!-- CONFIGURATORE GUIDATO DI PORTAFOGLIO (rule-based, preset rapidi) -->
             <div class="card shadow-premium" style="grid-column: span 2;">
               <div class="card-header">
-                <h3><i class="fa-solid fa-brain text-purple"></i> AI Investment Advisor <button class="info-btn" data-info="ai-advisor-general" title="Spiegazione"><i class="fa-solid fa-circle-info"></i></button></h3>
+                <h3><i class="fa-solid fa-compass text-purple"></i> Configuratore Guidato di Portafoglio <button class="info-btn" data-info="ai-advisor-general" title="Spiegazione"><i class="fa-solid fa-circle-info"></i></button></h3>
                 <div class="ai-status">
                   <span class="status-dot online"></span>
-                  <span>AI Analyst Attivo</span>
+                  <span>Assistente basato su regole</span>
                 </div>
               </div>
               <div class="ai-advisor-container">
@@ -293,15 +293,16 @@
                 <div class="ai-chat-window" id="ai-chat-window">
                   <div class="chat-message ai">
                     <div class="message-bubble">
-                      Ciao! Sono il tuo consulente finanziario AI. Clicca su uno dei portafogli suggeriti qui sopra o descrivimi il tuo obiettivo di investimento (es. <em>"voglio un portafoglio a basso rischio con un po' d'oro per 10 anni"</em>) ed io calcolerò l'allocazione ideale impostando all'istante le percentuali degli strumenti finanziari qui sotto!
+                      Benvenuto nel Configuratore Guidato! Clicca su uno dei portafogli predefiniti qui sopra oppure descrivi il tuo obiettivo (es. <em>"voglio un portafoglio a basso rischio con un po' d'oro per 10 anni"</em>): riconoscerò le parole chiave e imposterò all'istante un'allocazione di esempio negli strumenti qui sotto.
                     </div>
                   </div>
                 </div>
                 <!-- Chat Input -->
                 <form id="ai-chat-form" class="ai-chat-input-bar">
-                  <input type="text" id="ai-chat-input" placeholder="Chiedi all'AI: descrivi i tuoi obiettivi, durata o tolleranza al rischio..." autocomplete="off">
+                  <input type="text" id="ai-chat-input" placeholder="Descrivi i tuoi obiettivi, durata o tolleranza al rischio..." autocomplete="off">
                   <button type="submit" class="ai-send-btn" title="Invia richiesta"><i class="fa-solid fa-paper-plane"></i></button>
                 </form>
+                <p class="advisor-disclaimer">Le allocazioni proposte sono esempi predefiniti a scopo educativo/dimostrativo e non costituiscono consulenza finanziaria personalizzata.</p>
               </div>
             </div>
 

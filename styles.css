@@ -264,6 +264,15 @@ body.light-theme .menu-item.active {
   color: var(--color-orange);
 }
 
+/* Disclaimer del Configuratore Guidato (contenuto educativo, non consulenza) */
+.advisor-disclaimer {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  margin-top: 8px;
+  line-height: 1.5;
+  font-style: italic;
+}
+
 /* THEME TOGGLE BUTTON */
 .theme-toggle-btn {
   width: 100%;

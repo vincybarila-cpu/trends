@@ -2,7 +2,7 @@
  * TRENDS - Core Application Logic (REFRACTORED & POWERED)
  * Gestisce la navigazione, il popolamento dei dati, i modali esplicativi dinamici,
  * l'interruttore del doppio tema (chiaro/scuro), il configuratore di portafoglio custom,
- * il calcolo ponderato dei rendimenti e l'assistente finanziario AI Advisor integrato.
+ * il calcolo ponderato dei rendimenti e il Configuratore Guidato di portafoglio (rule-based).
  */
 
 import { TRENDS_DATA } from './data.js';
@@ -123,7 +123,7 @@ const EXPLANATIONS = {
     title: "Simulatore di Portafoglio ed Interesse Composto",
     content: `
       <p>Il simulatore consente di testare il comportamento di un portafoglio finanziario personalizzato combinando la **gamma di 17 strumenti solidi** della piattaforma.</p>
-      <p>La simulazione impiega il principio dell'**interesse composto** (capitalizzazione mensile degli interessi) e si basa sulle percentuali di allocazione decise da te o suggerite dall'AI Advisor.</p>
+      <p>La simulazione impiega il principio dell'**interesse composto** (capitalizzazione mensile degli interessi) e si basa sulle percentuali di allocazione decise da te o suggerite dal Configuratore Guidato.</p>
       <p><em>Invece di un grafico generico, ti viene restituito un piano di ammortamento anno per anno con il calcolo degli interessi cumulati.</em></p>
     `
   },
@@ -151,14 +151,15 @@ const EXPLANATIONS = {
     `
   },
   "ai-advisor-general": {
-    title: "AI Investment Advisor",
+    title: "Configuratore Guidato di Portafoglio",
     content: `
-      <p>L'<strong>AI Investment Advisor</strong> è un analista algoritmico integrato che elabora allocazioni di portafoglio su misura.</p>
-      <p>Puoi sfruttarlo in due modi:</p>
+      <p>Il <strong>Configuratore Guidato</strong> è un assistente basato su regole (non un'intelligenza artificiale) che imposta allocazioni di portafoglio predefinite nel simulatore.</p>
+      <p>Puoi usarlo in due modi:</p>
       <ul>
         <li><strong>Preset Rapidi</strong>: Clicca su uno dei badge per applicare configurazioni standard (Cauto, Bilanciato, Aggressivo).</li>
-        <li><strong>Prompt di Testo</strong>: Descrivi la tua situazione e le tue richieste (es. <em>"Voglio un portafoglio a rischio minimo incentrato su obbligazioni europee e oro"</em>). L'AI analizzerà le parole chiave, scriverà le sue valutazioni in chat ed **autocompilerà le percentuali e i parametri del modulo simulazione all'istante**.</li>
+        <li><strong>Descrizione Testuale</strong>: Descrivi il tuo obiettivo (es. <em>"Voglio un portafoglio a rischio minimo con obbligazioni e oro"</em>). Il configuratore riconosce le parole chiave (rischio, oro, inflazione, tech, crypto...) e <strong>autocompila all'istante le percentuali del modulo di simulazione</strong> con il preset più affine.</li>
       </ul>
+      <p><em>Le allocazioni proposte sono esempi a scopo educativo/dimostrativo e non costituiscono consulenza finanziaria personalizzata.</em></p>
     `
   }
 };
@@ -174,7 +175,7 @@ const state = {
   }
 };
 
-// Portafogli di riferimento per l'AI Advisor
+// Portafogli di riferimento per il Configuratore Guidato
 const AI_PORTFOLIOS = {
   cauto: [
     { id: "aggh", weight: 40 },
@@ -1066,7 +1067,7 @@ function renderScenarioDetail(id) {
 }
 
 // ==========================================================================
-// SEZIONE 5: SIMULATORE DI INTERESSE COMPOSTO / PORTAFOGLIO & AI ADVISOR
+// SEZIONE 5: SIMULATORE DI INTERESSE COMPOSTO / PORTAFOGLIO & CONFIGURATORE GUIDATO
 // ==========================================================================
 function initSimulator() {
   const form = document.getElementById('simulator-form');
@@ -1171,7 +1172,7 @@ function initSimulator() {
     calculateSimulation(capital, pac, years, weightedYield);
   });
 
-  // Inizializza l'AI Advisor
+  // Inizializza il Configuratore Guidato
   initAIAdvisor();
 }
 
@@ -1263,7 +1264,7 @@ function formatCurrency(value) {
 }
 
 // ==========================================================================
-// LOGICA AI INVESTMENT ADVISOR (CHAT & AUTOCOMPILAZIONE)
+// LOGICA CONFIGURATORE GUIDATO (CHAT & AUTOCOMPILAZIONE, RULE-BASED)
 // ==========================================================================
 function initAIAdvisor() {
   const chatWindow = document.getElementById('ai-chat-window');
@@ -1288,7 +1289,7 @@ function initAIAdvisor() {
     appendChatMessage('user', query);
     chatInput.value = '';
     
-    // Esegue logica AI basata sulle parole chiave della richiesta
+    // Riconoscimento keyword della richiesta (motore rule-based)
     processAIQuery(query);
   });
 }
