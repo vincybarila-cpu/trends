@@ -8,6 +8,8 @@ update_data.py - TRENDS Financial Markets Data Updater
    fails, only that index gets a random drift and is flagged estimated: true
    so the UI can label it as simulated.
 3. Patches data.js in-place using regex, preserving full JS syntax.
+4. Writes market-data.json (pure JSON with timestamp) fetched at runtime
+   by the frontend, so the UI always shows the latest committed data.
 
 Usage:
     python update_data.py   (su Windows: py update_data.py)
@@ -23,11 +25,12 @@ import os
 from urllib import request
 from urllib.parse import quote
 from urllib.error import URLError, HTTPError
-from datetime import datetime
+from datetime import datetime, timezone
 
 # --- CONFIG ------------------------------------------------------------------
 
 DATA_JS_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data.js")
+MARKET_JSON_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "market-data.json")
 
 COINGECKO_URL = (
     "https://api.coingecko.com/api/v3/simple/price"
@@ -239,12 +242,14 @@ def main():
     btc_price, btc_change = fetch_btc_data()
 
     if btc_price is not None:
+        btc_estimated = False
         price_str  = fmt_price(btc_price)
         change_str = fmt_change(btc_change)
         btc_status = "positive" if btc_change >= 0 else "negative"
         print("[OK] BTC Price : {}".format(price_str))
         print("[OK] BTC 24h   : {}  [{}]".format(change_str, btc_status))
     else:
+        btc_estimated = True
         print("[~~] Applicazione drift casuale a BTC come fallback...")
         base_btc   = 73510.0
         drift_pct  = random.uniform(0.5, 2.5) * random.choice([1, -1])
@@ -259,9 +264,21 @@ def main():
     js_text = patch_btc_in_js(js_text, price_str, change_str, btc_status)
     print("[OK] Blocco BTC aggiornato")
 
+    btc_json = {
+        "currentPrice": price_str,
+        "changePercent": change_str,
+        "status": btc_status,
+        "estimated": btc_estimated,
+    }
+
     # 4. Fetch real index values from Yahoo Finance (per-index fallback)
     print("\n[>>] Contatto Yahoo Finance per gli indici di mercato...")
     real_count, fallback_count = 0, 0
+    indices_json = []
+    index_names = {
+        "SPX": "S&P 500", "IXIC": "Nasdaq Composite", "DJI": "Dow Jones",
+        "FTSEMIB": "FTSE MIB", "GDAXI": "DAX 40", "N225": "Nikkei 225",
+    }
     for symbol, ticker in YAHOO_TICKERS.items():
         try:
             price, prev_close = fetch_index_from_yahoo(ticker)
@@ -280,6 +297,14 @@ def main():
             print("    [~~] {:<10} -> {:>12}  {:>8}  [{}]  FALLBACK STIMATO ({})".format(
                 symbol, val_str, chg_str, idx_status, e))
         js_text = patch_index_in_js(js_text, symbol, val_str, chg_str, idx_status, estimated)
+        indices_json.append({
+            "symbol": symbol,
+            "name": index_names.get(symbol, symbol),
+            "value": val_str,
+            "change": chg_str,
+            "status": idx_status,
+            "estimated": estimated,
+        })
 
     print("\n[OK] Indici da fonte reale: {}/6 - in fallback stimato: {}/6".format(
         real_count, fallback_count))
@@ -289,6 +314,16 @@ def main():
         f.write(js_text)
 
     print("\n[OK] data.js salvato ({:,} caratteri)".format(len(js_text)))
+
+    # 6. Save market-data.json (fetched at runtime by the frontend)
+    market_data = {
+        "lastUpdate": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "btc": btc_json,
+        "indices": indices_json,
+    }
+    with open(MARKET_JSON_PATH, "w", encoding="utf-8") as f:
+        json.dump(market_data, f, ensure_ascii=False, indent=2)
+    print("[OK] market-data.json salvato")
     print(sep)
     print("  Aggiornamento completato senza errori.")
     print(sep)

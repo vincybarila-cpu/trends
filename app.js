@@ -209,14 +209,71 @@ document.addEventListener('DOMContentLoaded', () => {
   initTheme();
   initModals();
   renderMarketTicker();
-  
+
   // Renderizzazione moduli iniziali
   renderDashboard();
   renderInstrumentsList();
   renderMacroHub();
   renderGeopoliticsHub();
   initSimulator();
+
+  // Aggiornamento asincrono con i dati live più recenti (market-data.json)
+  loadLiveData();
 });
+
+// ==========================================================================
+// DATI LIVE (market-data.json aggiornato ogni ora da GitHub Actions)
+// ==========================================================================
+async function loadLiveData() {
+  const freshnessEl = document.getElementById('data-freshness');
+  try {
+    const resp = await fetch('./market-data.json?t=' + Date.now(), { cache: 'no-store' });
+    if (!resp.ok) throw new Error('HTTP ' + resp.status);
+    const live = await resp.json();
+
+    // Merge indici (per simbolo)
+    if (Array.isArray(live.indices)) {
+      live.indices.forEach(li => {
+        const idx = TRENDS_DATA.indices.find(i => i.symbol === li.symbol);
+        if (idx) Object.assign(idx, li);
+      });
+    }
+
+    // Merge Bitcoin
+    if (live.btc) {
+      const btc = TRENDS_DATA.instruments.find(i => i.id === 'btc');
+      if (btc) {
+        btc.currentPrice = live.btc.currentPrice;
+        btc.changePercent = live.btc.changePercent;
+        btc.status = live.btc.status;
+      }
+    }
+
+    // Re-render delle viste che mostrano questi dati
+    renderMarketTicker();
+    renderDashboard();
+    renderInstrumentsList();
+    if (state.selectedInstrumentId) renderInstrumentDetail(state.selectedInstrumentId);
+
+    if (freshnessEl && live.lastUpdate) {
+      const d = new Date(live.lastUpdate);
+      const when = d.toLocaleString('it-IT', {
+        day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit'
+      });
+      freshnessEl.innerHTML = `<i class="fa-solid fa-tower-broadcast"></i> Dati aggiornati: ${when}`;
+      freshnessEl.classList.remove('stale');
+      freshnessEl.classList.add('fresh');
+    }
+  } catch (err) {
+    // Offline o file non raggiungibile: l'app resta utilizzabile con i dati
+    // statici del bundle, ma l'utente viene avvisato che non sono aggiornati
+    if (freshnessEl) {
+      freshnessEl.innerHTML = '<i class="fa-solid fa-triangle-exclamation"></i> Dati live non raggiungibili';
+      freshnessEl.classList.remove('fresh');
+      freshnessEl.classList.add('stale');
+    }
+  }
+}
 
 // ==========================================================================
 // GESTIONE DEL TEMA (CHIARO/SCURO)

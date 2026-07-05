@@ -248,6 +248,22 @@ body.light-theme .menu-item.active {
   color: var(--text-main);
 }
 
+/* Indicatore freschezza dati live (popolato da loadLiveData in app.js) */
+.data-freshness {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  margin-top: 4px;
+  line-height: 1.4;
+}
+
+.data-freshness.fresh {
+  color: var(--color-green);
+}
+
+.data-freshness.stale {
+  color: var(--color-orange);
+}
+
 /* THEME TOGGLE BUTTON */
 .theme-toggle-btn {
   width: 100%;
