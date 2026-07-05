@@ -223,6 +223,24 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // ==========================================================================
+// METRICHE DI RISCHIO QUANTITATIVE (derivate dai rendimenti storici)
+// ==========================================================================
+
+// Deviazione standard campionaria dei rendimenti annui 2020-2024: proxy
+// della volatilità dello strumento, calcolata dai dati invece che assegnata
+function computeVolatility(instrument) {
+  const yields = instrument.historicalYields.map(y => y.yield);
+  const mean = yields.reduce((sum, v) => sum + v, 0) / yields.length;
+  const variance = yields.reduce((sum, v) => sum + Math.pow(v - mean, 2), 0) / (yields.length - 1);
+  return Math.sqrt(variance);
+}
+
+function computeMeanYield(instrument) {
+  const yields = instrument.historicalYields.map(y => y.yield);
+  return yields.reduce((sum, v) => sum + v, 0) / yields.length;
+}
+
+// ==========================================================================
 // DATI LIVE (market-data.json aggiornato ogni ora da GitHub Actions)
 // ==========================================================================
 async function loadLiveData() {
@@ -711,6 +729,10 @@ function renderInstrumentDetail(id) {
           <span>${ins.subcategory}</span>
           <span>•</span>
           <span>Rischio: <strong>${ins.risk}</strong> (Score: ${ins.riskScore}/5)</span>
+          <span>•</span>
+          <span title="Deviazione standard dei rendimenti annui 2020-2024">Volatilità storica: <strong>${computeVolatility(ins).toFixed(1)}%</strong></span>
+          <span>•</span>
+          <span title="Media dei rendimenti annui 2020-2024">Rend. medio 5a: <strong>${computeMeanYield(ins).toFixed(1)}%</strong></span>
         </div>
       </div>
       <div class="detail-pricing">
@@ -1144,30 +1166,34 @@ function initSimulator() {
     // Calcolo del rendimento ponderato e del rischio ponderato
     const checkedChecks = selectionList.querySelectorAll('.portfolio-item-check:checked');
     let weightedYield = 0;
-    let weightedRiskScore = 0;
-    
+    let weightedVolatility = 0;
+
     checkedChecks.forEach(check => {
       const id = check.getAttribute('data-id');
       const row = check.closest('.portfolio-selection-item');
       const weightInput = row.querySelector('.portfolio-item-weight');
       const weightFraction = parseFloat(weightInput.value || 0) / 100;
-      
+
       const ins = TRENDS_DATA.instruments.find(item => item.id === id);
       weightedYield += ins.expectedYield * weightFraction;
-      weightedRiskScore += ins.riskScore * weightFraction;
+      weightedVolatility += computeVolatility(ins) * weightFraction;
     });
 
     // Aggiornamento statistiche sull'header
     document.getElementById('stat-weighted-yield').textContent = `${weightedYield.toFixed(2)}%`;
-    
+
+    // Media pesata delle volatilità storiche reali (senza correlazioni tra
+    // asset: stima prudenziale, la volatilità effettiva di un portafoglio
+    // diversificato è tipicamente inferiore)
     let riskLabel = "--";
-    if (weightedRiskScore <= 1.5) riskLabel = "Minimo 🛡️";
-    else if (weightedRiskScore <= 2.5) riskLabel = "Basso-Medio ⚖️";
-    else if (weightedRiskScore <= 3.5) riskLabel = "Medio 📈";
-    else if (weightedRiskScore <= 4.5) riskLabel = "Alto ⚡";
+    if (weightedVolatility <= 8) riskLabel = "Minimo 🛡️";
+    else if (weightedVolatility <= 18) riskLabel = "Basso-Medio ⚖️";
+    else if (weightedVolatility <= 35) riskLabel = "Medio 📈";
+    else if (weightedVolatility <= 60) riskLabel = "Alto ⚡";
     else riskLabel = "Molto Alto 🔥";
-    
-    document.getElementById('stat-weighted-risk').textContent = riskLabel;
+
+    document.getElementById('stat-weighted-risk').textContent =
+      `${riskLabel} (vol. ${weightedVolatility.toFixed(1)}%)`;
     
     calculateSimulation(capital, pac, years, weightedYield);
   });
