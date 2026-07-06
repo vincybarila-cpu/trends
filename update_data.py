@@ -22,10 +22,13 @@ import json
 import random
 import sys
 import os
+import time
 from urllib import request
 from urllib.parse import quote
 from urllib.error import URLError, HTTPError
 from datetime import datetime, timezone
+
+from update_macro import fetch_fred  # riuso: serie FRED senza chiave (stdlib)
 
 # --- CONFIG ------------------------------------------------------------------
 
@@ -48,6 +51,31 @@ YAHOO_TICKERS = {
     "FTSEMIB": "FTSEMIB.MI",
     "GDAXI":   "^GDAXI",
     "N225":    "^N225",
+}
+
+# Fonti per i 17 strumenti (BTC escluso: resta su CoinGecko).
+# type: "yahoo" (prezzo) | "fred" (rendimento %). fmt decide la stringa finale.
+# Se il fetch fallisce, il valore esistente in data.js resta invariato e lo
+# strumento viene marcato estimated: true (mai prezzi inventati).
+INSTRUMENT_SOURCES = {
+    "aapl":  {"type": "yahoo", "ref": "AAPL",    "fmt": "usd"},
+    "msft":  {"type": "yahoo", "ref": "MSFT",    "fmt": "usd"},
+    "nvda":  {"type": "yahoo", "ref": "NVDA",    "fmt": "usd"},
+    "asml":  {"type": "yahoo", "ref": "ASML.AS", "fmt": "eur"},
+    "lvmh":  {"type": "yahoo", "ref": "MC.PA",   "fmt": "eur"},
+    "ko":    {"type": "yahoo", "ref": "KO",      "fmt": "usd"},
+    "spy":   {"type": "yahoo", "ref": "SPY",     "fmt": "usd"},
+    "qqq":   {"type": "yahoo", "ref": "QQQ",     "fmt": "usd"},
+    "vwce":  {"type": "yahoo", "ref": "VWCE.DE", "fmt": "eur"},
+    "water": {"type": "yahoo", "ref": "WAT.PA",  "fmt": "eur"},
+    "gld":   {"type": "yahoo", "ref": "GLD",     "fmt": "usd"},
+    "aggh":  {"type": "yahoo", "ref": "AGGH.MI", "fmt": "eur"},
+    # GC=F: future front-month COMEX, proxy standard dello spot
+    "gold":  {"type": "yahoo", "ref": "GC=F",    "fmt": "gold"},
+    "us10y":  {"type": "fred", "ref": "DGS10",   "fmt": "yield"},
+    "us2y":   {"type": "fred", "ref": "DGS2",    "fmt": "yield"},
+    # OECD via FRED: serie mensile, in ritardo di ~2 mesi (reale ma lento)
+    "btp10y": {"type": "fred", "ref": "IRLTLT01ITM156N", "fmt": "yield"},
 }
 
 # Reference values used to compute realistic index drifts (fallback only,
@@ -140,19 +168,21 @@ def random_drift(base_value, min_pct=0.3, max_pct=1.8):
     return value_str, change_str, status
 
 
-def patch_btc_in_js(js_text, price_str, change_str, status):
+def patch_instrument_in_js(js_text, instrument_id, price_str=None, change_str=None,
+                           status=None, estimated=None):
     """
-    Patches BTC currentPrice, changePercent and status in the instruments array.
-    Strategy: split on the 'id: "btc"' anchor, then replace only the next
-    occurrence of each field before the next 'id:' anchor.
+    Patches currentPrice/changePercent/status/estimated of one instrument in
+    the instruments array. Strategy: split on the 'id: "<id>"' anchor, then
+    replace only within the segment before the next 'id:' anchor.
+    Any field passed as None is left untouched (used by the honest fallback:
+    keep the old real value, just flag it estimated).
     """
-    anchor = 'id: "btc"'
+    anchor = 'id: "{}"'.format(instrument_id)
     pos = js_text.find(anchor)
     if pos == -1:
-        print("[!!] Anchor 'id: \"btc\"' non trovato in data.js.")
+        print("[!!] Anchor '{}' non trovato in data.js.".format(anchor))
         return js_text
 
-    # Find the next id: occurrence after the BTC block to bound our replacements
     next_id_pos = js_text.find('id: "', pos + len(anchor))
     if next_id_pos == -1:
         next_id_pos = len(js_text)
@@ -161,25 +191,74 @@ def patch_btc_in_js(js_text, price_str, change_str, status):
     segment = js_text[pos:next_id_pos]
     after   = js_text[next_id_pos:]
 
-    # Patch within the BTC segment only
-    segment = re.sub(
-        r'(currentPrice:\s*")[^"]*(")',
-        lambda m: m.group(1) + price_str + m.group(2),
-        segment, count=1
-    )
-    segment = re.sub(
-        r'(changePercent:\s*")[^"]*(")',
-        lambda m: m.group(1) + change_str + m.group(2),
-        segment, count=1
-    )
-    # status field: only replace the first occurrence (not inside historicalYields)
-    segment = re.sub(
-        r'(status:\s*")[^"]*(")',
-        lambda m: m.group(1) + status + m.group(2),
-        segment, count=1
-    )
+    if price_str is not None:
+        segment = re.sub(
+            r'(currentPrice:\s*")[^"]*(")',
+            lambda m: m.group(1) + price_str + m.group(2),
+            segment, count=1
+        )
+    if change_str is not None:
+        segment = re.sub(
+            r'(changePercent:\s*")[^"]*(")',
+            lambda m: m.group(1) + change_str + m.group(2),
+            segment, count=1
+        )
+    if status is not None:
+        # status field: only replace the first occurrence (not inside historicalYields)
+        segment = re.sub(
+            r'(status:\s*")[^"]*(")',
+            lambda m: m.group(1) + status + m.group(2),
+            segment, count=1
+        )
+    if estimated is not None:
+        estimated_str = "true" if estimated else "false"
+        if re.search(r'estimated:\s*(?:true|false)', segment):
+            segment = re.sub(r'(estimated:\s*)(?:true|false)',
+                             lambda m: m.group(1) + estimated_str, segment, count=1)
+        else:
+            # Blocco senza il campo: lo inserisce subito dopo la riga status
+            segment = re.sub(r'(status:\s*"[^"]*",)',
+                             lambda m: m.group(1) + '\n      estimated: ' + estimated_str + ',',
+                             segment, count=1)
 
     return before + segment + after
+
+
+def fmt_instrument_price(value, fmt):
+    """Formats a numeric value into the display string used by data.js."""
+    if fmt == "usd":
+        return "{:,.2f} USD".format(value)
+    if fmt == "eur":
+        return "{:,.2f} EUR".format(value)
+    if fmt == "gold":
+        return "{:,.2f} USD/oz".format(value)
+    if fmt == "yield":
+        return "{:.2f}% (Rendimento)".format(value)
+    raise ValueError("Formato sconosciuto: {}".format(fmt))
+
+
+def fetch_instrument(source):
+    """
+    Fetches the live value for one instrument.
+    Returns (price_str, change_str, status). Raises on failure so the caller
+    can apply the honest per-instrument fallback.
+    """
+    if source["type"] == "yahoo":
+        price, prev_close = fetch_index_from_yahoo(source["ref"])
+        change_pct = (price - prev_close) / prev_close * 100.0
+        status = "positive" if change_pct >= 0 else "negative"
+        return fmt_instrument_price(price, source["fmt"]), fmt_change(change_pct), status
+
+    # FRED: serie di rendimenti in %, la variazione è un delta in punti
+    series = fetch_fred(source["ref"])
+    if len(series) < 2:
+        raise ValueError("Serie FRED troppo corta: {}".format(source["ref"]))
+    latest, prev = series[-1][1], series[-2][1]
+    delta = latest - prev
+    sign = "+" if delta >= 0 else ""
+    status = "positive" if delta >= 0 else "negative"
+    return (fmt_instrument_price(latest, source["fmt"]),
+            "{}{:.2f} pt".format(sign, delta), status)
 
 
 def patch_index_in_js(js_text, symbol, value_str, change_str, status, estimated):
@@ -261,7 +340,8 @@ def main():
         print("[~~] BTC (drift): {} ({})".format(price_str, change_str))
 
     # 3. Patch BTC block
-    js_text = patch_btc_in_js(js_text, price_str, change_str, btc_status)
+    js_text = patch_instrument_in_js(js_text, "btc", price_str, change_str,
+                                     btc_status, btc_estimated)
     print("[OK] Blocco BTC aggiornato")
 
     btc_json = {
@@ -270,6 +350,38 @@ def main():
         "status": btc_status,
         "estimated": btc_estimated,
     }
+
+    # 3b. Fetch live prices/yields for the other 16 instruments
+    print("\n[>>] Prezzi live dei 16 strumenti (Yahoo Finance + FRED)...")
+    instruments_json = {}
+    ins_real, ins_fallback = 0, 0
+    for ins_id, source in INSTRUMENT_SOURCES.items():
+        try:
+            ins_price, ins_change, ins_status = fetch_instrument(source)
+            js_text = patch_instrument_in_js(js_text, ins_id, ins_price,
+                                             ins_change, ins_status, False)
+            instruments_json[ins_id] = {
+                "currentPrice": ins_price,
+                "changePercent": ins_change,
+                "status": ins_status,
+                "estimated": False,
+            }
+            ins_real += 1
+            print("    [OK] {:<8} -> {:>18}  {:>9}  [{}]  ({})".format(
+                ins_id, ins_price, ins_change, ins_status, source["ref"]))
+        except Exception as e:
+            # Fallback onesto: il valore esistente resta invariato, viene solo
+            # marcato come non aggiornato (badge "stimato" in UI)
+            js_text = patch_instrument_in_js(js_text, ins_id, estimated=True)
+            instruments_json[ins_id] = {"estimated": True}
+            ins_fallback += 1
+            print("    [~~] {:<8} -> valore precedente mantenuto, marcato stimato ({})".format(
+                ins_id, e))
+        if source["type"] == "yahoo":
+            time.sleep(0.5)  # 22 chiamate Yahoo/run: restiamo gentili
+
+    print("\n[OK] Strumenti da fonte reale: {}/16 - non aggiornati (stimati): {}/16".format(
+        ins_real, ins_fallback))
 
     # 4. Fetch real index values from Yahoo Finance (per-index fallback)
     print("\n[>>] Contatto Yahoo Finance per gli indici di mercato...")
@@ -320,6 +432,7 @@ def main():
         "lastUpdate": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "btc": btc_json,
         "indices": indices_json,
+        "instruments": instruments_json,
     }
     with open(MARKET_JSON_PATH, "w", encoding="utf-8") as f:
         json.dump(market_data, f, ensure_ascii=False, indent=2)

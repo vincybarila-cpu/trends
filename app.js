@@ -21,7 +21,6 @@ const EXPLANATIONS = {
         <li><strong>Vetrina Asset Class</strong>: una selezione bilanciata di strumenti solidi che compongono un ecosistema d'investimento bilanciato.</li>
         <li><strong>Quadro Geopolitico ed Economico</strong>: eventi ad alto impatto imminenti e allarmi attivi che stanno guidando la volatilità.</li>
       </ul>
-      <p>Il sentiment complessivo ti indica se prevale l'ottimismo o la paura nel mercato nel breve periodo.</p>
     `
   },
   "featured-instruments": {
@@ -261,11 +260,16 @@ async function loadLiveData() {
     // Merge Bitcoin
     if (live.btc) {
       const btc = TRENDS_DATA.instruments.find(i => i.id === 'btc');
-      if (btc) {
-        btc.currentPrice = live.btc.currentPrice;
-        btc.changePercent = live.btc.changePercent;
-        btc.status = live.btc.status;
-      }
+      if (btc) Object.assign(btc, live.btc);
+    }
+
+    // Merge degli altri strumenti (per id); i fallback contengono solo
+    // { estimated: true } e lasciano invariato l'ultimo valore noto
+    if (live.instruments) {
+      Object.entries(live.instruments).forEach(([id, liveIns]) => {
+        const ins = TRENDS_DATA.instruments.find(i => i.id === id);
+        if (ins) Object.assign(ins, liveIns);
+      });
     }
 
     // Re-render delle viste che mostrano questi dati
@@ -543,7 +547,7 @@ function renderDashboard() {
         </div>
       </div>
       <div class="featured-yields">
-        <div class="featured-price">${ins.currentPrice}</div>
+        <div class="featured-price">${ins.currentPrice}${ins.estimated ? ' <span class="estimated-badge" title="Dato non aggiornato: fonte non disponibile all\'ultimo aggiornamento">stimato</span>' : ''}</div>
         <span class="featured-cat-tag tag-${ins.category.toLowerCase()}">${ins.category}</span>
       </div>
     `;
@@ -680,7 +684,7 @@ function renderInstrumentsList() {
         <span>${ins.name}</span>
       </div>
       <div class="ins-list-data">
-        <div class="ins-list-price">${ins.currentPrice}</div>
+        <div class="ins-list-price">${ins.currentPrice}${ins.estimated ? ' <span class="estimated-badge" title="Dato non aggiornato: fonte non disponibile all\'ultimo aggiornamento">stimato</span>' : ''}</div>
         <div class="risk-dot-badge">
           <span class="risk-dot ${riskClass}"></span> ${ins.risk}
         </div>
@@ -736,7 +740,7 @@ function renderInstrumentDetail(id) {
         </div>
       </div>
       <div class="detail-pricing">
-        <div class="detail-price">${ins.currentPrice}</div>
+        <div class="detail-price">${ins.currentPrice}${ins.estimated ? ' <span class="estimated-badge" title="Dato non aggiornato: fonte non disponibile all\'ultimo aggiornamento">stimato</span>' : ''}</div>
         <div class="detail-change ${statusClass}">${caretIcon} ${ins.changePercent}</div>
       </div>
     </div>
