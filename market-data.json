@@ -1,49 +1,49 @@
 {
-  "lastUpdate": "2026-07-06T12:58:55Z",
+  "lastUpdate": "2026-07-06T16:30:42Z",
   "btc": {
-    "currentPrice": "61,786.00 USD",
-    "changePercent": "-1.42%",
-    "status": "negative",
+    "currentPrice": "63,427.00 USD",
+    "changePercent": "+1.33%",
+    "status": "positive",
     "estimated": false
   },
   "indices": [
     {
       "symbol": "SPX",
       "name": "S&P 500",
-      "value": "7,483.24",
-      "change": "-0.21%",
-      "status": "negative",
+      "value": "7,532.81",
+      "change": "+0.66%",
+      "status": "positive",
       "estimated": false
     },
     {
       "symbol": "IXIC",
       "name": "Nasdaq Composite",
-      "value": "25,832.67",
-      "change": "-1.45%",
-      "status": "negative",
+      "value": "26,160.59",
+      "change": "+0.46%",
+      "status": "positive",
       "estimated": false
     },
     {
       "symbol": "DJI",
       "name": "Dow Jones",
-      "value": "52,900.07",
-      "change": "+1.11%",
+      "value": "52,879.61",
+      "change": "+1.10%",
       "status": "positive",
       "estimated": false
     },
     {
       "symbol": "FTSEMIB",
       "name": "FTSE MIB",
-      "value": "52,819.74",
-      "change": "+0.75%",
+      "value": "52,959.14",
+      "change": "+1.01%",
       "status": "positive",
       "estimated": false
     },
     {
       "symbol": "GDAXI",
       "name": "DAX 40",
-      "value": "25,752.77",
-      "change": "+0.67%",
+      "value": "25,817.89",
+      "change": "+0.93%",
       "status": "positive",
       "estimated": false
     },
