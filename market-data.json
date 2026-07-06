@@ -1,8 +1,8 @@
 {
-  "lastUpdate": "2026-07-05T23:18:39Z",
+  "lastUpdate": "2026-07-06T04:39:05Z",
   "btc": {
-    "currentPrice": "63,863.00 USD",
-    "changePercent": "+1.41%",
+    "currentPrice": "63,236.00 USD",
+    "changePercent": "+0.59%",
     "status": "positive",
     "estimated": false
   },
@@ -50,9 +50,9 @@
     {
       "symbol": "N225",
       "name": "Nikkei 225",
-      "value": "69,744.07",
-      "change": "+1.47%",
-      "status": "positive",
+      "value": "69,274.18",
+      "change": "-0.67%",
+      "status": "negative",
       "estimated": false
     }
   ]
