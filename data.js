@@ -9,9 +9,9 @@ export const TRENDS_DATA = {
     { symbol: "SPX", name: "S&P 500", value: "7,483.24", change: "-0.21%", status: "negative", estimated: false },
     { symbol: "IXIC", name: "Nasdaq Composite", value: "25,832.67", change: "-1.45%", status: "negative", estimated: false },
     { symbol: "DJI", name: "Dow Jones", value: "52,900.07", change: "+1.11%", status: "positive", estimated: false },
-    { symbol: "FTSEMIB", name: "FTSE MIB", value: "52,818.85", change: "+2.35%", status: "positive", estimated: false },
-    { symbol: "GDAXI", name: "DAX 40", value: "25,779.31", change: "+2.95%", status: "positive", estimated: false },
-    { symbol: "N225", name: "Nikkei 225", value: "69,274.18", change: "-0.67%", status: "negative", estimated: false }
+    { symbol: "FTSEMIB", name: "FTSE MIB", value: "53,002.93", change: "+1.10%", status: "positive", estimated: false },
+    { symbol: "GDAXI", name: "DAX 40", value: "25,829.66", change: "+0.97%", status: "positive", estimated: false },
+    { symbol: "N225", name: "Nikkei 225", value: "69,737.69", change: "-0.01%", status: "negative", estimated: false }
   ],
 
   instruments: [
@@ -395,9 +395,9 @@ export const TRENDS_DATA = {
       description: "La prima e più grande criptovaluta decentralizzata basata su blockchain. Caratterizzata da una scarsità algoritmica programmata a 21 milioni di unità totali.",
       solidRationale: "Adozione istituzionale crescente (approvazione di ETF spot globali), proprietà tangibili di oro digitale (scarsità matematica, trasferibilità globale senza intermediari) e indipendenza dai sistemi bancari centrali.",
       risks: "Estrema volatilità dei prezzi, incertezze normative e regolatorie globali, e potenziale impatto ambientale dei consumi del protocollo Proof of Work.",
-      currentPrice: "63,236.00 USD",
-      changePercent: "+0.59%",
-      status: "positive",
+      currentPrice: "62,808.00 USD",
+      changePercent: "-0.04%",
+      status: "negative",
       historicalYields: [
         { year: "2020", yield: 302.8 },
         { year: "2021", yield: 57.3 },
