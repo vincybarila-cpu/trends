@@ -1,8 +1,8 @@
 {
-  "lastUpdate": "2026-07-06T09:10:47Z",
+  "lastUpdate": "2026-07-06T12:58:55Z",
   "btc": {
-    "currentPrice": "62,808.00 USD",
-    "changePercent": "-0.04%",
+    "currentPrice": "61,786.00 USD",
+    "changePercent": "-1.42%",
     "status": "negative",
     "estimated": false
   },
@@ -34,16 +34,16 @@
     {
       "symbol": "FTSEMIB",
       "name": "FTSE MIB",
-      "value": "53,002.93",
-      "change": "+1.10%",
+      "value": "52,819.74",
+      "change": "+0.75%",
       "status": "positive",
       "estimated": false
     },
     {
       "symbol": "GDAXI",
       "name": "DAX 40",
-      "value": "25,829.66",
-      "change": "+0.97%",
+      "value": "25,752.77",
+      "change": "+0.67%",
       "status": "positive",
       "estimated": false
     },
