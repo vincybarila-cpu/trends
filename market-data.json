@@ -1,8 +1,8 @@
 {
-  "lastUpdate": "2026-07-09T20:04:24Z",
+  "lastUpdate": "2026-07-09T21:45:09Z",
   "btc": {
-    "currentPrice": "63,189.00 USD",
-    "changePercent": "+1.59%",
+    "currentPrice": "63,193.00 USD",
+    "changePercent": "+1.84%",
     "status": "positive",
     "estimated": false
   },
@@ -10,7 +10,7 @@
     {
       "symbol": "SPX",
       "name": "S&P 500",
-      "value": "7,543.66",
+      "value": "7,543.64",
       "change": "+0.53%",
       "status": "positive",
       "estimated": false
@@ -88,20 +88,20 @@
       "estimated": false
     },
     "ko": {
-      "currentPrice": "82.61 USD",
-      "changePercent": "-1.71%",
+      "currentPrice": "82.63 USD",
+      "changePercent": "-1.69%",
       "status": "negative",
       "estimated": false
     },
     "spy": {
-      "currentPrice": "751.60 USD",
-      "changePercent": "+0.52%",
+      "currentPrice": "751.71 USD",
+      "changePercent": "+0.53%",
       "status": "positive",
       "estimated": false
     },
     "qqq": {
-      "currentPrice": "723.23 USD",
-      "changePercent": "+1.94%",
+      "currentPrice": "723.28 USD",
+      "changePercent": "+1.95%",
       "status": "positive",
       "estimated": false
     },
@@ -118,8 +118,8 @@
       "estimated": false
     },
     "gld": {
-      "currentPrice": "378.21 USD",
-      "changePercent": "+0.19%",
+      "currentPrice": "378.18 USD",
+      "changePercent": "+0.18%",
       "status": "positive",
       "estimated": false
     },
@@ -130,20 +130,20 @@
       "estimated": false
     },
     "gold": {
-      "currentPrice": "4,132.00 USD/oz",
-      "changePercent": "+1.50%",
+      "currentPrice": "4,132.60 USD/oz",
+      "changePercent": "+1.52%",
       "status": "positive",
       "estimated": false
     },
     "us10y": {
-      "currentPrice": "4.55% (Rendimento)",
-      "changePercent": "+0.07 pt",
+      "currentPrice": "4.56% (Rendimento)",
+      "changePercent": "+0.01 pt",
       "status": "positive",
       "estimated": false
     },
     "us2y": {
-      "currentPrice": "4.19% (Rendimento)",
-      "changePercent": "+0.06 pt",
+      "currentPrice": "4.21% (Rendimento)",
+      "changePercent": "+0.02 pt",
       "status": "positive",
       "estimated": false
     },
