@@ -1,137 +1,137 @@
 {
-  "lastUpdate": "2026-07-09T05:06:21Z",
+  "lastUpdate": "2026-07-09T15:36:58Z",
   "btc": {
-    "currentPrice": "62,375.00 USD",
-    "changePercent": "-0.64%",
-    "status": "negative",
+    "currentPrice": "62,934.00 USD",
+    "changePercent": "+2.07%",
+    "status": "positive",
     "estimated": false
   },
   "indices": [
     {
       "symbol": "SPX",
       "name": "S&P 500",
-      "value": "7,482.71",
-      "change": "-0.73%",
-      "status": "negative",
+      "value": "7,522.89",
+      "change": "+0.25%",
+      "status": "positive",
       "estimated": false
     },
     {
       "symbol": "IXIC",
       "name": "Nasdaq Composite",
-      "value": "25,870.65",
-      "change": "-0.96%",
-      "status": "negative",
+      "value": "26,060.81",
+      "change": "+0.94%",
+      "status": "positive",
       "estimated": false
     },
     {
       "symbol": "DJI",
       "name": "Dow Jones",
-      "value": "52,348.39",
-      "change": "-1.33%",
+      "value": "52,477.57",
+      "change": "-0.85%",
       "status": "negative",
       "estimated": false
     },
     {
       "symbol": "FTSEMIB",
       "name": "FTSE MIB",
-      "value": "51,817.25",
-      "change": "-2.16%",
+      "value": "52,339.15",
+      "change": "-0.22%",
       "status": "negative",
       "estimated": false
     },
     {
       "symbol": "GDAXI",
       "name": "DAX 40",
-      "value": "24,897.45",
-      "change": "-3.57%",
+      "value": "25,109.47",
+      "change": "-1.40%",
       "status": "negative",
       "estimated": false
     },
     {
       "symbol": "N225",
       "name": "Nikkei 225",
-      "value": "67,887.34",
-      "change": "+1.60%",
+      "value": "67,743.85",
+      "change": "+1.38%",
       "status": "positive",
       "estimated": false
     }
   ],
   "instruments": {
     "aapl": {
-      "currentPrice": "313.39 USD",
-      "changePercent": "+0.23%",
-      "status": "positive",
-      "estimated": false
-    },
-    "msft": {
-      "currentPrice": "383.34 USD",
-      "changePercent": "-0.88%",
-      "status": "negative",
-      "estimated": false
-    },
-    "nvda": {
-      "currentPrice": "204.12 USD",
-      "changePercent": "+4.38%",
-      "status": "positive",
-      "estimated": false
-    },
-    "asml": {
-      "currentPrice": "1,529.00 EUR",
+      "currentPrice": "314.61 USD",
       "changePercent": "+1.27%",
       "status": "positive",
       "estimated": false
     },
-    "lvmh": {
-      "currentPrice": "484.90 EUR",
-      "changePercent": "-2.20%",
+    "msft": {
+      "currentPrice": "380.17 USD",
+      "changePercent": "-2.23%",
       "status": "negative",
       "estimated": false
     },
-    "ko": {
-      "currentPrice": "83.40 USD",
-      "changePercent": "+0.53%",
+    "nvda": {
+      "currentPrice": "201.46 USD",
+      "changePercent": "+2.30%",
       "status": "positive",
       "estimated": false
     },
-    "spy": {
-      "currentPrice": "745.40 USD",
-      "changePercent": "-0.78%",
+    "asml": {
+      "currentPrice": "1,600.80 EUR",
+      "changePercent": "+4.70%",
+      "status": "positive",
+      "estimated": false
+    },
+    "lvmh": {
+      "currentPrice": "493.65 EUR",
+      "changePercent": "+1.80%",
+      "status": "positive",
+      "estimated": false
+    },
+    "ko": {
+      "currentPrice": "82.53 USD",
+      "changePercent": "-1.81%",
       "status": "negative",
+      "estimated": false
+    },
+    "spy": {
+      "currentPrice": "749.69 USD",
+      "changePercent": "+0.26%",
+      "status": "positive",
       "estimated": false
     },
     "qqq": {
-      "currentPrice": "711.44 USD",
-      "changePercent": "-1.57%",
-      "status": "negative",
+      "currentPrice": "721.21 USD",
+      "changePercent": "+1.66%",
+      "status": "positive",
       "estimated": false
     },
     "vwce": {
-      "currentPrice": "163.78 EUR",
-      "changePercent": "-1.69%",
-      "status": "negative",
+      "currentPrice": "165.50 EUR",
+      "changePercent": "+0.41%",
+      "status": "positive",
       "estimated": false
     },
     "water": {
-      "currentPrice": "69.32 EUR",
-      "changePercent": "-1.46%",
-      "status": "negative",
+      "currentPrice": "69.51 EUR",
+      "changePercent": "+0.27%",
+      "status": "positive",
       "estimated": false
     },
     "gld": {
-      "currentPrice": "374.45 USD",
-      "changePercent": "-2.01%",
-      "status": "negative",
+      "currentPrice": "378.59 USD",
+      "changePercent": "+0.29%",
+      "status": "positive",
       "estimated": false
     },
     "aggh": {
-      "currentPrice": "4.90 EUR",
-      "changePercent": "-0.62%",
+      "currentPrice": "4.91 EUR",
+      "changePercent": "-0.15%",
       "status": "negative",
       "estimated": false
     },
     "gold": {
-      "currentPrice": "4,072.30 USD/oz",
-      "changePercent": "+0.03%",
+      "currentPrice": "4,139.80 USD/oz",
+      "changePercent": "+1.69%",
       "status": "positive",
       "estimated": false
     },
