@@ -222,7 +222,7 @@ export const TRENDS_DATA = {
       currentPrice: "166.14 EUR",
       changePercent: "+1.44%",
       status: "positive",
-      estimated: true,
+      estimated: false,
       historicalYields: [
         { year: "2020", yield: 6.4 },
         { year: "2021", yield: 27.8 },
@@ -388,8 +388,8 @@ export const TRENDS_DATA = {
       description: "Materia prima metallica di riferimento. Da millenni rappresenta lo standard storico del valore tangibile ed è la riserva monetaria delle banche centrali di tutto il pianeta.",
       solidRationale: "Assenza di rischio di controparte. Protegge nei periodi di gravi tensioni sistemiche ed geopolitiche (stagflazione, conflitti armati, crisi bancarie).",
       risks: "Costi fisici di stoccaggio e assicurazione per i possessori di oro fisico; forte correlazione inversa con i rendimenti reali dei titoli di Stato statunitensi.",
-      currentPrice: "4,120.00 USD/oz",
-      changePercent: "-0.26%",
+      currentPrice: "4,128.90 USD/oz",
+      changePercent: "-0.04%",
       status: "negative",
       estimated: false,
       historicalYields: [
@@ -412,8 +412,8 @@ export const TRENDS_DATA = {
       description: "La prima e più grande criptovaluta decentralizzata basata su blockchain. Caratterizzata da una scarsità algoritmica programmata a 21 milioni di unità totali.",
       solidRationale: "Adozione istituzionale crescente (approvazione di ETF spot globali), proprietà tangibili di oro digitale (scarsità matematica, trasferibilità globale senza intermediari) e indipendenza dai sistemi bancari centrali.",
       risks: "Estrema volatilità dei prezzi, incertezze normative e regolatorie globali, e potenziale impatto ambientale dei consumi del protocollo Proof of Work.",
-      currentPrice: "63,826.00 USD",
-      changePercent: "+0.88%",
+      currentPrice: "64,000.00 USD",
+      changePercent: "+1.15%",
       status: "positive",
       estimated: false,
       historicalYields: [

@@ -1,8 +1,8 @@
 {
-  "lastUpdate": "2026-07-10T20:43:12Z",
+  "lastUpdate": "2026-07-10T22:15:56Z",
   "btc": {
-    "currentPrice": "63,826.00 USD",
-    "changePercent": "+0.88%",
+    "currentPrice": "64,000.00 USD",
+    "changePercent": "+1.15%",
     "status": "positive",
     "estimated": false
   },
@@ -106,7 +106,10 @@
       "estimated": false
     },
     "vwce": {
-      "estimated": true
+      "currentPrice": "166.14 EUR",
+      "changePercent": "+1.44%",
+      "status": "positive",
+      "estimated": false
     },
     "water": {
       "currentPrice": "70.39 EUR",
@@ -127,8 +130,8 @@
       "estimated": false
     },
     "gold": {
-      "currentPrice": "4,120.00 USD/oz",
-      "changePercent": "-0.26%",
+      "currentPrice": "4,128.90 USD/oz",
+      "changePercent": "-0.04%",
       "status": "negative",
       "estimated": false
     },
