@@ -1,8 +1,8 @@
 {
-  "lastUpdate": "2026-07-13T19:49:27Z",
+  "lastUpdate": "2026-07-13T21:13:10Z",
   "btc": {
-    "currentPrice": "62,077.00 USD",
-    "changePercent": "-3.20%",
+    "currentPrice": "62,069.00 USD",
+    "changePercent": "-3.27%",
     "status": "negative",
     "estimated": false
   },
@@ -10,25 +10,25 @@
     {
       "symbol": "SPX",
       "name": "S&P 500",
-      "value": "7,514.35",
-      "change": "-0.39%",
+      "value": "7,515.34",
+      "change": "-0.38%",
       "status": "negative",
       "estimated": false
     },
     {
       "symbol": "IXIC",
       "name": "Nasdaq Composite",
-      "value": "25,867.51",
-      "change": "-1.30%",
+      "value": "25,873.18",
+      "change": "-1.27%",
       "status": "negative",
       "estimated": false
     },
     {
       "symbol": "DJI",
       "name": "Dow Jones",
-      "value": "52,485.67",
-      "change": "-0.00%",
-      "status": "negative",
+      "value": "52,498.64",
+      "change": "+0.02%",
+      "status": "positive",
       "estimated": false
     },
     {
@@ -58,20 +58,20 @@
   ],
   "instruments": {
     "aapl": {
-      "currentPrice": "317.32 USD",
-      "changePercent": "+0.35%",
+      "currentPrice": "317.31 USD",
+      "changePercent": "+0.34%",
       "status": "positive",
       "estimated": false
     },
     "msft": {
-      "currentPrice": "390.28 USD",
-      "changePercent": "+1.54%",
+      "currentPrice": "390.99 USD",
+      "changePercent": "+1.72%",
       "status": "positive",
       "estimated": false
     },
     "nvda": {
-      "currentPrice": "203.95 USD",
-      "changePercent": "+0.58%",
+      "currentPrice": "203.53 USD",
+      "changePercent": "+0.37%",
       "status": "positive",
       "estimated": false
     },
@@ -88,20 +88,20 @@
       "estimated": false
     },
     "ko": {
-      "currentPrice": "84.28 USD",
-      "changePercent": "+1.99%",
+      "currentPrice": "84.25 USD",
+      "changePercent": "+1.96%",
       "status": "positive",
       "estimated": false
     },
     "spy": {
-      "currentPrice": "748.89 USD",
-      "changePercent": "-0.38%",
+      "currentPrice": "749.17 USD",
+      "changePercent": "-0.34%",
       "status": "negative",
       "estimated": false
     },
     "qqq": {
-      "currentPrice": "711.58 USD",
-      "changePercent": "-1.62%",
+      "currentPrice": "711.74 USD",
+      "changePercent": "-1.60%",
       "status": "negative",
       "estimated": false
     },
@@ -118,8 +118,8 @@
       "estimated": false
     },
     "gld": {
-      "currentPrice": "366.73 USD",
-      "changePercent": "-3.03%",
+      "currentPrice": "367.13 USD",
+      "changePercent": "-2.92%",
       "status": "negative",
       "estimated": false
     },
@@ -130,21 +130,21 @@
       "estimated": false
     },
     "gold": {
-      "currentPrice": "4,001.00 USD/oz",
-      "changePercent": "-2.74%",
+      "currentPrice": "4,008.70 USD/oz",
+      "changePercent": "-2.55%",
       "status": "negative",
       "estimated": false
     },
     "us10y": {
-      "currentPrice": "4.54% (Rendimento)",
-      "changePercent": "-0.02 pt",
-      "status": "negative",
+      "currentPrice": "4.56% (Rendimento)",
+      "changePercent": "+0.02 pt",
+      "status": "positive",
       "estimated": false
     },
     "us2y": {
-      "currentPrice": "4.16% (Rendimento)",
-      "changePercent": "-0.05 pt",
-      "status": "negative",
+      "currentPrice": "4.21% (Rendimento)",
+      "changePercent": "+0.05 pt",
+      "status": "positive",
       "estimated": false
     },
     "btp10y": {
