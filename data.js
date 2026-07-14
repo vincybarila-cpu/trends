@@ -6,11 +6,11 @@
 
 export const TRENDS_DATA = {
   indices: [
-    { symbol: "SPX", name: "S&P 500", value: "7,527.03", change: "-0.64%", status: "negative", estimated: false },
-    { symbol: "IXIC", name: "Nasdaq Composite", value: "25,970.05", change: "-1.19%", status: "negative", estimated: false },
-    { symbol: "DJI", name: "Dow Jones", value: "52,607.12", change: "-0.06%", status: "negative", estimated: false },
-    { symbol: "FTSEMIB", name: "FTSE MIB", value: "52,891.45", change: "+0.53%", status: "positive", estimated: false },
-    { symbol: "GDAXI", name: "DAX 40", value: "25,105.28", change: "+0.15%", status: "positive", estimated: false },
+    { symbol: "SPX", name: "S&P 500", value: "7,543.79", change: "-0.42%", status: "negative", estimated: false },
+    { symbol: "IXIC", name: "Nasdaq Composite", value: "26,118.43", change: "-0.62%", status: "negative", estimated: false },
+    { symbol: "DJI", name: "Dow Jones", value: "52,417.56", change: "-0.42%", status: "negative", estimated: false },
+    { symbol: "FTSEMIB", name: "FTSE MIB", value: "52,885.77", change: "+0.52%", status: "positive", estimated: false },
+    { symbol: "GDAXI", name: "DAX 40", value: "25,144.38", change: "+0.31%", status: "positive", estimated: false },
     { symbol: "N225", name: "Nikkei 225", value: "67,743.50", change: "+0.74%", status: "positive", estimated: false }
   ],
 
@@ -51,8 +51,8 @@ export const TRENDS_DATA = {
       description: "Gigante tecnologico diversificato attivo nei sistemi operativi, software per la produttività aziendale, cloud computing (Azure) e intelligenza artificiale.",
       solidRationale: "Monopolio di fatto nel software aziendale (Office), infrastruttura cloud in fortissima crescita e leadership strategica nell'intelligenza artificiale grazie alla partnership con OpenAI.",
       risks: "Valutazioni di mercato storicamente elevate, forte concorrenza nel cloud da parte di AWS e Google, e requisiti crescenti di spesa in conto capitale (CapEx) per i data center.",
-      currentPrice: "383.97 USD",
-      changePercent: "-0.29%",
+      currentPrice: "384.70 USD",
+      changePercent: "-0.10%",
       status: "negative",
       estimated: false,
       historicalYields: [
@@ -75,8 +75,8 @@ export const TRENDS_DATA = {
       description: "Pioniere e leader indiscusso delle GPU (Graphics Processing Units) e dell'architettura hardware/software CUDA, essenziali per il deep learning e l'intelligenza artificiale generativa.",
       solidRationale: "Monopolio tecnologico (oltre l'80% di quota di mercato nei chip per AI), barriera d'ingresso insormontabile grazie all'ecosistema software CUDA e domanda globale di elaborazione dati senza precedenti.",
       risks: "Ciclicità intrinseca del settore dei semiconduttori, rischi geopolitici legati a Taiwan (TSMC produce i chip fisici) e valutazioni di mercato estremamente volatili.",
-      currentPrice: "204.39 USD",
-      changePercent: "-3.11%",
+      currentPrice: "208.93 USD",
+      changePercent: "-0.96%",
       status: "negative",
       estimated: false,
       historicalYields: [
@@ -99,8 +99,8 @@ export const TRENDS_DATA = {
       description: "Monopolista mondiale dei macchinari per litografia a ultravioletti estremi (EUV), l'unico metodo in grado di stampare i chip più piccoli e avanzati al mondo.",
       solidRationale: "Monopolio tecnologico assoluto nel cuore dell'industria globale dei semiconduttori. Senza ASML, la crescita dell'AI e dei processori di ultima generazione è tecnicamente impossibile.",
       risks: "Elevate tensioni commerciali USA-Cina che limitano l'export in Cina (un mercato enorme) ed elevata ciclicità del CapEx dei produttori di chip.",
-      currentPrice: "1,553.60 EUR",
-      changePercent: "+0.83%",
+      currentPrice: "1,559.60 EUR",
+      changePercent: "+1.22%",
       status: "positive",
       estimated: false,
       historicalYields: [
@@ -123,8 +123,8 @@ export const TRENDS_DATA = {
       description: "Conglomerato leader mondiale del lusso, detentore di oltre 75 marchi storici (Louis Vuitton, Christian Dior, Fendi, Bulgari, Moët & Chandon).",
       solidRationale: "Pricing power imbattibile dovuto all'eredità dei marchi, che consente di mantenere margini operativi stellari anche in scenari di forte inflazione o rallentamento economico.",
       risks: "Sensibilità alla riduzione del turismo di fascia alta e all'andamento della ricchezza della classe media emergente in Asia (soprattutto Cina).",
-      currentPrice: "485.40 EUR",
-      changePercent: "-1.24%",
+      currentPrice: "483.95 EUR",
+      changePercent: "-1.54%",
       status: "negative",
       estimated: false,
       historicalYields: [
@@ -147,8 +147,8 @@ export const TRENDS_DATA = {
       description: "Gigante globale delle bevande analcoliche, con una delle reti di distribuzione fisica più capillari del pianeta e un brand riconosciuto universalmente.",
       solidRationale: "Titolo difensivo per eccellenza. Dividendi costanti aumentati per oltre 60 anni consecutivi (Dividend King). Domanda anelastica indipendentemente dalla congiuntura economica.",
       risks: "Cambiamento delle abitudini dei consumatori verso opzioni più salutari e impatto di imposte specifiche sulle bevande zuccherate.",
-      currentPrice: "84.35 USD",
-      changePercent: "+1.03%",
+      currentPrice: "83.97 USD",
+      changePercent: "+0.57%",
       status: "positive",
       estimated: false,
       historicalYields: [
@@ -171,8 +171,8 @@ export const TRENDS_DATA = {
       description: "L'ETF più grande e liquido al mondo, che replica passivamente la performance dell'indice S&P 500, coprendo le 500 principali società statunitensi a grande capitalizzazione.",
       solidRationale: "Diversificazione immediata su 500 tra le migliori aziende del mondo. Costi di gestione estremamente contenuti (Expense Ratio: 0.09%) e liquidità imbattibile.",
       risks: "Esposizione totale all'economia e al mercato azionario statunitense, forte concentrazione attuale sui titoli tecnologici (i cosiddetti Magnifici Sette).",
-      currentPrice: "750.00 USD",
-      changePercent: "-0.66%",
+      currentPrice: "751.70 USD",
+      changePercent: "-0.43%",
       status: "negative",
       estimated: false,
       historicalYields: [
@@ -195,8 +195,8 @@ export const TRENDS_DATA = {
       description: "ETF che replica l'indice Nasdaq-100, focalizzato sulle 100 più grandi società non finanziarie quotate al Nasdaq, con forte prevalenza di tecnologia, servizi di comunicazione e beni voluttuari.",
       solidRationale: "Ideale per esporsi ai motori dell'innovazione globale (Apple, Microsoft, NVIDIA, Amazon, Alphabet, Meta, Tesla) in un unico strumento altamente liquido.",
       risks: "Elevata volatilità e sensibilità ai tassi di interesse; sovraesposizione settoriale alla tecnologia che può soffrire in periodi di alta inflazione.",
-      currentPrice: "716.62 USD",
-      changePercent: "-1.23%",
+      currentPrice: "720.89 USD",
+      changePercent: "-0.64%",
       status: "negative",
       estimated: false,
       historicalYields: [
@@ -219,8 +219,8 @@ export const TRENDS_DATA = {
       description: "ETF che replica l'indice FTSE All-World, investendo in oltre 3.600 società a grande e media capitalizzazione sia in mercati sviluppati che emergenti in tutto il mondo.",
       solidRationale: "La quintessenza dell'investimento passivo. Copre oltre il 90% della capitalizzazione azionaria mondiale in un unico strumento. Riduce al minimo il rischio specifico di singole nazioni o settori.",
       risks: "Sebbene sia globale, rimane esposto per oltre il 60% agli Stati Uniti. Risente dell'andamento macroeconomico globale complessivo.",
-      currentPrice: "165.46 EUR",
-      changePercent: "-0.41%",
+      currentPrice: "165.78 EUR",
+      changePercent: "-0.22%",
       status: "negative",
       estimated: false,
       historicalYields: [
@@ -243,9 +243,9 @@ export const TRENDS_DATA = {
       description: "ETF tematico che replica le 30 principali aziende mondiali attive nelle infrastrutture idriche, trattamento dell'acqua, depurazione e distribuzione.",
       solidRationale: "Investimento in una risorsa di fondamentale importanza, caratterizzata da una scarsità strutturale legata al cambiamento climatico e all'urbanizzazione. Profilo difensivo-industriale solido.",
       risks: "Forte esposizione alla regolamentazione pubblica locale dei servizi di pubblica utilità (utilities) e alla ciclicità degli investimenti infrastrutturali.",
-      currentPrice: "70.61 EUR",
-      changePercent: "+0.24%",
-      status: "positive",
+      currentPrice: "70.27 EUR",
+      changePercent: "-0.24%",
+      status: "negative",
       estimated: false,
       historicalYields: [
         { year: "2020", yield: 5.8 },
@@ -267,8 +267,8 @@ export const TRENDS_DATA = {
       description: "ETF con replica fisica dell'oro monetario, depositato in caveau protetti. Ogni quota simula la detenzione di circa un decimo di oncia d'oro.",
       solidRationale: "Strumento di protezione patrimoniale ideale contro l'inflazione sistemica, la svalutazione monetaria e l'incertezza geopolitica globale.",
       risks: "Non distribuisce dividendi o interessi (costo opportunità elevato in contesti di tassi reali positivi) e fluttua in base al dollaro USA.",
-      currentPrice: "374.66 USD",
-      changePercent: "-0.62%",
+      currentPrice: "373.85 USD",
+      changePercent: "-0.84%",
       status: "negative",
       estimated: false,
       historicalYields: [
@@ -365,7 +365,7 @@ export const TRENDS_DATA = {
       solidRationale: "Rappresenta l'ancora di stabilità per eccellenza in un portafoglio bilanciato classica (formula 60/40). Diversificazione totale del debito con rischio valutario annullato tramite l'hedging.",
       risks: "Sensibilità generalizzata all'aumento globale coordinato dei tassi di interesse e rendimenti reali negativi in presenza di alta inflazione.",
       currentPrice: "4.91 EUR",
-      changePercent: "-0.16%",
+      changePercent: "-0.10%",
       status: "negative",
       estimated: false,
       historicalYields: [
@@ -412,8 +412,8 @@ export const TRENDS_DATA = {
       description: "La prima e più grande criptovaluta decentralizzata basata su blockchain. Caratterizzata da una scarsità algoritmica programmata a 21 milioni di unità totali.",
       solidRationale: "Adozione istituzionale crescente (approvazione di ETF spot globali), proprietà tangibili di oro digitale (scarsità matematica, trasferibilità globale senza intermediari) e indipendenza dai sistemi bancari centrali.",
       risks: "Estrema volatilità dei prezzi, incertezze normative e regolatorie globali, e potenziale impatto ambientale dei consumi del protocollo Proof of Work.",
-      currentPrice: "63,701.00 USD",
-      changePercent: "+2.19%",
+      currentPrice: "64,731.00 USD",
+      changePercent: "+3.43%",
       status: "positive",
       estimated: false,
       historicalYields: [
