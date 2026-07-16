@@ -1,8 +1,8 @@
 {
-  "lastUpdate": "2026-07-16T20:12:32Z",
+  "lastUpdate": "2026-07-16T21:16:48Z",
   "btc": {
-    "currentPrice": "64,147.00 USD",
-    "changePercent": "-1.17%",
+    "currentPrice": "64,133.00 USD",
+    "changePercent": "-1.11%",
     "status": "negative",
     "estimated": false
   },
@@ -88,14 +88,14 @@
       "estimated": false
     },
     "ko": {
-      "currentPrice": "84.94 USD",
-      "changePercent": "+2.23%",
+      "currentPrice": "84.92 USD",
+      "changePercent": "+2.21%",
       "status": "positive",
       "estimated": false
     },
     "spy": {
-      "currentPrice": "750.77 USD",
-      "changePercent": "-0.14%",
+      "currentPrice": "750.72 USD",
+      "changePercent": "-0.15%",
       "status": "negative",
       "estimated": false
     },
@@ -118,8 +118,8 @@
       "estimated": false
     },
     "gld": {
-      "currentPrice": "365.01 USD",
-      "changePercent": "-1.92%",
+      "currentPrice": "364.96 USD",
+      "changePercent": "-1.93%",
       "status": "negative",
       "estimated": false
     },
@@ -130,27 +130,27 @@
       "estimated": false
     },
     "gold": {
-      "currentPrice": "3,983.00 USD/oz",
-      "changePercent": "-1.51%",
+      "currentPrice": "3,979.90 USD/oz",
+      "changePercent": "-1.59%",
       "status": "negative",
       "estimated": false
     },
     "us10y": {
-      "currentPrice": "4.58% (Rendimento)",
-      "changePercent": "-0.04 pt",
+      "currentPrice": "4.55% (Rendimento)",
+      "changePercent": "-0.03 pt",
       "status": "negative",
       "estimated": false
     },
     "us2y": {
-      "currentPrice": "4.18% (Rendimento)",
-      "changePercent": "-0.08 pt",
+      "currentPrice": "4.13% (Rendimento)",
+      "changePercent": "-0.05 pt",
       "status": "negative",
       "estimated": false
     },
     "btp10y": {
-      "currentPrice": "3.82% (Rendimento)",
-      "changePercent": "+0.08 pt",
-      "status": "positive",
+      "currentPrice": "3.73% (Rendimento)",
+      "changePercent": "-0.10 pt",
+      "status": "negative",
       "estimated": false
     }
   }
