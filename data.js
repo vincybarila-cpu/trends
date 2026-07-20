@@ -460,11 +460,11 @@ export const TRENDS_DATA = {
       }
     ],
     indicators: [
-      { name: "Inflazione USA (CPI)", actual: "4.3%", previous: "3.9%", status: "Elevata" },
+      { name: "Inflazione USA (CPI)", actual: "3.7%", previous: "4.3%", status: "Elevata" },
       { name: "PIL USA (trim. annualizzato)", actual: "2.1%", previous: "0.5%", status: "Crescita moderata" },
       { name: "Tasso Disoccupazione USA", actual: "4.2%", previous: "4.3%", status: "Piena occupazione" },
       { name: "Inflazione Eurozona (CPI)", actual: "1.9%", previous: "2.1%", status: "Vicina al target" },
-      { name: "PIL Eurozona (var. annua)", actual: "0.3%", previous: "1.2%", status: "Crescita debole" }
+      { name: "PIL Eurozona (var. annua)", actual: "0.5%", previous: "1.1%", status: "Crescita debole" }
     ],
     calendar: [
       { date: "07 Agosto 2026", event: "USA Non-Farm Payrolls (Dati Occupazione Luglio)", impact: "Alto", expectation: "—" },
