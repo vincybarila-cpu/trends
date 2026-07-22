@@ -11,7 +11,7 @@ export const TRENDS_DATA = {
     { symbol: "DJI", name: "Dow Jones", value: "52,224.64", change: "+0.15%", status: "positive", estimated: false },
     { symbol: "FTSEMIB", name: "FTSE MIB", value: "52,285.09", change: "+0.78%", status: "positive", estimated: false },
     { symbol: "GDAXI", name: "DAX 40", value: "25,011.35", change: "+0.73%", status: "positive", estimated: false },
-    { symbol: "N225", name: "Nikkei 225", value: "66,232.19", change: "+0.00%", status: "positive", estimated: false }
+    { symbol: "N225", name: "Nikkei 225", value: "67,355.48", change: "+1.70%", status: "positive", estimated: false }
   ],
 
   instruments: [
@@ -388,8 +388,8 @@ export const TRENDS_DATA = {
       description: "Materia prima metallica di riferimento. Da millenni rappresenta lo standard storico del valore tangibile ed è la riserva monetaria delle banche centrali di tutto il pianeta.",
       solidRationale: "Assenza di rischio di controparte. Protegge nei periodi di gravi tensioni sistemiche ed geopolitiche (stagflazione, conflitti armati, crisi bancarie).",
       risks: "Costi fisici di stoccaggio e assicurazione per i possessori di oro fisico; forte correlazione inversa con i rendimenti reali dei titoli di Stato statunitensi.",
-      currentPrice: "4,085.00 USD/oz",
-      changePercent: "+1.86%",
+      currentPrice: "4,138.00 USD/oz",
+      changePercent: "+3.18%",
       status: "positive",
       estimated: false,
       historicalYields: [
@@ -412,8 +412,8 @@ export const TRENDS_DATA = {
       description: "La prima e più grande criptovaluta decentralizzata basata su blockchain. Caratterizzata da una scarsità algoritmica programmata a 21 milioni di unità totali.",
       solidRationale: "Adozione istituzionale crescente (approvazione di ETF spot globali), proprietà tangibili di oro digitale (scarsità matematica, trasferibilità globale senza intermediari) e indipendenza dai sistemi bancari centrali.",
       risks: "Estrema volatilità dei prezzi, incertezze normative e regolatorie globali, e potenziale impatto ambientale dei consumi del protocollo Proof of Work.",
-      currentPrice: "66,555.00 USD",
-      changePercent: "+2.17%",
+      currentPrice: "66,220.00 USD",
+      changePercent: "+1.18%",
       status: "positive",
       estimated: false,
       historicalYields: [
