@@ -1,8 +1,8 @@
 {
-  "lastUpdate": "2026-07-23T09:36:37Z",
+  "lastUpdate": "2026-07-23T12:02:36Z",
   "btc": {
-    "currentPrice": "65,677.00 USD",
-    "changePercent": "-0.29%",
+    "currentPrice": "65,527.00 USD",
+    "changePercent": "-0.65%",
     "status": "negative",
     "estimated": false
   },
@@ -34,17 +34,17 @@
     {
       "symbol": "FTSEMIB",
       "name": "FTSE MIB",
-      "value": "51,871.05",
-      "change": "-0.79%",
+      "value": "51,764.82",
+      "change": "-0.99%",
       "status": "negative",
       "estimated": false
     },
     {
       "symbol": "GDAXI",
       "name": "DAX 40",
-      "value": "25,024.69",
-      "change": "+0.05%",
-      "status": "positive",
+      "value": "24,950.01",
+      "change": "-0.25%",
+      "status": "negative",
       "estimated": false
     },
     {
@@ -76,14 +76,14 @@
       "estimated": false
     },
     "asml": {
-      "currentPrice": "1,589.20 EUR",
-      "changePercent": "-0.03%",
+      "currentPrice": "1,575.50 EUR",
+      "changePercent": "-0.89%",
       "status": "negative",
       "estimated": false
     },
     "lvmh": {
-      "currentPrice": "465.40 EUR",
-      "changePercent": "-1.81%",
+      "currentPrice": "460.80 EUR",
+      "changePercent": "-2.78%",
       "status": "negative",
       "estimated": false
     },
@@ -106,8 +106,8 @@
       "estimated": false
     },
     "vwce": {
-      "currentPrice": "164.80 EUR",
-      "changePercent": "-0.21%",
+      "currentPrice": "164.58 EUR",
+      "changePercent": "-0.34%",
       "status": "negative",
       "estimated": false
     },
@@ -125,13 +125,13 @@
     },
     "aggh": {
       "currentPrice": "4.88 EUR",
-      "changePercent": "-0.12%",
+      "changePercent": "-0.16%",
       "status": "negative",
       "estimated": false
     },
     "gold": {
-      "currentPrice": "4,093.80 USD/oz",
-      "changePercent": "-1.28%",
+      "currentPrice": "4,086.70 USD/oz",
+      "changePercent": "-1.45%",
       "status": "negative",
       "estimated": false
     },
