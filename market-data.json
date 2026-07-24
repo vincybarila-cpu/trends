@@ -1,8 +1,8 @@
 {
-  "lastUpdate": "2026-07-24T15:45:17Z",
+  "lastUpdate": "2026-07-24T17:52:04Z",
   "btc": {
-    "currentPrice": "64,135.00 USD",
-    "changePercent": "-1.16%",
+    "currentPrice": "64,082.00 USD",
+    "changePercent": "-1.06%",
     "status": "negative",
     "estimated": false
   },
@@ -10,40 +10,40 @@
     {
       "symbol": "SPX",
       "name": "S&P 500",
-      "value": "7,447.80",
-      "change": "-0.68%",
+      "value": "7,434.81",
+      "change": "-0.86%",
       "status": "negative",
       "estimated": false
     },
     {
       "symbol": "IXIC",
       "name": "Nasdaq Composite",
-      "value": "25,141.16",
-      "change": "-2.14%",
+      "value": "25,115.11",
+      "change": "-2.24%",
       "status": "negative",
       "estimated": false
     },
     {
       "symbol": "DJI",
       "name": "Dow Jones",
-      "value": "52,070.68",
-      "change": "-0.28%",
+      "value": "51,973.53",
+      "change": "-0.47%",
       "status": "negative",
       "estimated": false
     },
     {
       "symbol": "FTSEMIB",
       "name": "FTSE MIB",
-      "value": "51,745.00",
-      "change": "-1.98%",
+      "value": "51,802.23",
+      "change": "-1.87%",
       "status": "negative",
       "estimated": false
     },
     {
       "symbol": "GDAXI",
       "name": "DAX 40",
-      "value": "25,091.69",
-      "change": "-0.25%",
+      "value": "25,099.00",
+      "change": "-0.22%",
       "status": "negative",
       "estimated": false
     },
@@ -64,74 +64,74 @@
       "estimated": false
     },
     "msft": {
-      "currentPrice": "384.44 USD",
-      "changePercent": "-1.51%",
+      "currentPrice": "384.70 USD",
+      "changePercent": "-1.44%",
       "status": "negative",
       "estimated": false
     },
     "nvda": {
-      "currentPrice": "209.37 USD",
-      "changePercent": "-1.27%",
+      "currentPrice": "210.06 USD",
+      "changePercent": "-0.94%",
       "status": "negative",
       "estimated": false
     },
     "asml": {
-      "currentPrice": "1,563.20 EUR",
-      "changePercent": "-1.01%",
+      "currentPrice": "1,563.00 EUR",
+      "changePercent": "-1.03%",
       "status": "negative",
       "estimated": false
     },
     "lvmh": {
-      "currentPrice": "461.65 EUR",
-      "changePercent": "+1.79%",
+      "currentPrice": "461.70 EUR",
+      "changePercent": "+1.80%",
       "status": "positive",
       "estimated": false
     },
     "ko": {
-      "currentPrice": "82.18 USD",
-      "changePercent": "-0.02%",
+      "currentPrice": "81.98 USD",
+      "changePercent": "-0.27%",
       "status": "negative",
       "estimated": false
     },
     "spy": {
-      "currentPrice": "742.37 USD",
-      "changePercent": "-0.67%",
+      "currentPrice": "741.09 USD",
+      "changePercent": "-0.85%",
       "status": "negative",
       "estimated": false
     },
     "qqq": {
-      "currentPrice": "689.71 USD",
-      "changePercent": "-2.22%",
+      "currentPrice": "688.78 USD",
+      "changePercent": "-2.35%",
       "status": "negative",
       "estimated": false
     },
     "vwce": {
-      "currentPrice": "164.34 EUR",
-      "changePercent": "-0.64%",
+      "currentPrice": "164.28 EUR",
+      "changePercent": "-0.68%",
       "status": "negative",
       "estimated": false
     },
     "water": {
-      "currentPrice": "70.70 EUR",
-      "changePercent": "+0.77%",
+      "currentPrice": "70.90 EUR",
+      "changePercent": "+1.05%",
       "status": "positive",
       "estimated": false
     },
     "gld": {
-      "currentPrice": "373.56 USD",
-      "changePercent": "-1.47%",
+      "currentPrice": "373.05 USD",
+      "changePercent": "-1.60%",
       "status": "negative",
       "estimated": false
     },
     "aggh": {
       "currentPrice": "4.89 EUR",
-      "changePercent": "+0.02%",
-      "status": "positive",
+      "changePercent": "-0.02%",
+      "status": "negative",
       "estimated": false
     },
     "gold": {
-      "currentPrice": "4,076.80 USD/oz",
-      "changePercent": "+0.75%",
+      "currentPrice": "4,070.70 USD/oz",
+      "changePercent": "+0.60%",
       "status": "positive",
       "estimated": false
     },
