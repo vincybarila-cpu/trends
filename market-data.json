@@ -1,8 +1,8 @@
 {
-  "lastUpdate": "2026-07-28T03:35:32Z",
+  "lastUpdate": "2026-07-28T06:40:29Z",
   "btc": {
-    "currentPrice": "63,235.00 USD",
-    "changePercent": "-3.10%",
+    "currentPrice": "63,480.00 USD",
+    "changePercent": "-3.04%",
     "status": "negative",
     "estimated": false
   },
@@ -50,8 +50,8 @@
     {
       "symbol": "N225",
       "name": "Nikkei 225",
-      "value": "62,046.46",
-      "change": "-4.44%",
+      "value": "62,313.21",
+      "change": "-4.03%",
       "status": "negative",
       "estimated": false
     }
@@ -130,8 +130,8 @@
       "estimated": false
     },
     "gold": {
-      "currentPrice": "4,049.00 USD/oz",
-      "changePercent": "-0.69%",
+      "currentPrice": "4,048.00 USD/oz",
+      "changePercent": "-0.65%",
       "status": "negative",
       "estimated": false
     },
