@@ -6,12 +6,12 @@
 
 export const TRENDS_DATA = {
   indices: [
-    { symbol: "SPX", name: "S&P 500", value: "7,428.78", change: "+0.21%", status: "positive", estimated: false },
-    { symbol: "IXIC", name: "Nasdaq Composite", value: "24,876.91", change: "-0.22%", status: "negative", estimated: false },
-    { symbol: "DJI", name: "Dow Jones", value: "52,747.32", change: "+1.03%", status: "positive", estimated: false },
-    { symbol: "FTSEMIB", name: "FTSE MIB", value: "51,698.19", change: "-0.69%", status: "negative", estimated: false },
-    { symbol: "GDAXI", name: "DAX 40", value: "25,464.01", change: "+0.41%", status: "positive", estimated: false },
-    { symbol: "N225", name: "Nikkei 225", value: "62,364.92", change: "-3.95%", status: "negative", estimated: false }
+    { symbol: "SPX", name: "S&P 500", value: "7,428.78", change: "+0.23%", status: "positive", estimated: false },
+    { symbol: "IXIC", name: "Nasdaq Composite", value: "24,876.91", change: "-0.40%", status: "negative", estimated: false },
+    { symbol: "DJI", name: "Dow Jones", value: "52,747.32", change: "+1.54%", status: "positive", estimated: false },
+    { symbol: "FTSEMIB", name: "FTSE MIB", value: "51,698.19", change: "-0.20%", status: "negative", estimated: false },
+    { symbol: "GDAXI", name: "DAX 40", value: "25,464.01", change: "+1.45%", status: "positive", estimated: false },
+    { symbol: "N225", name: "Nikkei 225", value: "61,689.86", change: "-1.08%", status: "negative", estimated: false }
   ],
 
   instruments: [
@@ -388,8 +388,8 @@ export const TRENDS_DATA = {
       description: "Materia prima metallica di riferimento. Da millenni rappresenta lo standard storico del valore tangibile ed è la riserva monetaria delle banche centrali di tutto il pianeta.",
       solidRationale: "Assenza di rischio di controparte. Protegge nei periodi di gravi tensioni sistemiche ed geopolitiche (stagflazione, conflitti armati, crisi bancarie).",
       risks: "Costi fisici di stoccaggio e assicurazione per i possessori di oro fisico; forte correlazione inversa con i rendimenti reali dei titoli di Stato statunitensi.",
-      currentPrice: "4,016.50 USD/oz",
-      changePercent: "-1.42%",
+      currentPrice: "4,024.90 USD/oz",
+      changePercent: "-1.22%",
       status: "negative",
       estimated: false,
       historicalYields: [
@@ -412,9 +412,9 @@ export const TRENDS_DATA = {
       description: "La prima e più grande criptovaluta decentralizzata basata su blockchain. Caratterizzata da una scarsità algoritmica programmata a 21 milioni di unità totali.",
       solidRationale: "Adozione istituzionale crescente (approvazione di ETF spot globali), proprietà tangibili di oro digitale (scarsità matematica, trasferibilità globale senza intermediari) e indipendenza dai sistemi bancari centrali.",
       risks: "Estrema volatilità dei prezzi, incertezze normative e regolatorie globali, e potenziale impatto ambientale dei consumi del protocollo Proof of Work.",
-      currentPrice: "63,575.00 USD",
-      changePercent: "-0.35%",
-      status: "negative",
+      currentPrice: "63,765.00 USD",
+      changePercent: "+0.78%",
+      status: "positive",
       estimated: false,
       historicalYields: [
         { year: "2020", yield: 302.8 },

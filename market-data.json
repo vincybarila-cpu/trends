@@ -1,9 +1,9 @@
 {
-  "lastUpdate": "2026-07-28T23:18:00Z",
+  "lastUpdate": "2026-07-29T03:40:16Z",
   "btc": {
-    "currentPrice": "63,575.00 USD",
-    "changePercent": "-0.35%",
-    "status": "negative",
+    "currentPrice": "63,765.00 USD",
+    "changePercent": "+0.78%",
+    "status": "positive",
     "estimated": false
   },
   "indices": [
@@ -11,7 +11,7 @@
       "symbol": "SPX",
       "name": "S&P 500",
       "value": "7,428.78",
-      "change": "+0.21%",
+      "change": "+0.23%",
       "status": "positive",
       "estimated": false
     },
@@ -19,7 +19,7 @@
       "symbol": "IXIC",
       "name": "Nasdaq Composite",
       "value": "24,876.91",
-      "change": "-0.22%",
+      "change": "-0.40%",
       "status": "negative",
       "estimated": false
     },
@@ -27,7 +27,7 @@
       "symbol": "DJI",
       "name": "Dow Jones",
       "value": "52,747.32",
-      "change": "+1.03%",
+      "change": "+1.54%",
       "status": "positive",
       "estimated": false
     },
@@ -35,7 +35,7 @@
       "symbol": "FTSEMIB",
       "name": "FTSE MIB",
       "value": "51,698.19",
-      "change": "-0.69%",
+      "change": "-0.20%",
       "status": "negative",
       "estimated": false
     },
@@ -43,15 +43,15 @@
       "symbol": "GDAXI",
       "name": "DAX 40",
       "value": "25,464.01",
-      "change": "+0.41%",
+      "change": "+1.45%",
       "status": "positive",
       "estimated": false
     },
     {
       "symbol": "N225",
       "name": "Nikkei 225",
-      "value": "62,364.92",
-      "change": "-3.95%",
+      "value": "61,689.86",
+      "change": "-1.08%",
       "status": "negative",
       "estimated": false
     }
@@ -130,8 +130,8 @@
       "estimated": false
     },
     "gold": {
-      "currentPrice": "4,016.50 USD/oz",
-      "changePercent": "-1.42%",
+      "currentPrice": "4,024.90 USD/oz",
+      "changePercent": "-1.22%",
       "status": "negative",
       "estimated": false
     },
