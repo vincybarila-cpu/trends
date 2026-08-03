@@ -6,9 +6,9 @@
 
 export const TRENDS_DATA = {
   indices: [
-    { symbol: "SPX", name: "S&P 500", value: "7,592.18", change: "+2.08%", status: "positive", estimated: false },
-    { symbol: "IXIC", name: "Nasdaq Composite", value: "25,911.04", change: "+3.14%", status: "positive", estimated: false },
-    { symbol: "DJI", name: "Dow Jones", value: "52,990.46", change: "+1.50%", status: "positive", estimated: false },
+    { symbol: "SPX", name: "S&P 500", value: "7,601.56", change: "+2.20%", status: "positive", estimated: false },
+    { symbol: "IXIC", name: "Nasdaq Composite", value: "25,904.59", change: "+3.11%", status: "positive", estimated: false },
+    { symbol: "DJI", name: "Dow Jones", value: "53,222.39", change: "+1.94%", status: "positive", estimated: false },
     { symbol: "FTSEMIB", name: "FTSE MIB", value: "52,871.72", change: "+1.47%", status: "positive", estimated: false },
     { symbol: "GDAXI", name: "DAX 40", value: "26,001.31", change: "+1.52%", status: "positive", estimated: false },
     { symbol: "N225", name: "Nikkei 225", value: "63,754.90", change: "-0.94%", status: "negative", estimated: false }
@@ -27,8 +27,8 @@ export const TRENDS_DATA = {
       description: "Leader globale nella tecnologia di consumo, con un ecosistema hardware-software estremamente fidelizzato e margini operativi elevati.",
       solidRationale: "Generazione di cassa (Free Cash Flow) straordinaria, brand premium con forte potere di determinazione dei prezzi (pricing power) e continuo sviluppo dei servizi ad abbonamento ad alto margine.",
       risks: "Dipendenza dalle catene di approvvigionamento asiatiche, rallentamento delle vendite in Cina e scrutinio antitrust globale.",
-      currentPrice: "306.90 USD",
-      changePercent: "-7.96%",
+      currentPrice: "302.83 USD",
+      changePercent: "-9.18%",
       status: "negative",
       estimated: false,
       historicalYields: [
@@ -51,8 +51,8 @@ export const TRENDS_DATA = {
       description: "Gigante tecnologico diversificato attivo nei sistemi operativi, software per la produttività aziendale, cloud computing (Azure) e intelligenza artificiale.",
       solidRationale: "Monopolio di fatto nel software aziendale (Office), infrastruttura cloud in fortissima crescita e leadership strategica nell'intelligenza artificiale grazie alla partnership con OpenAI.",
       risks: "Valutazioni di mercato storicamente elevate, forte concorrenza nel cloud da parte di AWS e Google, e requisiti crescenti di spesa in conto capitale (CapEx) per i data center.",
-      currentPrice: "488.96 USD",
-      changePercent: "+8.39%",
+      currentPrice: "487.45 USD",
+      changePercent: "+8.06%",
       status: "positive",
       estimated: false,
       historicalYields: [
@@ -75,8 +75,8 @@ export const TRENDS_DATA = {
       description: "Pioniere e leader indiscusso delle GPU (Graphics Processing Units) e dell'architettura hardware/software CUDA, essenziali per il deep learning e l'intelligenza artificiale generativa.",
       solidRationale: "Monopolio tecnologico (oltre l'80% di quota di mercato nei chip per AI), barriera d'ingresso insormontabile grazie all'ecosistema software CUDA e domanda globale di elaborazione dati senza precedenti.",
       risks: "Ciclicità intrinseca del settore dei semiconduttori, rischi geopolitici legati a Taiwan (TSMC produce i chip fisici) e valutazioni di mercato estremamente volatili.",
-      currentPrice: "207.89 USD",
-      changePercent: "+6.59%",
+      currentPrice: "206.51 USD",
+      changePercent: "+5.88%",
       status: "positive",
       estimated: false,
       historicalYields: [
@@ -147,8 +147,8 @@ export const TRENDS_DATA = {
       description: "Gigante globale delle bevande analcoliche, con una delle reti di distribuzione fisica più capillari del pianeta e un brand riconosciuto universalmente.",
       solidRationale: "Titolo difensivo per eccellenza. Dividendi costanti aumentati per oltre 60 anni consecutivi (Dividend King). Domanda anelastica indipendentemente dalla congiuntura economica.",
       risks: "Cambiamento delle abitudini dei consumatori verso opzioni più salutari e impatto di imposte specifiche sulle bevande zuccherate.",
-      currentPrice: "86.81 USD",
-      changePercent: "-1.89%",
+      currentPrice: "87.06 USD",
+      changePercent: "-1.61%",
       status: "negative",
       estimated: false,
       historicalYields: [
@@ -171,8 +171,8 @@ export const TRENDS_DATA = {
       description: "L'ETF più grande e liquido al mondo, che replica passivamente la performance dell'indice S&P 500, coprendo le 500 principali società statunitensi a grande capitalizzazione.",
       solidRationale: "Diversificazione immediata su 500 tra le migliori aziende del mondo. Costi di gestione estremamente contenuti (Expense Ratio: 0.09%) e liquidità imbattibile.",
       risks: "Esposizione totale all'economia e al mercato azionario statunitense, forte concentrazione attuale sui titoli tecnologici (i cosiddetti Magnifici Sette).",
-      currentPrice: "756.78 USD",
-      changePercent: "+2.03%",
+      currentPrice: "757.81 USD",
+      changePercent: "+2.17%",
       status: "positive",
       estimated: false,
       historicalYields: [
@@ -195,8 +195,8 @@ export const TRENDS_DATA = {
       description: "ETF che replica l'indice Nasdaq-100, focalizzato sulle 100 più grandi società non finanziarie quotate al Nasdaq, con forte prevalenza di tecnologia, servizi di comunicazione e beni voluttuari.",
       solidRationale: "Ideale per esporsi ai motori dell'innovazione globale (Apple, Microsoft, NVIDIA, Amazon, Alphabet, Meta, Tesla) in un unico strumento altamente liquido.",
       risks: "Elevata volatilità e sensibilità ai tassi di interesse; sovraesposizione settoriale alla tecnologia che può soffrire in periodi di alta inflazione.",
-      currentPrice: "699.25 USD",
-      changePercent: "+2.30%",
+      currentPrice: "699.85 USD",
+      changePercent: "+2.38%",
       status: "positive",
       estimated: false,
       historicalYields: [
@@ -267,8 +267,8 @@ export const TRENDS_DATA = {
       description: "ETF con replica fisica dell'oro monetario, depositato in caveau protetti. Ogni quota simula la detenzione di circa un decimo di oncia d'oro.",
       solidRationale: "Strumento di protezione patrimoniale ideale contro l'inflazione sistemica, la svalutazione monetaria e l'incertezza geopolitica globale.",
       risks: "Non distribuisce dividendi o interessi (costo opportunità elevato in contesti di tassi reali positivi) e fluttua in base al dollaro USA.",
-      currentPrice: "370.13 USD",
-      changePercent: "-1.86%",
+      currentPrice: "371.67 USD",
+      changePercent: "-1.46%",
       status: "negative",
       estimated: false,
       historicalYields: [
@@ -388,9 +388,9 @@ export const TRENDS_DATA = {
       description: "Materia prima metallica di riferimento. Da millenni rappresenta lo standard storico del valore tangibile ed è la riserva monetaria delle banche centrali di tutto il pianeta.",
       solidRationale: "Assenza di rischio di controparte. Protegge nei periodi di gravi tensioni sistemiche ed geopolitiche (stagflazione, conflitti armati, crisi bancarie).",
       risks: "Costi fisici di stoccaggio e assicurazione per i possessori di oro fisico; forte correlazione inversa con i rendimenti reali dei titoli di Stato statunitensi.",
-      currentPrice: "4,090.20 USD/oz",
-      changePercent: "-0.41%",
-      status: "negative",
+      currentPrice: "4,111.20 USD/oz",
+      changePercent: "+0.10%",
+      status: "positive",
       estimated: false,
       historicalYields: [
         { year: "2020", yield: 24.6 },
@@ -412,8 +412,8 @@ export const TRENDS_DATA = {
       description: "La prima e più grande criptovaluta decentralizzata basata su blockchain. Caratterizzata da una scarsità algoritmica programmata a 21 milioni di unità totali.",
       solidRationale: "Adozione istituzionale crescente (approvazione di ETF spot globali), proprietà tangibili di oro digitale (scarsità matematica, trasferibilità globale senza intermediari) e indipendenza dai sistemi bancari centrali.",
       risks: "Estrema volatilità dei prezzi, incertezze normative e regolatorie globali, e potenziale impatto ambientale dei consumi del protocollo Proof of Work.",
-      currentPrice: "63,777.00 USD",
-      changePercent: "+0.99%",
+      currentPrice: "63,892.00 USD",
+      changePercent: "+0.79%",
       status: "positive",
       estimated: false,
       historicalYields: [
