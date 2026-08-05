@@ -9,8 +9,8 @@ export const TRENDS_DATA = {
     { symbol: "SPX", name: "S&P 500", value: "7,736.52", change: "+3.30%", status: "positive", estimated: false },
     { symbol: "IXIC", name: "Nasdaq Composite", value: "26,584.99", change: "+4.77%", status: "positive", estimated: false },
     { symbol: "DJI", name: "Dow Jones", value: "54,085.88", change: "+3.05%", status: "positive", estimated: false },
-    { symbol: "FTSEMIB", name: "FTSE MIB", value: "53,728.70", change: "+1.62%", status: "positive", estimated: false },
-    { symbol: "GDAXI", name: "DAX 40", value: "26,220.35", change: "+0.84%", status: "positive", estimated: false },
+    { symbol: "FTSEMIB", name: "FTSE MIB", value: "53,705.03", change: "+1.58%", status: "positive", estimated: false },
+    { symbol: "GDAXI", name: "DAX 40", value: "26,262.34", change: "+1.00%", status: "positive", estimated: false },
     { symbol: "N225", name: "Nikkei 225", value: "66,300.44", change: "+3.66%", status: "positive", estimated: false }
   ],
 
@@ -99,8 +99,8 @@ export const TRENDS_DATA = {
       description: "Monopolista mondiale dei macchinari per litografia a ultravioletti estremi (EUV), l'unico metodo in grado di stampare i chip più piccoli e avanzati al mondo.",
       solidRationale: "Monopolio tecnologico assoluto nel cuore dell'industria globale dei semiconduttori. Senza ASML, la crescita dell'AI e dei processori di ultima generazione è tecnicamente impossibile.",
       risks: "Elevate tensioni commerciali USA-Cina che limitano l'export in Cina (un mercato enorme) ed elevata ciclicità del CapEx dei produttori di chip.",
-      currentPrice: "1,471.50 EUR",
-      changePercent: "-0.07%",
+      currentPrice: "1,471.40 EUR",
+      changePercent: "-0.08%",
       status: "negative",
       estimated: false,
       historicalYields: [
@@ -123,8 +123,8 @@ export const TRENDS_DATA = {
       description: "Conglomerato leader mondiale del lusso, detentore di oltre 75 marchi storici (Louis Vuitton, Christian Dior, Fendi, Bulgari, Moët & Chandon).",
       solidRationale: "Pricing power imbattibile dovuto all'eredità dei marchi, che consente di mantenere margini operativi stellari anche in scenari di forte inflazione o rallentamento economico.",
       risks: "Sensibilità alla riduzione del turismo di fascia alta e all'andamento della ricchezza della classe media emergente in Asia (soprattutto Cina).",
-      currentPrice: "476.70 EUR",
-      changePercent: "-1.71%",
+      currentPrice: "475.65 EUR",
+      changePercent: "-1.93%",
       status: "negative",
       estimated: false,
       historicalYields: [
@@ -219,8 +219,8 @@ export const TRENDS_DATA = {
       description: "ETF che replica l'indice FTSE All-World, investendo in oltre 3.600 società a grande e media capitalizzazione sia in mercati sviluppati che emergenti in tutto il mondo.",
       solidRationale: "La quintessenza dell'investimento passivo. Copre oltre il 90% della capitalizzazione azionaria mondiale in un unico strumento. Riduce al minimo il rischio specifico di singole nazioni o settori.",
       risks: "Sebbene sia globale, rimane esposto per oltre il 60% agli Stati Uniti. Risente dell'andamento macroeconomico globale complessivo.",
-      currentPrice: "168.30 EUR",
-      changePercent: "+1.94%",
+      currentPrice: "168.36 EUR",
+      changePercent: "+1.97%",
       status: "positive",
       estimated: false,
       historicalYields: [
@@ -243,8 +243,8 @@ export const TRENDS_DATA = {
       description: "ETF tematico che replica le 30 principali aziende mondiali attive nelle infrastrutture idriche, trattamento dell'acqua, depurazione e distribuzione.",
       solidRationale: "Investimento in una risorsa di fondamentale importanza, caratterizzata da una scarsità strutturale legata al cambiamento climatico e all'urbanizzazione. Profilo difensivo-industriale solido.",
       risks: "Forte esposizione alla regolamentazione pubblica locale dei servizi di pubblica utilità (utilities) e alla ciclicità degli investimenti infrastrutturali.",
-      currentPrice: "72.55 EUR",
-      changePercent: "+1.30%",
+      currentPrice: "72.42 EUR",
+      changePercent: "+1.12%",
       status: "positive",
       estimated: false,
       historicalYields: [
@@ -365,7 +365,7 @@ export const TRENDS_DATA = {
       solidRationale: "Rappresenta l'ancora di stabilità per eccellenza in un portafoglio bilanciato classica (formula 60/40). Diversificazione totale del debito con rischio valutario annullato tramite l'hedging.",
       risks: "Sensibilità generalizzata all'aumento globale coordinato dei tassi di interesse e rendimenti reali negativi in presenza di alta inflazione.",
       currentPrice: "4.91 EUR",
-      changePercent: "+0.41%",
+      changePercent: "+0.40%",
       status: "positive",
       estimated: false,
       historicalYields: [
@@ -388,8 +388,8 @@ export const TRENDS_DATA = {
       description: "Materia prima metallica di riferimento. Da millenni rappresenta lo standard storico del valore tangibile ed è la riserva monetaria delle banche centrali di tutto il pianeta.",
       solidRationale: "Assenza di rischio di controparte. Protegge nei periodi di gravi tensioni sistemiche ed geopolitiche (stagflazione, conflitti armati, crisi bancarie).",
       risks: "Costi fisici di stoccaggio e assicurazione per i possessori di oro fisico; forte correlazione inversa con i rendimenti reali dei titoli di Stato statunitensi.",
-      currentPrice: "4,217.90 USD/oz",
-      changePercent: "+2.99%",
+      currentPrice: "4,255.90 USD/oz",
+      changePercent: "+3.92%",
       status: "positive",
       estimated: false,
       historicalYields: [
@@ -412,8 +412,8 @@ export const TRENDS_DATA = {
       description: "La prima e più grande criptovaluta decentralizzata basata su blockchain. Caratterizzata da una scarsità algoritmica programmata a 21 milioni di unità totali.",
       solidRationale: "Adozione istituzionale crescente (approvazione di ETF spot globali), proprietà tangibili di oro digitale (scarsità matematica, trasferibilità globale senza intermediari) e indipendenza dai sistemi bancari centrali.",
       risks: "Estrema volatilità dei prezzi, incertezze normative e regolatorie globali, e potenziale impatto ambientale dei consumi del protocollo Proof of Work.",
-      currentPrice: "64,119.00 USD",
-      changePercent: "+0.97%",
+      currentPrice: "64,151.00 USD",
+      changePercent: "+0.62%",
       status: "positive",
       estimated: false,
       historicalYields: [
