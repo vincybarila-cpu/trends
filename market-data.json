@@ -1,8 +1,8 @@
 {
-  "lastUpdate": "2026-08-07T20:01:09Z",
+  "lastUpdate": "2026-08-07T20:58:43Z",
   "btc": {
-    "currentPrice": "64,931.00 USD",
-    "changePercent": "+0.84%",
+    "currentPrice": "64,929.00 USD",
+    "changePercent": "+0.83%",
     "status": "positive",
     "estimated": false
   },
@@ -10,7 +10,7 @@
     {
       "symbol": "SPX",
       "name": "S&P 500",
-      "value": "7,757.46",
+      "value": "7,757.64",
       "change": "+0.44%",
       "status": "positive",
       "estimated": false
@@ -26,8 +26,8 @@
     {
       "symbol": "DJI",
       "name": "Dow Jones",
-      "value": "54,036.52",
-      "change": "-0.58%",
+      "value": "54,036.93",
+      "change": "-0.57%",
       "status": "negative",
       "estimated": false
     },
@@ -94,7 +94,7 @@
       "estimated": false
     },
     "spy": {
-      "currentPrice": "773.22 USD",
+      "currentPrice": "773.26 USD",
       "changePercent": "+0.45%",
       "status": "positive",
       "estimated": false
@@ -118,7 +118,7 @@
       "estimated": false
     },
     "gld": {
-      "currentPrice": "398.49 USD",
+      "currentPrice": "398.47 USD",
       "changePercent": "+2.27%",
       "status": "positive",
       "estimated": false
@@ -130,21 +130,21 @@
       "estimated": false
     },
     "gold": {
-      "currentPrice": "4,408.30 USD/oz",
-      "changePercent": "+3.92%",
+      "currentPrice": "4,399.10 USD/oz",
+      "changePercent": "+3.70%",
       "status": "positive",
       "estimated": false
     },
     "us10y": {
-      "currentPrice": "4.63% (Rendimento)",
-      "changePercent": "+0.00 pt",
+      "currentPrice": "4.69% (Rendimento)",
+      "changePercent": "+0.06 pt",
       "status": "positive",
       "estimated": false
     },
     "us2y": {
-      "currentPrice": "4.18% (Rendimento)",
-      "changePercent": "-0.02 pt",
-      "status": "negative",
+      "currentPrice": "4.25% (Rendimento)",
+      "changePercent": "+0.07 pt",
+      "status": "positive",
       "estimated": false
     },
     "btp10y": {
