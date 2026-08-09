@@ -1,8 +1,8 @@
 {
-  "lastUpdate": "2026-08-09T02:28:56Z",
+  "lastUpdate": "2026-08-09T04:36:44Z",
   "btc": {
-    "currentPrice": "64,799.00 USD",
-    "changePercent": "-0.12%",
+    "currentPrice": "64,776.00 USD",
+    "changePercent": "-0.32%",
     "status": "negative",
     "estimated": false
   },
@@ -131,7 +131,7 @@
     },
     "gold": {
       "currentPrice": "4,399.70 USD/oz",
-      "changePercent": "+3.72%",
+      "changePercent": "+1.36%",
       "status": "positive",
       "estimated": false
     },
