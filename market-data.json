@@ -1,8 +1,8 @@
 {
-  "lastUpdate": "2026-08-10T08:50:40Z",
+  "lastUpdate": "2026-08-10T10:36:15Z",
   "btc": {
-    "currentPrice": "65,165.00 USD",
-    "changePercent": "+0.61%",
+    "currentPrice": "64,979.00 USD",
+    "changePercent": "+0.12%",
     "status": "positive",
     "estimated": false
   },
@@ -34,16 +34,16 @@
     {
       "symbol": "FTSEMIB",
       "name": "FTSE MIB",
-      "value": "53,691.09",
-      "change": "+0.02%",
+      "value": "53,765.26",
+      "change": "+0.15%",
       "status": "positive",
       "estimated": false
     },
     {
       "symbol": "GDAXI",
       "name": "DAX 40",
-      "value": "26,365.70",
-      "change": "+0.86%",
+      "value": "26,424.94",
+      "change": "+1.09%",
       "status": "positive",
       "estimated": false
     },
@@ -76,14 +76,14 @@
       "estimated": false
     },
     "asml": {
-      "currentPrice": "1,533.60 EUR",
-      "changePercent": "+2.31%",
+      "currentPrice": "1,540.20 EUR",
+      "changePercent": "+2.75%",
       "status": "positive",
       "estimated": false
     },
     "lvmh": {
-      "currentPrice": "483.05 EUR",
-      "changePercent": "+0.64%",
+      "currentPrice": "485.00 EUR",
+      "changePercent": "+1.04%",
       "status": "positive",
       "estimated": false
     },
@@ -106,8 +106,8 @@
       "estimated": false
     },
     "vwce": {
-      "currentPrice": "168.46 EUR",
-      "changePercent": "+0.37%",
+      "currentPrice": "168.48 EUR",
+      "changePercent": "+0.38%",
       "status": "positive",
       "estimated": false
     },
@@ -124,14 +124,14 @@
       "estimated": false
     },
     "aggh": {
-      "currentPrice": "4.90 EUR",
-      "changePercent": "-0.05%",
-      "status": "negative",
+      "currentPrice": "4.91 EUR",
+      "changePercent": "+0.03%",
+      "status": "positive",
       "estimated": false
     },
     "gold": {
-      "currentPrice": "4,407.80 USD/oz",
-      "changePercent": "+0.18%",
+      "currentPrice": "4,401.80 USD/oz",
+      "changePercent": "+0.05%",
       "status": "positive",
       "estimated": false
     },
