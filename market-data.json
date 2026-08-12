@@ -1,8 +1,8 @@
 {
-  "lastUpdate": "2026-08-12T08:39:18Z",
+  "lastUpdate": "2026-08-12T10:19:45Z",
   "btc": {
-    "currentPrice": "63,721.00 USD",
-    "changePercent": "-0.46%",
+    "currentPrice": "64,039.00 USD",
+    "changePercent": "-0.22%",
     "status": "negative",
     "estimated": false
   },
@@ -34,16 +34,16 @@
     {
       "symbol": "FTSEMIB",
       "name": "FTSE MIB",
-      "value": "53,745.03",
-      "change": "+0.15%",
+      "value": "53,806.54",
+      "change": "+0.27%",
       "status": "positive",
       "estimated": false
     },
     {
       "symbol": "GDAXI",
       "name": "DAX 40",
-      "value": "26,420.50",
-      "change": "+0.37%",
+      "value": "26,493.86",
+      "change": "+0.65%",
       "status": "positive",
       "estimated": false
     },
@@ -76,14 +76,14 @@
       "estimated": false
     },
     "asml": {
-      "currentPrice": "1,584.20 EUR",
-      "changePercent": "+1.94%",
+      "currentPrice": "1,585.60 EUR",
+      "changePercent": "+2.03%",
       "status": "positive",
       "estimated": false
     },
     "lvmh": {
-      "currentPrice": "470.45 EUR",
-      "changePercent": "-1.74%",
+      "currentPrice": "469.68 EUR",
+      "changePercent": "-1.91%",
       "status": "negative",
       "estimated": false
     },
@@ -106,8 +106,8 @@
       "estimated": false
     },
     "vwce": {
-      "currentPrice": "168.60 EUR",
-      "changePercent": "+0.07%",
+      "currentPrice": "168.80 EUR",
+      "changePercent": "+0.19%",
       "status": "positive",
       "estimated": false
     },
@@ -125,13 +125,13 @@
     },
     "aggh": {
       "currentPrice": "4.90 EUR",
-      "changePercent": "+0.12%",
+      "changePercent": "+0.22%",
       "status": "positive",
       "estimated": false
     },
     "gold": {
-      "currentPrice": "4,465.60 USD/oz",
-      "changePercent": "+1.88%",
+      "currentPrice": "4,478.30 USD/oz",
+      "changePercent": "+2.17%",
       "status": "positive",
       "estimated": false
     },
