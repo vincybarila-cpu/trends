@@ -460,7 +460,7 @@ export const TRENDS_DATA = {
       }
     ],
     indicators: [
-      { name: "Inflazione USA (CPI)", actual: "3.7%", previous: "4.3%", status: "Elevata" },
+      { name: "Inflazione USA (CPI)", actual: "3.5%", previous: "3.7%", status: "Elevata" },
       { name: "PIL USA (trim. annualizzato)", actual: "1.5%", previous: "2.1%", status: "Crescita moderata" },
       { name: "Tasso Disoccupazione USA", actual: "4.1%", previous: "4.2%", status: "Piena occupazione" },
       { name: "Inflazione Eurozona (CPI)", actual: "1.9%", previous: "2.1%", status: "Vicina al target" },
