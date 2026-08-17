@@ -1,8 +1,8 @@
 {
-  "lastUpdate": "2026-08-17T09:57:26Z",
+  "lastUpdate": "2026-08-17T10:48:39Z",
   "btc": {
-    "currentPrice": "63,263.00 USD",
-    "changePercent": "+0.49%",
+    "currentPrice": "63,551.00 USD",
+    "changePercent": "+0.95%",
     "status": "positive",
     "estimated": false
   },
@@ -34,16 +34,16 @@
     {
       "symbol": "FTSEMIB",
       "name": "FTSE MIB",
-      "value": "53,780.58",
-      "change": "+0.16%",
+      "value": "53,801.56",
+      "change": "+0.20%",
       "status": "positive",
       "estimated": false
     },
     {
       "symbol": "GDAXI",
       "name": "DAX 40",
-      "value": "26,422.95",
-      "change": "+0.47%",
+      "value": "26,466.94",
+      "change": "+0.64%",
       "status": "positive",
       "estimated": false
     },
@@ -76,14 +76,14 @@
       "estimated": false
     },
     "asml": {
-      "currentPrice": "1,617.80 EUR",
-      "changePercent": "+2.42%",
+      "currentPrice": "1,623.80 EUR",
+      "changePercent": "+2.80%",
       "status": "positive",
       "estimated": false
     },
     "lvmh": {
-      "currentPrice": "455.70 EUR",
-      "changePercent": "-0.59%",
+      "currentPrice": "453.45 EUR",
+      "changePercent": "-1.08%",
       "status": "negative",
       "estimated": false
     },
@@ -106,14 +106,14 @@
       "estimated": false
     },
     "vwce": {
-      "currentPrice": "169.02 EUR",
-      "changePercent": "-0.35%",
+      "currentPrice": "169.20 EUR",
+      "changePercent": "-0.25%",
       "status": "negative",
       "estimated": false
     },
     "water": {
-      "currentPrice": "71.32 EUR",
-      "changePercent": "-0.24%",
+      "currentPrice": "71.16 EUR",
+      "changePercent": "-0.46%",
       "status": "negative",
       "estimated": false
     },
@@ -130,8 +130,8 @@
       "estimated": false
     },
     "gold": {
-      "currentPrice": "4,450.30 USD/oz",
-      "changePercent": "+0.29%",
+      "currentPrice": "4,452.70 USD/oz",
+      "changePercent": "+0.35%",
       "status": "positive",
       "estimated": false
     },
