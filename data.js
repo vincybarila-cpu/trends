@@ -10,8 +10,8 @@ export const TRENDS_DATA = {
     { symbol: "IXIC", name: "Nasdaq Composite", value: "26,289.71", change: "-1.64%", status: "negative", estimated: false },
     { symbol: "DJI", name: "Dow Jones", value: "53,343.40", change: "-0.72%", status: "negative", estimated: false },
     { symbol: "FTSEMIB", name: "FTSE MIB", value: "53,017.84", change: "-1.06%", status: "negative", estimated: false },
-    { symbol: "GDAXI", name: "DAX 40", value: "26,128.36", change: "-1.18%", status: "negative", estimated: false },
-    { symbol: "N225", name: "Nikkei 225", value: "65,392.93", change: "-3.07%", status: "negative", estimated: false }
+    { symbol: "GDAXI", name: "DAX 40", value: "26,128.36", change: "-0.80%", status: "negative", estimated: false },
+    { symbol: "N225", name: "Nikkei 225", value: "65,326.42", change: "-3.16%", status: "negative", estimated: false }
   ],
 
   instruments: [
@@ -124,7 +124,7 @@ export const TRENDS_DATA = {
       solidRationale: "Pricing power imbattibile dovuto all'eredità dei marchi, che consente di mantenere margini operativi stellari anche in scenari di forte inflazione o rallentamento economico.",
       risks: "Sensibilità alla riduzione del turismo di fascia alta e all'andamento della ricchezza della classe media emergente in Asia (soprattutto Cina).",
       currentPrice: "447.75 EUR",
-      changePercent: "+0.39%",
+      changePercent: "+0.00%",
       status: "positive",
       estimated: false,
       historicalYields: [
@@ -220,7 +220,7 @@ export const TRENDS_DATA = {
       solidRationale: "La quintessenza dell'investimento passivo. Copre oltre il 90% della capitalizzazione azionaria mondiale in un unico strumento. Riduce al minimo il rischio specifico di singole nazioni o settori.",
       risks: "Sebbene sia globale, rimane esposto per oltre il 60% agli Stati Uniti. Risente dell'andamento macroeconomico globale complessivo.",
       currentPrice: "166.90 EUR",
-      changePercent: "-1.17%",
+      changePercent: "-1.28%",
       status: "negative",
       estimated: false,
       historicalYields: [
@@ -365,7 +365,7 @@ export const TRENDS_DATA = {
       solidRationale: "Rappresenta l'ancora di stabilità per eccellenza in un portafoglio bilanciato classica (formula 60/40). Diversificazione totale del debito con rischio valutario annullato tramite l'hedging.",
       risks: "Sensibilità generalizzata all'aumento globale coordinato dei tassi di interesse e rendimenti reali negativi in presenza di alta inflazione.",
       currentPrice: "4.88 EUR",
-      changePercent: "-0.22%",
+      changePercent: "-0.10%",
       status: "negative",
       estimated: false,
       historicalYields: [
@@ -388,8 +388,8 @@ export const TRENDS_DATA = {
       description: "Materia prima metallica di riferimento. Da millenni rappresenta lo standard storico del valore tangibile ed è la riserva monetaria delle banche centrali di tutto il pianeta.",
       solidRationale: "Assenza di rischio di controparte. Protegge nei periodi di gravi tensioni sistemiche ed geopolitiche (stagflazione, conflitti armati, crisi bancarie).",
       risks: "Costi fisici di stoccaggio e assicurazione per i possessori di oro fisico; forte correlazione inversa con i rendimenti reali dei titoli di Stato statunitensi.",
-      currentPrice: "4,392.40 USD/oz",
-      changePercent: "+0.60%",
+      currentPrice: "4,402.40 USD/oz",
+      changePercent: "+0.83%",
       status: "positive",
       estimated: false,
       historicalYields: [
@@ -412,8 +412,8 @@ export const TRENDS_DATA = {
       description: "La prima e più grande criptovaluta decentralizzata basata su blockchain. Caratterizzata da una scarsità algoritmica programmata a 21 milioni di unità totali.",
       solidRationale: "Adozione istituzionale crescente (approvazione di ETF spot globali), proprietà tangibili di oro digitale (scarsità matematica, trasferibilità globale senza intermediari) e indipendenza dai sistemi bancari centrali.",
       risks: "Estrema volatilità dei prezzi, incertezze normative e regolatorie globali, e potenziale impatto ambientale dei consumi del protocollo Proof of Work.",
-      currentPrice: "64,270.00 USD",
-      changePercent: "+0.13%",
+      currentPrice: "64,271.00 USD",
+      changePercent: "+0.06%",
       status: "positive",
       estimated: false,
       historicalYields: [
