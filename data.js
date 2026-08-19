@@ -10,8 +10,8 @@ export const TRENDS_DATA = {
     { symbol: "IXIC", name: "Nasdaq Composite", value: "26,289.71", change: "-1.64%", status: "negative", estimated: false },
     { symbol: "DJI", name: "Dow Jones", value: "53,343.40", change: "-0.72%", status: "negative", estimated: false },
     { symbol: "FTSEMIB", name: "FTSE MIB", value: "53,017.84", change: "-1.06%", status: "negative", estimated: false },
-    { symbol: "GDAXI", name: "DAX 40", value: "26,128.40", change: "-1.18%", status: "negative", estimated: false },
-    { symbol: "N225", name: "Nikkei 225", value: "65,724.25", change: "-2.57%", status: "negative", estimated: false }
+    { symbol: "GDAXI", name: "DAX 40", value: "26,128.36", change: "-1.18%", status: "negative", estimated: false },
+    { symbol: "N225", name: "Nikkei 225", value: "65,685.96", change: "-2.63%", status: "negative", estimated: false }
   ],
 
   instruments: [
@@ -388,8 +388,8 @@ export const TRENDS_DATA = {
       description: "Materia prima metallica di riferimento. Da millenni rappresenta lo standard storico del valore tangibile ed è la riserva monetaria delle banche centrali di tutto il pianeta.",
       solidRationale: "Assenza di rischio di controparte. Protegge nei periodi di gravi tensioni sistemiche ed geopolitiche (stagflazione, conflitti armati, crisi bancarie).",
       risks: "Costi fisici di stoccaggio e assicurazione per i possessori di oro fisico; forte correlazione inversa con i rendimenti reali dei titoli di Stato statunitensi.",
-      currentPrice: "4,408.80 USD/oz",
-      changePercent: "-0.20%",
+      currentPrice: "4,411.20 USD/oz",
+      changePercent: "-0.15%",
       status: "negative",
       estimated: false,
       historicalYields: [
@@ -412,8 +412,8 @@ export const TRENDS_DATA = {
       description: "La prima e più grande criptovaluta decentralizzata basata su blockchain. Caratterizzata da una scarsità algoritmica programmata a 21 milioni di unità totali.",
       solidRationale: "Adozione istituzionale crescente (approvazione di ETF spot globali), proprietà tangibili di oro digitale (scarsità matematica, trasferibilità globale senza intermediari) e indipendenza dai sistemi bancari centrali.",
       risks: "Estrema volatilità dei prezzi, incertezze normative e regolatorie globali, e potenziale impatto ambientale dei consumi del protocollo Proof of Work.",
-      currentPrice: "64,245.00 USD",
-      changePercent: "+0.30%",
+      currentPrice: "64,288.00 USD",
+      changePercent: "+0.28%",
       status: "positive",
       estimated: false,
       historicalYields: [
