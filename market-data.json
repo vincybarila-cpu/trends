@@ -1,8 +1,8 @@
 {
-  "lastUpdate": "2026-08-21T07:57:00Z",
+  "lastUpdate": "2026-08-21T08:58:38Z",
   "btc": {
-    "currentPrice": "76,319.00 USD",
-    "changePercent": "+9.51%",
+    "currentPrice": "78,563.00 USD",
+    "changePercent": "+9.66%",
     "status": "positive",
     "estimated": false
   },
@@ -34,16 +34,16 @@
     {
       "symbol": "FTSEMIB",
       "name": "FTSE MIB",
-      "value": "52,899.95",
-      "change": "+0.54%",
+      "value": "52,966.05",
+      "change": "+0.66%",
       "status": "positive",
       "estimated": false
     },
     {
       "symbol": "GDAXI",
       "name": "DAX 40",
-      "value": "26,052.69",
-      "change": "-0.15%",
+      "value": "26,074.21",
+      "change": "-0.07%",
       "status": "negative",
       "estimated": false
     },
@@ -76,14 +76,14 @@
       "estimated": false
     },
     "asml": {
-      "currentPrice": "1,529.40 EUR",
-      "changePercent": "+1.59%",
-      "status": "positive",
+      "currentPrice": "1,504.20 EUR",
+      "changePercent": "-0.08%",
+      "status": "negative",
       "estimated": false
     },
     "lvmh": {
-      "currentPrice": "445.10 EUR",
-      "changePercent": "+0.45%",
+      "currentPrice": "447.05 EUR",
+      "changePercent": "+0.89%",
       "status": "positive",
       "estimated": false
     },
@@ -106,14 +106,14 @@
       "estimated": false
     },
     "vwce": {
-      "currentPrice": "165.86 EUR",
-      "changePercent": "-0.38%",
+      "currentPrice": "165.82 EUR",
+      "changePercent": "-0.41%",
       "status": "negative",
       "estimated": false
     },
     "water": {
-      "currentPrice": "70.09 EUR",
-      "changePercent": "-0.51%",
+      "currentPrice": "70.19 EUR",
+      "changePercent": "-0.37%",
       "status": "negative",
       "estimated": false
     },
@@ -125,13 +125,13 @@
     },
     "aggh": {
       "currentPrice": "4.89 EUR",
-      "changePercent": "-0.08%",
+      "changePercent": "-0.11%",
       "status": "negative",
       "estimated": false
     },
     "gold": {
-      "currentPrice": "4,620.60 USD/oz",
-      "changePercent": "+2.31%",
+      "currentPrice": "4,639.80 USD/oz",
+      "changePercent": "+2.73%",
       "status": "positive",
       "estimated": false
     },
