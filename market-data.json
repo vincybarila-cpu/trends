@@ -1,8 +1,8 @@
 {
-  "lastUpdate": "2026-08-21T03:16:09Z",
+  "lastUpdate": "2026-08-21T04:04:29Z",
   "btc": {
-    "currentPrice": "74,426.00 USD",
-    "changePercent": "+7.94%",
+    "currentPrice": "74,549.00 USD",
+    "changePercent": "+7.78%",
     "status": "positive",
     "estimated": false
   },
@@ -26,7 +26,7 @@
     {
       "symbol": "DJI",
       "name": "Dow Jones",
-      "value": "52,759.20",
+      "value": "52,759.21",
       "change": "-1.10%",
       "status": "negative",
       "estimated": false
@@ -42,7 +42,7 @@
     {
       "symbol": "GDAXI",
       "name": "DAX 40",
-      "value": "25,983.00",
+      "value": "25,983.04",
       "change": "-0.56%",
       "status": "negative",
       "estimated": false
@@ -50,8 +50,8 @@
     {
       "symbol": "N225",
       "name": "Nikkei 225",
-      "value": "66,008.45",
-      "change": "-0.31%",
+      "value": "65,958.68",
+      "change": "-0.39%",
       "status": "negative",
       "estimated": false
     }
@@ -130,8 +130,8 @@
       "estimated": false
     },
     "gold": {
-      "currentPrice": "4,589.80 USD/oz",
-      "changePercent": "+2.24%",
+      "currentPrice": "4,588.80 USD/oz",
+      "changePercent": "+1.61%",
       "status": "positive",
       "estimated": false
     },
