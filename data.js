@@ -8,10 +8,10 @@ export const TRENDS_DATA = {
   indices: [
     { symbol: "SPX", name: "S&P 500", value: "7,641.16", change: "-0.66%", status: "negative", estimated: false },
     { symbol: "IXIC", name: "Nasdaq Composite", value: "26,067.17", change: "-0.85%", status: "negative", estimated: false },
-    { symbol: "DJI", name: "Dow Jones", value: "52,759.21", change: "-1.10%", status: "negative", estimated: false },
+    { symbol: "DJI", name: "Dow Jones", value: "52,759.20", change: "-1.10%", status: "negative", estimated: false },
     { symbol: "FTSEMIB", name: "FTSE MIB", value: "52,665.82", change: "-0.66%", status: "negative", estimated: false },
-    { symbol: "GDAXI", name: "DAX 40", value: "25,983.04", change: "-0.56%", status: "negative", estimated: false },
-    { symbol: "N225", name: "Nikkei 225", value: "65,761.87", change: "-0.69%", status: "negative", estimated: false }
+    { symbol: "GDAXI", name: "DAX 40", value: "25,983.00", change: "-0.56%", status: "negative", estimated: false },
+    { symbol: "N225", name: "Nikkei 225", value: "66,008.45", change: "-0.31%", status: "negative", estimated: false }
   ],
 
   instruments: [
@@ -388,8 +388,8 @@ export const TRENDS_DATA = {
       description: "Materia prima metallica di riferimento. Da millenni rappresenta lo standard storico del valore tangibile ed è la riserva monetaria delle banche centrali di tutto il pianeta.",
       solidRationale: "Assenza di rischio di controparte. Protegge nei periodi di gravi tensioni sistemiche ed geopolitiche (stagflazione, conflitti armati, crisi bancarie).",
       risks: "Costi fisici di stoccaggio e assicurazione per i possessori di oro fisico; forte correlazione inversa con i rendimenti reali dei titoli di Stato statunitensi.",
-      currentPrice: "4,585.70 USD/oz",
-      changePercent: "+2.15%",
+      currentPrice: "4,589.80 USD/oz",
+      changePercent: "+2.24%",
       status: "positive",
       estimated: false,
       historicalYields: [
@@ -412,8 +412,8 @@ export const TRENDS_DATA = {
       description: "La prima e più grande criptovaluta decentralizzata basata su blockchain. Caratterizzata da una scarsità algoritmica programmata a 21 milioni di unità totali.",
       solidRationale: "Adozione istituzionale crescente (approvazione di ETF spot globali), proprietà tangibili di oro digitale (scarsità matematica, trasferibilità globale senza intermediari) e indipendenza dai sistemi bancari centrali.",
       risks: "Estrema volatilità dei prezzi, incertezze normative e regolatorie globali, e potenziale impatto ambientale dei consumi del protocollo Proof of Work.",
-      currentPrice: "75,400.00 USD",
-      changePercent: "+8.23%",
+      currentPrice: "74,426.00 USD",
+      changePercent: "+7.94%",
       status: "positive",
       estimated: false,
       historicalYields: [
