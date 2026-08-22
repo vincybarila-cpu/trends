@@ -1,9 +1,9 @@
 {
-  "lastUpdate": "2026-08-22T19:34:56Z",
+  "lastUpdate": "2026-08-22T20:39:40Z",
   "btc": {
-    "currentPrice": "77,316.00 USD",
-    "changePercent": "+0.12%",
-    "status": "positive",
+    "currentPrice": "77,285.00 USD",
+    "changePercent": "-0.17%",
+    "status": "negative",
     "estimated": false
   },
   "indices": [
@@ -26,7 +26,7 @@
     {
       "symbol": "DJI",
       "name": "Dow Jones",
-      "value": "53,277.00",
+      "value": "53,277.01",
       "change": "-0.35%",
       "status": "negative",
       "estimated": false
