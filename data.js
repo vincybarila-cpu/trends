@@ -413,8 +413,8 @@ export const TRENDS_DATA = {
       solidRationale: "Adozione istituzionale crescente (approvazione di ETF spot globali), proprietà tangibili di oro digitale (scarsità matematica, trasferibilità globale senza intermediari) e indipendenza dai sistemi bancari centrali.",
       risks: "Estrema volatilità dei prezzi, incertezze normative e regolatorie globali, e potenziale impatto ambientale dei consumi del protocollo Proof of Work.",
       currentPrice: "77,203.00 USD",
-      changePercent: "+0.23%",
-      status: "positive",
+      changePercent: "-0.12%",
+      status: "negative",
       estimated: false,
       historicalYields: [
         { year: "2020", yield: 302.8 },
