@@ -9,9 +9,9 @@ export const TRENDS_DATA = {
     { symbol: "SPX", name: "S&P 500", value: "7,677.28", change: "+0.04%", status: "positive", estimated: false },
     { symbol: "IXIC", name: "Nasdaq Composite", value: "26,151.30", change: "-0.11%", status: "negative", estimated: false },
     { symbol: "DJI", name: "Dow Jones", value: "53,577.40", change: "+0.56%", status: "positive", estimated: false },
-    { symbol: "FTSEMIB", name: "FTSE MIB", value: "52,720.31", change: "+0.10%", status: "positive", estimated: false },
-    { symbol: "GDAXI", name: "DAX 40", value: "26,266.14", change: "+0.50%", status: "positive", estimated: false },
-    { symbol: "N225", name: "Nikkei 225", value: "66,320.03", change: "+0.70%", status: "positive", estimated: false }
+    { symbol: "FTSEMIB", name: "FTSE MIB", value: "52,720.31", change: "+0.34%", status: "positive", estimated: false },
+    { symbol: "GDAXI", name: "DAX 40", value: "26,266.14", change: "+0.61%", status: "positive", estimated: false },
+    { symbol: "N225", name: "Nikkei 225", value: "66,262.16", change: "+0.62%", status: "positive", estimated: false }
   ],
 
   instruments: [
@@ -124,8 +124,8 @@ export const TRENDS_DATA = {
       solidRationale: "Pricing power imbattibile dovuto all'eredità dei marchi, che consente di mantenere margini operativi stellari anche in scenari di forte inflazione o rallentamento economico.",
       risks: "Sensibilità alla riduzione del turismo di fascia alta e all'andamento della ricchezza della classe media emergente in Asia (soprattutto Cina).",
       currentPrice: "450.70 EUR",
-      changePercent: "-1.88%",
-      status: "negative",
+      changePercent: "+0.00%",
+      status: "positive",
       estimated: false,
       historicalYields: [
         { year: "2020", yield: 23.4 },
@@ -220,7 +220,7 @@ export const TRENDS_DATA = {
       solidRationale: "La quintessenza dell'investimento passivo. Copre oltre il 90% della capitalizzazione azionaria mondiale in un unico strumento. Riduce al minimo il rischio specifico di singole nazioni o settori.",
       risks: "Sebbene sia globale, rimane esposto per oltre il 60% agli Stati Uniti. Risente dell'andamento macroeconomico globale complessivo.",
       currentPrice: "166.30 EUR",
-      changePercent: "+0.00%",
+      changePercent: "+0.41%",
       status: "positive",
       estimated: false,
       historicalYields: [
@@ -365,7 +365,7 @@ export const TRENDS_DATA = {
       solidRationale: "Rappresenta l'ancora di stabilità per eccellenza in un portafoglio bilanciato classica (formula 60/40). Diversificazione totale del debito con rischio valutario annullato tramite l'hedging.",
       risks: "Sensibilità generalizzata all'aumento globale coordinato dei tassi di interesse e rendimenti reali negativi in presenza di alta inflazione.",
       currentPrice: "4.91 EUR",
-      changePercent: "+0.37%",
+      changePercent: "+0.33%",
       status: "positive",
       estimated: false,
       historicalYields: [
@@ -388,8 +388,8 @@ export const TRENDS_DATA = {
       description: "Materia prima metallica di riferimento. Da millenni rappresenta lo standard storico del valore tangibile ed è la riserva monetaria delle banche centrali di tutto il pianeta.",
       solidRationale: "Assenza di rischio di controparte. Protegge nei periodi di gravi tensioni sistemiche ed geopolitiche (stagflazione, conflitti armati, crisi bancarie).",
       risks: "Costi fisici di stoccaggio e assicurazione per i possessori di oro fisico; forte correlazione inversa con i rendimenti reali dei titoli di Stato statunitensi.",
-      currentPrice: "4,698.80 USD/oz",
-      changePercent: "+1.31%",
+      currentPrice: "4,689.10 USD/oz",
+      changePercent: "+1.10%",
       status: "positive",
       estimated: false,
       historicalYields: [
@@ -412,8 +412,8 @@ export const TRENDS_DATA = {
       description: "La prima e più grande criptovaluta decentralizzata basata su blockchain. Caratterizzata da una scarsità algoritmica programmata a 21 milioni di unità totali.",
       solidRationale: "Adozione istituzionale crescente (approvazione di ETF spot globali), proprietà tangibili di oro digitale (scarsità matematica, trasferibilità globale senza intermediari) e indipendenza dai sistemi bancari centrali.",
       risks: "Estrema volatilità dei prezzi, incertezze normative e regolatorie globali, e potenziale impatto ambientale dei consumi del protocollo Proof of Work.",
-      currentPrice: "79,058.00 USD",
-      changePercent: "-2.06%",
+      currentPrice: "79,044.00 USD",
+      changePercent: "-2.04%",
       status: "negative",
       estimated: false,
       historicalYields: [
