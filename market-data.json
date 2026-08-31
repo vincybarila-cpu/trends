@@ -1,8 +1,8 @@
 {
-  "lastUpdate": "2026-08-31T20:05:34Z",
+  "lastUpdate": "2026-08-31T23:51:08Z",
   "btc": {
-    "currentPrice": "78,912.00 USD",
-    "changePercent": "+0.06%",
+    "currentPrice": "78,533.00 USD",
+    "changePercent": "+1.56%",
     "status": "positive",
     "estimated": false
   },
@@ -70,8 +70,8 @@
       "estimated": false
     },
     "nvda": {
-      "currentPrice": "220.50 USD",
-      "changePercent": "-3.28%",
+      "currentPrice": "220.78 USD",
+      "changePercent": "-3.16%",
       "status": "negative",
       "estimated": false
     },
@@ -88,13 +88,13 @@
       "estimated": false
     },
     "ko": {
-      "currentPrice": "88.70 USD",
-      "changePercent": "-0.40%",
+      "currentPrice": "88.67 USD",
+      "changePercent": "-0.44%",
       "status": "negative",
       "estimated": false
     },
     "spy": {
-      "currentPrice": "767.02 USD",
+      "currentPrice": "767.05 USD",
       "changePercent": "-0.53%",
       "status": "negative",
       "estimated": false
@@ -118,7 +118,7 @@
       "estimated": false
     },
     "gld": {
-      "currentPrice": "408.40 USD",
+      "currentPrice": "408.42 USD",
       "changePercent": "-3.36%",
       "status": "negative",
       "estimated": false
@@ -130,20 +130,20 @@
       "estimated": false
     },
     "gold": {
-      "currentPrice": "4,498.40 USD/oz",
-      "changePercent": "-0.70%",
-      "status": "negative",
+      "currentPrice": "4,493.20 USD/oz",
+      "changePercent": "+0.26%",
+      "status": "positive",
       "estimated": false
     },
     "us10y": {
-      "currentPrice": "4.67% (Rendimento)",
-      "changePercent": "+0.01 pt",
+      "currentPrice": "4.73% (Rendimento)",
+      "changePercent": "+0.06 pt",
       "status": "positive",
       "estimated": false
     },
     "us2y": {
-      "currentPrice": "4.20% (Rendimento)",
-      "changePercent": "+0.01 pt",
+      "currentPrice": "4.34% (Rendimento)",
+      "changePercent": "+0.14 pt",
       "status": "positive",
       "estimated": false
     },
