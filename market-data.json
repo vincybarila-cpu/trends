@@ -1,8 +1,8 @@
 {
-  "lastUpdate": "2026-09-01T21:46:56Z",
+  "lastUpdate": "2026-09-02T00:14:49Z",
   "btc": {
-    "currentPrice": "77,113.00 USD",
-    "changePercent": "-2.41%",
+    "currentPrice": "77,337.00 USD",
+    "changePercent": "-1.76%",
     "status": "negative",
     "estimated": false
   },
@@ -11,7 +11,7 @@
       "symbol": "SPX",
       "name": "S&P 500",
       "value": "7,631.47",
-      "change": "-1.04%",
+      "change": "-0.71%",
       "status": "negative",
       "estimated": false
     },
@@ -19,7 +19,7 @@
       "symbol": "IXIC",
       "name": "Nasdaq Composite",
       "value": "26,099.77",
-      "change": "-1.15%",
+      "change": "-1.03%",
       "status": "negative",
       "estimated": false
     },
@@ -27,7 +27,7 @@
       "symbol": "DJI",
       "name": "Dow Jones",
       "value": "52,766.88",
-      "change": "-1.48%",
+      "change": "-0.79%",
       "status": "negative",
       "estimated": false
     },
@@ -43,7 +43,7 @@
       "symbol": "GDAXI",
       "name": "DAX 40",
       "value": "25,970.11",
-      "change": "-2.26%",
+      "change": "-1.10%",
       "status": "negative",
       "estimated": false
     },
@@ -51,8 +51,8 @@
       "symbol": "N225",
       "name": "Nikkei 225",
       "value": "66,215.34",
-      "change": "-0.15%",
-      "status": "negative",
+      "change": "+0.00%",
+      "status": "positive",
       "estimated": false
     }
   ],
@@ -89,7 +89,7 @@
     },
     "ko": {
       "currentPrice": "88.00 USD",
-      "changePercent": "-1.85%",
+      "changePercent": "-0.76%",
       "status": "negative",
       "estimated": false
     },
@@ -130,8 +130,8 @@
       "estimated": false
     },
     "gold": {
-      "currentPrice": "4,375.70 USD/oz",
-      "changePercent": "-1.25%",
+      "currentPrice": "4,376.20 USD/oz",
+      "changePercent": "-1.24%",
       "status": "negative",
       "estimated": false
     },
