@@ -1,8 +1,8 @@
 {
-  "lastUpdate": "2026-09-07T10:19:05Z",
+  "lastUpdate": "2026-09-07T16:27:33Z",
   "btc": {
-    "currentPrice": "79,388.00 USD",
-    "changePercent": "-0.69%",
+    "currentPrice": "78,830.00 USD",
+    "changePercent": "-1.02%",
     "status": "negative",
     "estimated": false
   },
@@ -34,17 +34,17 @@
     {
       "symbol": "FTSEMIB",
       "name": "FTSE MIB",
-      "value": "52,175.14",
-      "change": "-0.13%",
+      "value": "52,229.57",
+      "change": "-0.03%",
       "status": "negative",
       "estimated": false
     },
     {
       "symbol": "GDAXI",
       "name": "DAX 40",
-      "value": "25,974.72",
-      "change": "-0.11%",
-      "status": "negative",
+      "value": "26,006.53",
+      "change": "+0.01%",
+      "status": "positive",
       "estimated": false
     },
     {
@@ -76,14 +76,14 @@
       "estimated": false
     },
     "asml": {
-      "currentPrice": "1,488.60 EUR",
-      "changePercent": "+1.44%",
+      "currentPrice": "1,500.40 EUR",
+      "changePercent": "+2.25%",
       "status": "positive",
       "estimated": false
     },
     "lvmh": {
-      "currentPrice": "429.15 EUR",
-      "changePercent": "+0.01%",
+      "currentPrice": "431.20 EUR",
+      "changePercent": "+0.49%",
       "status": "positive",
       "estimated": false
     },
@@ -106,14 +106,14 @@
       "estimated": false
     },
     "vwce": {
-      "currentPrice": "168.06 EUR",
-      "changePercent": "+0.00%",
-      "status": "positive",
+      "currentPrice": "167.78 EUR",
+      "changePercent": "-0.17%",
+      "status": "negative",
       "estimated": false
     },
     "water": {
-      "currentPrice": "69.09 EUR",
-      "changePercent": "-0.03%",
+      "currentPrice": "69.00 EUR",
+      "changePercent": "-0.16%",
       "status": "negative",
       "estimated": false
     },
@@ -124,8 +124,8 @@
       "estimated": false
     },
     "aggh": {
-      "currentPrice": "4.88 EUR",
-      "changePercent": "-0.01%",
+      "currentPrice": "4.87 EUR",
+      "changePercent": "-0.17%",
       "status": "negative",
       "estimated": false
     },
