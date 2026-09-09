@@ -1,8 +1,8 @@
 {
-  "lastUpdate": "2026-09-09T04:48:30Z",
+  "lastUpdate": "2026-09-09T09:46:28Z",
   "btc": {
-    "currentPrice": "79,082.00 USD",
-    "changePercent": "+0.37%",
+    "currentPrice": "79,176.00 USD",
+    "changePercent": "+0.60%",
     "status": "positive",
     "estimated": false
   },
@@ -34,24 +34,24 @@
     {
       "symbol": "FTSEMIB",
       "name": "FTSE MIB",
-      "value": "52,177.47",
-      "change": "+0.15%",
-      "status": "positive",
+      "value": "51,815.88",
+      "change": "-0.79%",
+      "status": "negative",
       "estimated": false
     },
     {
       "symbol": "GDAXI",
       "name": "DAX 40",
-      "value": "26,007.63",
-      "change": "-0.15%",
+      "value": "25,784.44",
+      "change": "-0.85%",
       "status": "negative",
       "estimated": false
     },
     {
       "symbol": "N225",
       "name": "Nikkei 225",
-      "value": "65,217.11",
-      "change": "-0.08%",
+      "value": "65,142.78",
+      "change": "-0.19%",
       "status": "negative",
       "estimated": false
     }
@@ -76,14 +76,14 @@
       "estimated": false
     },
     "asml": {
-      "currentPrice": "1,518.00 EUR",
-      "changePercent": "+1.17%",
-      "status": "positive",
+      "currentPrice": "1,501.60 EUR",
+      "changePercent": "-1.08%",
+      "status": "negative",
       "estimated": false
     },
     "lvmh": {
-      "currentPrice": "426.55 EUR",
-      "changePercent": "-1.08%",
+      "currentPrice": "417.05 EUR",
+      "changePercent": "-2.23%",
       "status": "negative",
       "estimated": false
     },
@@ -106,15 +106,15 @@
       "estimated": false
     },
     "vwce": {
-      "currentPrice": "167.58 EUR",
-      "changePercent": "-0.18%",
+      "currentPrice": "167.04 EUR",
+      "changePercent": "-0.44%",
       "status": "negative",
       "estimated": false
     },
     "water": {
-      "currentPrice": "69.06 EUR",
-      "changePercent": "+0.09%",
-      "status": "positive",
+      "currentPrice": "68.95 EUR",
+      "changePercent": "-0.16%",
+      "status": "negative",
       "estimated": false
     },
     "gld": {
@@ -124,14 +124,14 @@
       "estimated": false
     },
     "aggh": {
-      "currentPrice": "4.88 EUR",
-      "changePercent": "-0.03%",
-      "status": "negative",
+      "currentPrice": "4.87 EUR",
+      "changePercent": "+0.00%",
+      "status": "positive",
       "estimated": false
     },
     "gold": {
-      "currentPrice": "4,422.50 USD/oz",
-      "changePercent": "+0.65%",
+      "currentPrice": "4,441.90 USD/oz",
+      "changePercent": "+1.09%",
       "status": "positive",
       "estimated": false
     },
