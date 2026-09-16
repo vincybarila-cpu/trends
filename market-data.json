@@ -1,9 +1,9 @@
 {
-  "lastUpdate": "2026-09-16T20:08:04Z",
+  "lastUpdate": "2026-09-16T22:56:34Z",
   "btc": {
-    "currentPrice": "76,196.00 USD",
-    "changePercent": "+0.26%",
-    "status": "positive",
+    "currentPrice": "75,607.00 USD",
+    "changePercent": "-0.10%",
+    "status": "negative",
     "estimated": false
   },
   "indices": [
@@ -88,14 +88,14 @@
       "estimated": false
     },
     "ko": {
-      "currentPrice": "87.86 USD",
-      "changePercent": "-1.67%",
+      "currentPrice": "87.87 USD",
+      "changePercent": "-1.66%",
       "status": "negative",
       "estimated": false
     },
     "spy": {
-      "currentPrice": "754.13 USD",
-      "changePercent": "-0.89%",
+      "currentPrice": "754.05 USD",
+      "changePercent": "-0.90%",
       "status": "negative",
       "estimated": false
     },
@@ -118,7 +118,7 @@
       "estimated": false
     },
     "gld": {
-      "currentPrice": "391.75 USD",
+      "currentPrice": "391.74 USD",
       "changePercent": "-0.28%",
       "status": "negative",
       "estimated": false
@@ -130,19 +130,19 @@
       "estimated": false
     },
     "gold": {
-      "currentPrice": "4,309.10 USD/oz",
-      "changePercent": "-0.55%",
+      "currentPrice": "4,310.70 USD/oz",
+      "changePercent": "-0.51%",
       "status": "negative",
       "estimated": false
     },
     "us10y": {
-      "currentPrice": "4.97% (Rendimento)",
-      "changePercent": "+0.01 pt",
+      "currentPrice": "5.00% (Rendimento)",
+      "changePercent": "+0.03 pt",
       "status": "positive",
       "estimated": false
     },
     "us2y": {
-      "currentPrice": "4.65% (Rendimento)",
+      "currentPrice": "4.67% (Rendimento)",
       "changePercent": "+0.02 pt",
       "status": "positive",
       "estimated": false
