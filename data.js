@@ -434,7 +434,7 @@ export const TRENDS_DATA = {
       {
         name: "Federal Reserve (Fed)",
         region: "Stati Uniti",
-        rate: "3.50% - 3.75%",
+        rate: "3.75% - 4.00%",
         inflation: "3.7% (PCE)",
         inflationTarget: "2.0%",
         stance: "In allentamento graduale (Data-dependent)",
