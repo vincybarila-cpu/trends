@@ -11,7 +11,7 @@ export const TRENDS_DATA = {
     { symbol: "DJI", name: "Dow Jones", value: "51,828.62", change: "+0.62%", status: "positive", estimated: false },
     { symbol: "FTSEMIB", name: "FTSE MIB", value: "51,866.93", change: "-0.23%", status: "negative", estimated: false },
     { symbol: "GDAXI", name: "DAX 40", value: "25,408.64", change: "-0.01%", status: "negative", estimated: false },
-    { symbol: "N225", name: "Nikkei 225", value: "66,364.20", change: "+1.30%", status: "positive", estimated: false }
+    { symbol: "N225", name: "Nikkei 225", value: "66,871.98", change: "+0.77%", status: "positive", estimated: false }
   ],
 
   instruments: [
@@ -388,9 +388,9 @@ export const TRENDS_DATA = {
       description: "Materia prima metallica di riferimento. Da millenni rappresenta lo standard storico del valore tangibile ed è la riserva monetaria delle banche centrali di tutto il pianeta.",
       solidRationale: "Assenza di rischio di controparte. Protegge nei periodi di gravi tensioni sistemiche ed geopolitiche (stagflazione, conflitti armati, crisi bancarie).",
       risks: "Costi fisici di stoccaggio e assicurazione per i possessori di oro fisico; forte correlazione inversa con i rendimenti reali dei titoli di Stato statunitensi.",
-      currentPrice: "4,321.20 USD/oz",
-      changePercent: "+0.00%",
-      status: "positive",
+      currentPrice: "4,270.20 USD/oz",
+      changePercent: "-1.18%",
+      status: "negative",
       estimated: false,
       historicalYields: [
         { year: "2020", yield: 24.6 },
@@ -412,9 +412,9 @@ export const TRENDS_DATA = {
       description: "La prima e più grande criptovaluta decentralizzata basata su blockchain. Caratterizzata da una scarsità algoritmica programmata a 21 milioni di unità totali.",
       solidRationale: "Adozione istituzionale crescente (approvazione di ETF spot globali), proprietà tangibili di oro digitale (scarsità matematica, trasferibilità globale senza intermediari) e indipendenza dai sistemi bancari centrali.",
       risks: "Estrema volatilità dei prezzi, incertezze normative e regolatorie globali, e potenziale impatto ambientale dei consumi del protocollo Proof of Work.",
-      currentPrice: "84,383.00 USD",
-      changePercent: "+0.09%",
-      status: "positive",
+      currentPrice: "84,278.00 USD",
+      changePercent: "-0.07%",
+      status: "negative",
       estimated: false,
       historicalYields: [
         { year: "2020", yield: 302.8 },
