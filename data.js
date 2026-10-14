@@ -8,10 +8,10 @@ export const TRENDS_DATA = {
   indices: [
     { symbol: "SPX", name: "S&P 500", value: "7,805.45", change: "-0.08%", status: "negative", estimated: false },
     { symbol: "IXIC", name: "Nasdaq Composite", value: "27,204.38", change: "-0.59%", status: "negative", estimated: false },
-    { symbol: "DJI", name: "Dow Jones", value: "51,850.60", change: "+0.38%", status: "positive", estimated: false },
+    { symbol: "DJI", name: "Dow Jones", value: "51,670.10", change: "+0.03%", status: "positive", estimated: false },
     { symbol: "FTSEMIB", name: "FTSE MIB", value: "50,057.18", change: "+0.63%", status: "positive", estimated: false },
     { symbol: "GDAXI", name: "DAX 40", value: "25,259.90", change: "+0.69%", status: "positive", estimated: false },
-    { symbol: "N225", name: "Nikkei 225", value: "67,777.52", change: "-1.82%", status: "negative", estimated: false }
+    { symbol: "N225", name: "Nikkei 225", value: "68,365.21", change: "+0.87%", status: "positive", estimated: false }
   ],
 
   instruments: [
@@ -388,9 +388,9 @@ export const TRENDS_DATA = {
       description: "Materia prima metallica di riferimento. Da millenni rappresenta lo standard storico del valore tangibile ed è la riserva monetaria delle banche centrali di tutto il pianeta.",
       solidRationale: "Assenza di rischio di controparte. Protegge nei periodi di gravi tensioni sistemiche ed geopolitiche (stagflazione, conflitti armati, crisi bancarie).",
       risks: "Costi fisici di stoccaggio e assicurazione per i possessori di oro fisico; forte correlazione inversa con i rendimenti reali dei titoli di Stato statunitensi.",
-      currentPrice: "4,179.20 USD/oz",
-      changePercent: "-0.27%",
-      status: "negative",
+      currentPrice: "4,188.70 USD/oz",
+      changePercent: "+0.27%",
+      status: "positive",
       estimated: false,
       historicalYields: [
         { year: "2020", yield: 24.6 },
@@ -412,8 +412,8 @@ export const TRENDS_DATA = {
       description: "La prima e più grande criptovaluta decentralizzata basata su blockchain. Caratterizzata da una scarsità algoritmica programmata a 21 milioni di unità totali.",
       solidRationale: "Adozione istituzionale crescente (approvazione di ETF spot globali), proprietà tangibili di oro digitale (scarsità matematica, trasferibilità globale senza intermediari) e indipendenza dai sistemi bancari centrali.",
       risks: "Estrema volatilità dei prezzi, incertezze normative e regolatorie globali, e potenziale impatto ambientale dei consumi del protocollo Proof of Work.",
-      currentPrice: "83,190.00 USD",
-      changePercent: "+1.76%",
+      currentPrice: "83,723.00 USD",
+      changePercent: "+0.43%",
       status: "positive",
       estimated: false,
       historicalYields: [
