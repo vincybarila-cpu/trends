@@ -11,7 +11,7 @@ export const TRENDS_DATA = {
     { symbol: "DJI", name: "Dow Jones", value: "52,342.56", change: "-0.07%", status: "negative", estimated: false },
     { symbol: "FTSEMIB", name: "FTSE MIB", value: "50,002.36", change: "+0.75%", status: "positive", estimated: false },
     { symbol: "GDAXI", name: "DAX 40", value: "26,039.68", change: "+1.75%", status: "positive", estimated: false },
-    { symbol: "N225", name: "Nikkei 225", value: "64,659.47", change: "+1.10%", status: "positive", estimated: false }
+    { symbol: "N225", name: "Nikkei 225", value: "63,539.11", change: "-1.73%", status: "negative", estimated: false }
   ],
 
   instruments: [
@@ -291,9 +291,9 @@ export const TRENDS_DATA = {
       description: "Titolo di debito emesso dal governo degli Stati Uniti con scadenza a 10 anni. Rappresenta il benchmark dei tassi d'interesse mondiali e l'asset privo di rischio (risk-free) per eccellenza.",
       solidRationale: "Garanzia totale di solvibilità (il governo USA ha la capacità teoricamente illimitata di stampare dollari). Offre un flusso di cassa certo (cedole semestrali).",
       risks: "Rischio tasso (se i tassi d'interesse salgono, il prezzo dell'obbligazione scende sul mercato secondario) e rischio di erosione del potere d'acquisto da inflazione elevata.",
-      currentPrice: "4.99% (Rendimento)",
-      changePercent: "-0.01 pt",
-      status: "negative",
+      currentPrice: "5.05% (Rendimento)",
+      changePercent: "+0.06 pt",
+      status: "positive",
       estimated: false,
       historicalYields: [
         { year: "2020", yield: 0.93 },
@@ -315,9 +315,9 @@ export const TRENDS_DATA = {
       description: "Titolo di debito emesso dal governo degli Stati Uniti con scadenza a 2 anni. Molto sensibile alle decisioni di politica monetaria immediata della Federal Reserve.",
       solidRationale: "Rischio di fluttuazione del prezzo sul mercato secondario estremamente ridotto rispetto al decennale a causa della brevissima durata (duration). Ideale per parcheggiare la liquidità con rendimenti elevati.",
       risks: "Rischio di reinvestimento (alla scadenza, se i tassi sono scesi, si dovrà reinvestire a rendimenti inferiori) e imposte sull'inflazione reale.",
-      currentPrice: "4.70% (Rendimento)",
-      changePercent: "+0.02 pt",
-      status: "positive",
+      currentPrice: "4.67% (Rendimento)",
+      changePercent: "-0.03 pt",
+      status: "negative",
       estimated: false,
       historicalYields: [
         { year: "2020", yield: 0.12 },
@@ -388,8 +388,8 @@ export const TRENDS_DATA = {
       description: "Materia prima metallica di riferimento. Da millenni rappresenta lo standard storico del valore tangibile ed è la riserva monetaria delle banche centrali di tutto il pianeta.",
       solidRationale: "Assenza di rischio di controparte. Protegge nei periodi di gravi tensioni sistemiche ed geopolitiche (stagflazione, conflitti armati, crisi bancarie).",
       risks: "Costi fisici di stoccaggio e assicurazione per i possessori di oro fisico; forte correlazione inversa con i rendimenti reali dei titoli di Stato statunitensi.",
-      currentPrice: "4,037.80 USD/oz",
-      changePercent: "-0.34%",
+      currentPrice: "4,027.50 USD/oz",
+      changePercent: "-0.59%",
       status: "negative",
       estimated: false,
       historicalYields: [
@@ -412,8 +412,8 @@ export const TRENDS_DATA = {
       description: "La prima e più grande criptovaluta decentralizzata basata su blockchain. Caratterizzata da una scarsità algoritmica programmata a 21 milioni di unità totali.",
       solidRationale: "Adozione istituzionale crescente (approvazione di ETF spot globali), proprietà tangibili di oro digitale (scarsità matematica, trasferibilità globale senza intermediari) e indipendenza dai sistemi bancari centrali.",
       risks: "Estrema volatilità dei prezzi, incertezze normative e regolatorie globali, e potenziale impatto ambientale dei consumi del protocollo Proof of Work.",
-      currentPrice: "80,287.00 USD",
-      changePercent: "-1.16%",
+      currentPrice: "77,123.00 USD",
+      changePercent: "-4.83%",
       status: "negative",
       estimated: false,
       historicalYields: [
