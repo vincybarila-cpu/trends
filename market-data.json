@@ -1,9 +1,9 @@
 {
-  "lastUpdate": "2026-10-31T05:41:30Z",
+  "lastUpdate": "2026-10-31T12:30:15Z",
   "btc": {
-    "currentPrice": "77,134.00 USD",
-    "changePercent": "-1.84%",
-    "status": "negative",
+    "currentPrice": "77,520.00 USD",
+    "changePercent": "+0.14%",
+    "status": "positive",
     "estimated": false
   },
   "indices": [
