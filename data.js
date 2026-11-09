@@ -435,7 +435,7 @@ export const TRENDS_DATA = {
         name: "Federal Reserve (Fed)",
         region: "Stati Uniti",
         rate: "3.75% - 4.00%",
-        inflation: "3.4% (PCE)",
+        inflation: "3.6% (PCE)",
         inflationTarget: "2.0%",
         stance: "In allentamento graduale (Data-dependent)",
         comment: "Dopo il picco restrittivo del 2023-2024, la Fed ha avviato un ciclo di riduzione graduale dei tassi. Il ritmo dei tagli resta legato ai dati su inflazione dei servizi e mercato del lavoro."
@@ -461,8 +461,8 @@ export const TRENDS_DATA = {
     ],
     indicators: [
       { name: "Inflazione USA (CPI)", actual: "4.0%", previous: "3.7%", status: "Elevata" },
-      { name: "PIL USA (trim. annualizzato)", actual: "2.2%", previous: "2.5%", status: "Crescita moderata" },
-      { name: "Tasso Disoccupazione USA", actual: "4.2%", previous: "4.1%", status: "Piena occupazione" },
+      { name: "PIL USA (trim. annualizzato)", actual: "3.4%", previous: "2.2%", status: "Espansione solida" },
+      { name: "Tasso Disoccupazione USA", actual: "4.1%", previous: "4.2%", status: "Piena occupazione" },
       { name: "Inflazione Eurozona (CPI)", actual: "1.9%", previous: "2.1%", status: "Vicina al target" },
       { name: "PIL Eurozona (var. annua)", actual: "0.5%", previous: "1.1%", status: "Crescita debole" }
     ],
