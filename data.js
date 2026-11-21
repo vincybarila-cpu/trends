@@ -6,9 +6,9 @@
 
 export const TRENDS_DATA = {
   indices: [
-    { symbol: "SPX", name: "S&P 500", value: "6,953.28", change: "-5.06%", status: "negative", estimated: false },
-    { symbol: "IXIC", name: "Nasdaq Composite", value: "22,749.35", change: "-6.88%", status: "negative", estimated: false },
-    { symbol: "DJI", name: "Dow Jones", value: "48,444.91", change: "-3.49%", status: "negative", estimated: false },
+    { symbol: "SPX", name: "S&P 500", value: "6,910.39", change: "-5.64%", status: "negative", estimated: false },
+    { symbol: "IXIC", name: "Nasdaq Composite", value: "22,617.73", change: "-7.42%", status: "negative", estimated: false },
+    { symbol: "DJI", name: "Dow Jones", value: "48,147.33", change: "-4.09%", status: "negative", estimated: false },
     { symbol: "FTSEMIB", name: "FTSE MIB", value: "48,703.72", change: "-2.93%", status: "negative", estimated: false },
     { symbol: "GDAXI", name: "DAX 40", value: "24,802.78", change: "-3.63%", status: "negative", estimated: false },
     { symbol: "N225", name: "Nikkei 225", value: "56,436.65", change: "-5.06%", status: "negative", estimated: false }
@@ -27,8 +27,8 @@ export const TRENDS_DATA = {
       description: "Leader globale nella tecnologia di consumo, con un ecosistema hardware-software estremamente fidelizzato e margini operativi elevati.",
       solidRationale: "Generazione di cassa (Free Cash Flow) straordinaria, brand premium con forte potere di determinazione dei prezzi (pricing power) e continuo sviluppo dei servizi ad abbonamento ad alto margine.",
       risks: "Dipendenza dalle catene di approvvigionamento asiatiche, rallentamento delle vendite in Cina e scrutinio antitrust globale.",
-      currentPrice: "344.48 USD",
-      changePercent: "-2.26%",
+      currentPrice: "342.56 USD",
+      changePercent: "-2.81%",
       status: "negative",
       estimated: false,
       historicalYields: [
@@ -51,8 +51,8 @@ export const TRENDS_DATA = {
       description: "Gigante tecnologico diversificato attivo nei sistemi operativi, software per la produttività aziendale, cloud computing (Azure) e intelligenza artificiale.",
       solidRationale: "Monopolio di fatto nel software aziendale (Office), infrastruttura cloud in fortissima crescita e leadership strategica nell'intelligenza artificiale grazie alla partnership con OpenAI.",
       risks: "Valutazioni di mercato storicamente elevate, forte concorrenza nel cloud da parte di AWS e Google, e requisiti crescenti di spesa in conto capitale (CapEx) per i data center.",
-      currentPrice: "485.98 USD",
-      changePercent: "-4.39%",
+      currentPrice: "484.52 USD",
+      changePercent: "-4.68%",
       status: "negative",
       estimated: false,
       historicalYields: [
@@ -75,8 +75,8 @@ export const TRENDS_DATA = {
       description: "Pioniere e leader indiscusso delle GPU (Graphics Processing Units) e dell'architettura hardware/software CUDA, essenziali per il deep learning e l'intelligenza artificiale generativa.",
       solidRationale: "Monopolio tecnologico (oltre l'80% di quota di mercato nei chip per AI), barriera d'ingresso insormontabile grazie all'ecosistema software CUDA e domanda globale di elaborazione dati senza precedenti.",
       risks: "Ciclicità intrinseca del settore dei semiconduttori, rischi geopolitici legati a Taiwan (TSMC produce i chip fisici) e valutazioni di mercato estremamente volatili.",
-      currentPrice: "126.95 USD",
-      changePercent: "-15.90%",
+      currentPrice: "125.53 USD",
+      changePercent: "-16.85%",
       status: "negative",
       estimated: false,
       historicalYields: [
@@ -147,8 +147,8 @@ export const TRENDS_DATA = {
       description: "Gigante globale delle bevande analcoliche, con una delle reti di distribuzione fisica più capillari del pianeta e un brand riconosciuto universalmente.",
       solidRationale: "Titolo difensivo per eccellenza. Dividendi costanti aumentati per oltre 60 anni consecutivi (Dividend King). Domanda anelastica indipendentemente dalla congiuntura economica.",
       risks: "Cambiamento delle abitudini dei consumatori verso opzioni più salutari e impatto di imposte specifiche sulle bevande zuccherate.",
-      currentPrice: "97.37 USD",
-      changePercent: "-0.73%",
+      currentPrice: "96.99 USD",
+      changePercent: "-1.12%",
       status: "negative",
       estimated: false,
       historicalYields: [
@@ -171,8 +171,8 @@ export const TRENDS_DATA = {
       description: "L'ETF più grande e liquido al mondo, che replica passivamente la performance dell'indice S&P 500, coprendo le 500 principali società statunitensi a grande capitalizzazione.",
       solidRationale: "Diversificazione immediata su 500 tra le migliori aziende del mondo. Costi di gestione estremamente contenuti (Expense Ratio: 0.09%) e liquidità imbattibile.",
       risks: "Esposizione totale all'economia e al mercato azionario statunitense, forte concentrazione attuale sui titoli tecnologici (i cosiddetti Magnifici Sette).",
-      currentPrice: "693.86 USD",
-      changePercent: "-4.98%",
+      currentPrice: "689.81 USD",
+      changePercent: "-5.53%",
       status: "negative",
       estimated: false,
       historicalYields: [
@@ -195,8 +195,8 @@ export const TRENDS_DATA = {
       description: "ETF che replica l'indice Nasdaq-100, focalizzato sulle 100 più grandi società non finanziarie quotate al Nasdaq, con forte prevalenza di tecnologia, servizi di comunicazione e beni voluttuari.",
       solidRationale: "Ideale per esporsi ai motori dell'innovazione globale (Apple, Microsoft, NVIDIA, Amazon, Alphabet, Meta, Tesla) in un unico strumento altamente liquido.",
       risks: "Elevata volatilità e sensibilità ai tassi di interesse; sovraesposizione settoriale alla tecnologia che può soffrire in periodi di alta inflazione.",
-      currentPrice: "613.02 USD",
-      changePercent: "-7.05%",
+      currentPrice: "608.45 USD",
+      changePercent: "-7.74%",
       status: "negative",
       estimated: false,
       historicalYields: [
@@ -267,8 +267,8 @@ export const TRENDS_DATA = {
       description: "ETF con replica fisica dell'oro monetario, depositato in caveau protetti. Ogni quota simula la detenzione di circa un decimo di oncia d'oro.",
       solidRationale: "Strumento di protezione patrimoniale ideale contro l'inflazione sistemica, la svalutazione monetaria e l'incertezza geopolitica globale.",
       risks: "Non distribuisce dividendi o interessi (costo opportunità elevato in contesti di tassi reali positivi) e fluttua in base al dollaro USA.",
-      currentPrice: "322.21 USD",
-      changePercent: "-5.56%",
+      currentPrice: "322.87 USD",
+      changePercent: "-5.37%",
       status: "negative",
       estimated: false,
       historicalYields: [
@@ -291,7 +291,7 @@ export const TRENDS_DATA = {
       description: "Titolo di debito emesso dal governo degli Stati Uniti con scadenza a 10 anni. Rappresenta il benchmark dei tassi d'interesse mondiali e l'asset privo di rischio (risk-free) per eccellenza.",
       solidRationale: "Garanzia totale di solvibilità (il governo USA ha la capacità teoricamente illimitata di stampare dollari). Offre un flusso di cassa certo (cedole semestrali).",
       risks: "Rischio tasso (se i tassi d'interesse salgono, il prezzo dell'obbligazione scende sul mercato secondario) e rischio di erosione del potere d'acquisto da inflazione elevata.",
-      currentPrice: "5.07% (Rendimento)",
+      currentPrice: "5.04% (Rendimento)",
       changePercent: "-0.03 pt",
       status: "negative",
       estimated: false,
@@ -315,9 +315,9 @@ export const TRENDS_DATA = {
       description: "Titolo di debito emesso dal governo degli Stati Uniti con scadenza a 2 anni. Molto sensibile alle decisioni di politica monetaria immediata della Federal Reserve.",
       solidRationale: "Rischio di fluttuazione del prezzo sul mercato secondario estremamente ridotto rispetto al decennale a causa della brevissima durata (duration). Ideale per parcheggiare la liquidità con rendimenti elevati.",
       risks: "Rischio di reinvestimento (alla scadenza, se i tassi sono scesi, si dovrà reinvestire a rendimenti inferiori) e imposte sull'inflazione reale.",
-      currentPrice: "4.80% (Rendimento)",
-      changePercent: "+0.00 pt",
-      status: "positive",
+      currentPrice: "4.76% (Rendimento)",
+      changePercent: "-0.04 pt",
+      status: "negative",
       estimated: false,
       historicalYields: [
         { year: "2020", yield: 0.12 },
@@ -388,8 +388,8 @@ export const TRENDS_DATA = {
       description: "Materia prima metallica di riferimento. Da millenni rappresenta lo standard storico del valore tangibile ed è la riserva monetaria delle banche centrali di tutto il pianeta.",
       solidRationale: "Assenza di rischio di controparte. Protegge nei periodi di gravi tensioni sistemiche ed geopolitiche (stagflazione, conflitti armati, crisi bancarie).",
       risks: "Costi fisici di stoccaggio e assicurazione per i possessori di oro fisico; forte correlazione inversa con i rendimenti reali dei titoli di Stato statunitensi.",
-      currentPrice: "3,516.80 USD/oz",
-      changePercent: "-4.58%",
+      currentPrice: "3,539.00 USD/oz",
+      changePercent: "-3.98%",
       status: "negative",
       estimated: false,
       historicalYields: [
@@ -412,8 +412,8 @@ export const TRENDS_DATA = {
       description: "La prima e più grande criptovaluta decentralizzata basata su blockchain. Caratterizzata da una scarsità algoritmica programmata a 21 milioni di unità totali.",
       solidRationale: "Adozione istituzionale crescente (approvazione di ETF spot globali), proprietà tangibili di oro digitale (scarsità matematica, trasferibilità globale senza intermediari) e indipendenza dai sistemi bancari centrali.",
       risks: "Estrema volatilità dei prezzi, incertezze normative e regolatorie globali, e potenziale impatto ambientale dei consumi del protocollo Proof of Work.",
-      currentPrice: "58,411.00 USD",
-      changePercent: "-6.29%",
+      currentPrice: "58,961.00 USD",
+      changePercent: "-3.99%",
       status: "negative",
       estimated: false,
       historicalYields: [
