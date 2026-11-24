@@ -11,7 +11,7 @@ export const TRENDS_DATA = {
     { symbol: "DJI", name: "Dow Jones", value: "49,595.31", change: "+1.01%", status: "positive", estimated: false },
     { symbol: "FTSEMIB", name: "FTSE MIB", value: "49,021.93", change: "-1.84%", status: "negative", estimated: false },
     { symbol: "GDAXI", name: "DAX 40", value: "25,337.27", change: "-0.50%", status: "negative", estimated: false },
-    { symbol: "N225", name: "Nikkei 225", value: "56,436.65", change: "-5.06%", status: "negative", estimated: false }
+    { symbol: "N225", name: "Nikkei 225", value: "58,732.80", change: "+4.07%", status: "positive", estimated: false }
   ],
 
   instruments: [
@@ -171,8 +171,8 @@ export const TRENDS_DATA = {
       description: "L'ETF più grande e liquido al mondo, che replica passivamente la performance dell'indice S&P 500, coprendo le 500 principali società statunitensi a grande capitalizzazione.",
       solidRationale: "Diversificazione immediata su 500 tra le migliori aziende del mondo. Costi di gestione estremamente contenuti (Expense Ratio: 0.09%) e liquidità imbattibile.",
       risks: "Esposizione totale all'economia e al mercato azionario statunitense, forte concentrazione attuale sui titoli tecnologici (i cosiddetti Magnifici Sette).",
-      currentPrice: "722.51 USD",
-      changePercent: "+0.93%",
+      currentPrice: "722.29 USD",
+      changePercent: "+0.90%",
       status: "positive",
       estimated: false,
       historicalYields: [
@@ -267,7 +267,7 @@ export const TRENDS_DATA = {
       description: "ETF con replica fisica dell'oro monetario, depositato in caveau protetti. Ogni quota simula la detenzione di circa un decimo di oncia d'oro.",
       solidRationale: "Strumento di protezione patrimoniale ideale contro l'inflazione sistemica, la svalutazione monetaria e l'incertezza geopolitica globale.",
       risks: "Non distribuisce dividendi o interessi (costo opportunità elevato in contesti di tassi reali positivi) e fluttua in base al dollaro USA.",
-      currentPrice: "333.04 USD",
+      currentPrice: "333.02 USD",
       changePercent: "-0.64%",
       status: "negative",
       estimated: false,
@@ -291,8 +291,8 @@ export const TRENDS_DATA = {
       description: "Titolo di debito emesso dal governo degli Stati Uniti con scadenza a 10 anni. Rappresenta il benchmark dei tassi d'interesse mondiali e l'asset privo di rischio (risk-free) per eccellenza.",
       solidRationale: "Garanzia totale di solvibilità (il governo USA ha la capacità teoricamente illimitata di stampare dollari). Offre un flusso di cassa certo (cedole semestrali).",
       risks: "Rischio tasso (se i tassi d'interesse salgono, il prezzo dell'obbligazione scende sul mercato secondario) e rischio di erosione del potere d'acquisto da inflazione elevata.",
-      currentPrice: "5.04% (Rendimento)",
-      changePercent: "-0.03 pt",
+      currentPrice: "4.92% (Rendimento)",
+      changePercent: "-0.12 pt",
       status: "negative",
       estimated: false,
       historicalYields: [
@@ -315,8 +315,8 @@ export const TRENDS_DATA = {
       description: "Titolo di debito emesso dal governo degli Stati Uniti con scadenza a 2 anni. Molto sensibile alle decisioni di politica monetaria immediata della Federal Reserve.",
       solidRationale: "Rischio di fluttuazione del prezzo sul mercato secondario estremamente ridotto rispetto al decennale a causa della brevissima durata (duration). Ideale per parcheggiare la liquidità con rendimenti elevati.",
       risks: "Rischio di reinvestimento (alla scadenza, se i tassi sono scesi, si dovrà reinvestire a rendimenti inferiori) e imposte sull'inflazione reale.",
-      currentPrice: "4.76% (Rendimento)",
-      changePercent: "-0.04 pt",
+      currentPrice: "4.63% (Rendimento)",
+      changePercent: "-0.13 pt",
       status: "negative",
       estimated: false,
       historicalYields: [
@@ -388,9 +388,9 @@ export const TRENDS_DATA = {
       description: "Materia prima metallica di riferimento. Da millenni rappresenta lo standard storico del valore tangibile ed è la riserva monetaria delle banche centrali di tutto il pianeta.",
       solidRationale: "Assenza di rischio di controparte. Protegge nei periodi di gravi tensioni sistemiche ed geopolitiche (stagflazione, conflitti armati, crisi bancarie).",
       risks: "Costi fisici di stoccaggio e assicurazione per i possessori di oro fisico; forte correlazione inversa con i rendimenti reali dei titoli di Stato statunitensi.",
-      currentPrice: "3,636.90 USD/oz",
-      changePercent: "+3.46%",
-      status: "positive",
+      currentPrice: "3,633.70 USD/oz",
+      changePercent: "-0.48%",
+      status: "negative",
       estimated: false,
       historicalYields: [
         { year: "2020", yield: 24.6 },
@@ -412,9 +412,9 @@ export const TRENDS_DATA = {
       description: "La prima e più grande criptovaluta decentralizzata basata su blockchain. Caratterizzata da una scarsità algoritmica programmata a 21 milioni di unità totali.",
       solidRationale: "Adozione istituzionale crescente (approvazione di ETF spot globali), proprietà tangibili di oro digitale (scarsità matematica, trasferibilità globale senza intermediari) e indipendenza dai sistemi bancari centrali.",
       risks: "Estrema volatilità dei prezzi, incertezze normative e regolatorie globali, e potenziale impatto ambientale dei consumi del protocollo Proof of Work.",
-      currentPrice: "61,237.00 USD",
-      changePercent: "+0.54%",
-      status: "positive",
+      currentPrice: "60,521.00 USD",
+      changePercent: "-1.77%",
+      status: "negative",
       estimated: false,
       historicalYields: [
         { year: "2020", yield: 302.8 },
