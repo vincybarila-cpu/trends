@@ -294,7 +294,7 @@ export const TRENDS_DATA = {
       currentPrice: "4.85% (Rendimento)",
       changePercent: "-0.06 pt",
       status: "negative",
-      estimated: false,
+      estimated: true,
       historicalYields: [
         { year: "2020", yield: 0.93 },
         { year: "2021", yield: 1.51 },
@@ -318,7 +318,7 @@ export const TRENDS_DATA = {
       currentPrice: "4.61% (Rendimento)",
       changePercent: "-0.02 pt",
       status: "negative",
-      estimated: false,
+      estimated: true,
       historicalYields: [
         { year: "2020", yield: 0.12 },
         { year: "2021", yield: 0.73 },
@@ -343,7 +343,7 @@ export const TRENDS_DATA = {
       currentPrice: "4.68% (Rendimento)",
       changePercent: "+0.32 pt",
       status: "positive",
-      estimated: false,
+      estimated: true,
       historicalYields: [
         { year: "2020", yield: 0.54 },
         { year: "2021", yield: 1.17 },
@@ -412,8 +412,8 @@ export const TRENDS_DATA = {
       description: "La prima e più grande criptovaluta decentralizzata basata su blockchain. Caratterizzata da una scarsità algoritmica programmata a 21 milioni di unità totali.",
       solidRationale: "Adozione istituzionale crescente (approvazione di ETF spot globali), proprietà tangibili di oro digitale (scarsità matematica, trasferibilità globale senza intermediari) e indipendenza dai sistemi bancari centrali.",
       risks: "Estrema volatilità dei prezzi, incertezze normative e regolatorie globali, e potenziale impatto ambientale dei consumi del protocollo Proof of Work.",
-      currentPrice: "60,152.00 USD",
-      changePercent: "-0.77%",
+      currentPrice: "59,325.00 USD",
+      changePercent: "-3.69%",
       status: "negative",
       estimated: false,
       historicalYields: [
